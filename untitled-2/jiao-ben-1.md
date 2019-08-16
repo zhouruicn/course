@@ -30,7 +30,13 @@ this.define("change",function(data,callback){
     }.bind(this)
 ```
 
+或者也可以直接调用系统内置的方法例如
 
+```javascript
+MWF.Actions.get("x_cms_assemble_control").getDocument(id,function(json){
+    //code
+}.bind(this))
+```
 
-
+getDocument是系统中已经定义的方法，具体可以查看服务调用文件o2\_core/o2/xAction/service目录下的服务文件
 
