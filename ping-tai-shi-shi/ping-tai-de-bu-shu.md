@@ -1,10 +1,4 @@
-# 平台的部署
-
-## 下载O2OA平台
-
-{% embed url="http://www.o2oa.net/download.html" %}
-
- **服务器下载和安装**
+# 服务器下载和安装
 
  访问 [www.o2oa.net/download.html](www.o2oa.net/download.html)
 
