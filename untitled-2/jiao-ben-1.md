@@ -40,3 +40,29 @@ MWF.Actions.get("x_cms_assemble_control").getDocument(id,function(json){
 
 getDocument是系统中已经定义的方法，具体可以查看服务调用文件o2\_core/o2/xAction/service目录下的服务文件
 
+4、操作嵌入视图数据
+
+5、视图查询
+
+6、引入外部js框架，例如jquery
+
+```javascript
+ o2.load("/o2_lib/jquery/jquery.min.js",function(){
+        var jq = jQuery.noConflict(true);
+        //alert(jq("#aaa").find("input").val())
+        jq(document).ready(function(){
+            //window.setTimeout(function(){ 
+                var tab = jq("table");
+                var tr = tab.find("tr"); 
+                tr.mouseover(function(){
+                    jq(this).css("background-color","#ff0")
+                });
+                tr.mouseout(function(){
+                    jq(this).css("background-color","")
+                })
+            //},2000);
+            
+        })
+    }.bind(this))
+```
+

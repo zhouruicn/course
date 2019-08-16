@@ -16,3 +16,11 @@
 
         this.form.openApplication\(name\) //打开其他应用
 
+      //启动一个发文管理实例，标题为：my file title，启动后提示`this.form.startProcess("公文管理", "发文管理", {"title": "my file title"}, function(json){                  this.form.notice("create file success!", "success"); });`
+
+
+
+
+
+
+
