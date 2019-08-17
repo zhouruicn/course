@@ -6,5 +6,5 @@
 
 输入分类名称“通知公告”，然后点击保存按钮，如下图
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
