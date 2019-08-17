@@ -1,5 +1,7 @@
 # 应用创建及权限设置
 
+通过两种途径对流程进行设计和管理，一是单击应用名称进入，二是新建一个应用流程：
+
 可以对各个平台进行设计开发的权限如下表：
 
 <table>
@@ -83,5 +85,11 @@
   </tbody>
 </table>
 
+![](../.gitbook/assets/image%20%2847%29.png)
 
+![](../.gitbook/assets/image%20%28105%29.png)
+
+![](../.gitbook/assets/image%20%2843%29.png)
+
+![](../.gitbook/assets/image%20%28103%29.png)
 
