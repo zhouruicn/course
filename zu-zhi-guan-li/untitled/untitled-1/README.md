@@ -1,6 +1,6 @@
 # 组织信息
 
- **1.查询组织的下级：listSubUnit函数说明**
+###  **1.查询组织的下级：listSubUnit函数说明**
 
 <table>
   <thead>
@@ -37,7 +37,7 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>2.  **查询组织的上级：listSupUnit**
+</table>### 2.  **查询组织的上级：listSupUnit**
 
 <table>
   <thead>
@@ -75,7 +75,7 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>**3.根据个人身份获取组织：getUnitByIdentity**
+</table>### **3.根据个人身份获取组织：getUnitByIdentity**
 
 <table>
   <thead>
@@ -116,8 +116,7 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>  
-**4.列出身份所在组织的所有上级组织：listAllSupUnitWithIdentity**
+</table>### **4.列出身份所在组织的所有上级组织：listAllSupUnitWithIdentity**
 
 <table>
   <thead>
@@ -152,7 +151,7 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>5.  **获取人员所在的所有组织：listUnitWithPerson**
+</table>### 5.  **获取人员所在的所有组织：listUnitWithPerson**
 
 <table>
   <thead>
@@ -187,7 +186,7 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>6.**列出个人所在组织的所有上级组织：listAllSupUnitWithPerson**
+</table>### 6.**列出个人所在组织的所有上级组织：listAllSupUnitWithPerson**
 
 <table>
   <thead>
@@ -222,7 +221,7 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>7.**根据组织属性获取所有符合的组织：listUnitWithAttribute**
+</table>### 7.**根据组织属性获取所有符合的组织：listUnitWithAttribute**
 
 <table>
   <thead>
@@ -260,7 +259,7 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>8.  **根据组织职务获取所有符合的组织：listUnitWithDuty**
+</table>### 8.  **根据组织职务获取所有符合的组织：listUnitWithDuty**
 
 <table>
   <thead>
