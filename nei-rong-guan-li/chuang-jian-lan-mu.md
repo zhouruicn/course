@@ -2,13 +2,13 @@
 
 在设计中心点击内容管理平台图标可进入内容管理界面（可使用快捷键Shift+C），如下图：
 
-![](../.gitbook/assets/image%20%2842%29.png)
+![](../.gitbook/assets/image%20%2843%29.png)
 
 
 
 点击右上角新建按钮，可创建新的栏目。弹出栏目新建对话框：
 
-![](../.gitbook/assets/image%20%2879%29.png)
+![](../.gitbook/assets/image%20%2880%29.png)
 
 
 
