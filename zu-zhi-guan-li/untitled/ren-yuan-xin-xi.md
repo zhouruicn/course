@@ -1,6 +1,6 @@
 # 人员信息
 
-**1.  获取人员信息：getPerson**
+### **1.  获取人员信息：getPerson**
 
 <table>
   <thead>
@@ -35,7 +35,7 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>**2. 查询下级人员：listSubPerson**
+</table>### **2. 查询下级人员：listSubPerson**
 
 <table>
   <thead>
@@ -71,7 +71,7 @@
       style="text-align:left"></td>
     </tr>
   </tbody>
-</table>**3. 查询上级人员：listSupPerson**
+</table>### **3. 查询上级人员：listSupPerson**
 
 <table>
   <thead>
@@ -107,7 +107,7 @@
       style="text-align:left"></td>
     </tr>
   </tbody>
-</table>**4. 获取群组的所有人员：listPersonWithGroup**
+</table>### **4. 获取群组的所有人员：listPersonWithGroup**
 
 | **函数说明** | var person\_array = this.org.listPersonWithGroup\(name\); |
 | :--- | :--- |
@@ -116,7 +116,7 @@
 | **脚本示例** |  |
 | var person\_array = this.org.listPersonWithGroup \("人力组"\); |  |
 
-5**. 获取角色的所有人员：listPersonWithRole**
+### 5**. 获取角色的所有人员：listPersonWithRole**
 
 | **函数说明** | var person\_array = this.org.listPersonWithRole\(name\); |
 | :--- | :--- |
@@ -125,7 +125,7 @@
 | **脚本示例** |  |
 | var person\_array = this.org.listPersonWithRole\("Manager"\); |  |
 
-**6.获取指定身份的所有人员：listPersonWithIdentity**
+### **6.获取指定身份的所有人员：listPersonWithIdentity**
 
 **函数说明**
 
@@ -136,7 +136,7 @@
 | **脚本示例** |  |
 | var person\_array = this.org.listPersonWithIdentity\("李杰@114849cc-eb77-4217-bd15-00b449acbdbb@I"\); |  |
 
-**7. 查询组织成员的人员：listPersonWithUnit**
+### **7. 查询组织成员的人员：listPersonWithUnit**
 
 <table>
   <thead>
