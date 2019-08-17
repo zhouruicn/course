@@ -1,4 +1,4 @@
-# 删除用户
+# 修改用户密码
 
 **请求报文**
 
@@ -7,8 +7,9 @@
     <tr>
       <th style="text-align:left">
         <p>{</p>
-        <p>action : &quot;delete&quot;,</p>
+        <p>action : &quot;updatepwd&quot;,</p>
         <p>flag: &quot;&quot;, //&#x7528;&#x6237;&#x6807;&#x5FD7;&#x4F4D;</p>
+        <p>password: &quot;&quot; //&#x65B0;&#x5BC6;&#x7801;</p>
         <p>}</p>
       </th>
     </tr>

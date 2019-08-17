@@ -1,4 +1,4 @@
-# 删除用户
+# 修改汇报对象
 
 **请求报文**
 
@@ -7,8 +7,9 @@
     <tr>
       <th style="text-align:left">
         <p>{</p>
-        <p>action : &quot;delete&quot;,</p>
+        <p>action : &quot;updateSuperior&quot;,</p>
         <p>flag: &quot;&quot;, //&#x7528;&#x6237;&#x6807;&#x5FD7;&#x4F4D;</p>
+        <p>superior: &quot;&quot; //&#x7528;&#x6237;&#x6C47;&#x62A5;&#x5BF9;&#x8C61;</p>
         <p>}</p>
       </th>
     </tr>

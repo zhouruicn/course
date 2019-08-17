@@ -39,6 +39,8 @@
       * [新增用户](zu-zhi-guan-li/shu-ju-tong-bu-jie-kou/ren-yuan-shu-ju-jie-kou/untitled.md)
       * [修改用户](zu-zhi-guan-li/shu-ju-tong-bu-jie-kou/ren-yuan-shu-ju-jie-kou/xiu-gai-yong-hu.md)
       * [删除用户](zu-zhi-guan-li/shu-ju-tong-bu-jie-kou/ren-yuan-shu-ju-jie-kou/shan-chu-yong-hu.md)
+      * [修改用户密码](zu-zhi-guan-li/shu-ju-tong-bu-jie-kou/ren-yuan-shu-ju-jie-kou/xiu-gai-yong-hu-mi-ma.md)
+      * [修改汇报对象](zu-zhi-guan-li/shu-ju-tong-bu-jie-kou/ren-yuan-shu-ju-jie-kou/xiu-gai-hui-bao-dui-xiang.md)
     * [组织数据接口](zu-zhi-guan-li/shu-ju-tong-bu-jie-kou/zu-zhi-shu-ju-jie-kou/README.md)
       * [新增组织](zu-zhi-guan-li/shu-ju-tong-bu-jie-kou/zu-zhi-shu-ju-jie-kou/xin-zeng-zu-zhi.md)
       * [修改组织](zu-zhi-guan-li/shu-ju-tong-bu-jie-kou/zu-zhi-shu-ju-jie-kou/xiu-gai-zu-zhi.md)
