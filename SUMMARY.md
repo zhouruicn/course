@@ -4,6 +4,7 @@
 * [平台实施](ping-tai-shi-shi/README.md)
   * [服务器下载和安装](ping-tai-shi-shi/ping-tai-de-bu-shu.md)
   * [平台能力介绍](ping-tai-shi-shi/ping-tai-neng-li-jie-shao.md)
+  * [服务器目录结构](ping-tai-shi-shi/fu-wu-qi-mu-lu-jie-gou.md)
   * [移动办公介绍](ping-tai-shi-shi/yi-dong-ban-gong-pei-zhi-jie-shao.md)
   * [钉钉和微信接入](ping-tai-shi-shi/ding-ding-he-wei-xin-jie-ru.md)
   * [集群方式部署](ping-tai-shi-shi/ji-qun-fang-shi-bu-shu.md)
