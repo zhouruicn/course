@@ -6,7 +6,7 @@ description: compact data passwd其中passwd 是xadmin密码
 
 数据库压缩命令：compact data o2，其中o2是平台默认的xadmin密码，如果密码已经修改过了，请使用新的密码。
 
-![](../../../.gitbook/assets/image%20%28106%29.png)
+![](../../../.gitbook/assets/image%20%28107%29.png)
 
 压缩时间由数据量大小而定。
 

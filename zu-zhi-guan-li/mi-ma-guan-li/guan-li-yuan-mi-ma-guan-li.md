@@ -4,7 +4,7 @@
 
 方法一：在系统控制台命令方式修改
 
-![](../../.gitbook/assets/image%20%28109%29.png)
+![](../../.gitbook/assets/image%20%28110%29.png)
 
 在控制台输入 setPassword o2 newpassword
 
@@ -16,11 +16,11 @@
 
 先正常完成O2OA系统启动，使用xadmin登录系统，在左上角系统菜单中点击控制面板-系统设置：
 
-![](../../.gitbook/assets/image%20%2882%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
 在基础配置 - 系统用户配置界面中，可以直接进行超级管理员\(xadmin\)密码修改，如下图所示：
 
-![](../../.gitbook/assets/image%20%28102%29.png)
+![](../../.gitbook/assets/image%20%28103%29.png)
 
 点击\[修改超级管理员密码\]，输入新密码，点击确定即可完成密码修改操作。管理员密码修改完成后，一定要重启服务。
 
