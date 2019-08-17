@@ -1,16 +1,19 @@
+---
+description: >-
+  组织成员即人员和组织和隶属关系，表明人员的组织隶属关系。由于一个人员有可能由于兼职或者借调的原因，需要在多个组织里使用，这样系统会为该人员生成多种人员与组织的关系，即“身份”。在O2OA中管理人员与组织的隶属关系（“身份”）比较方便，只需要在组织信息中对组织成员进行管理即可完成人员与组织隶属关系的绑定。
+---
+
 # 人员与组织的关系（人员身份）
-
-
 
 打开指定组织的信息页面，如下图所示界面：
 
-![IMG\_256](file:///C:\Users\wwgwilly\AppData\Local\Temp\msohtmlclip1\01\clip_image002.gif)
+![](../../.gitbook/assets/image%20%283%29.png)
 
 在组织信息界面中，显示组织成员标签，如下图所示：
 
-![IMG\_257](file:///C:\Users\wwgwilly\AppData\Local\Temp\msohtmlclip1\01\clip_image004.gif)
+![](../../.gitbook/assets/image%20%2858%29.png)
 
 点击添加，选择需要添加到该组织的个人，或者选择一个或者多个个人信息从组织里删除，如下图所示：
 
-![IMG\_258](file:///C:\Users\wwgwilly\AppData\Local\Temp\msohtmlclip1\01\clip_image006.gif)
+![](../../.gitbook/assets/image%20%28122%29.png)
 

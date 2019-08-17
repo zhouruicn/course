@@ -2,7 +2,7 @@
 
 系统支持集群方式进行应用扩展.
 
-![](../.gitbook/assets/image%20%2887%29.png)
+![](../.gitbook/assets/image%20%2893%29.png)
 
 扩展依靠配置文件实现.
 

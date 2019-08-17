@@ -21,6 +21,8 @@
       * [顶组织创建](zu-zhi-guan-li/zu-zhi-jia-gou-zu-zhi-zhi-wei-zu-zhi-shu-xing/zu-zhi-jia-gou-chuang-jian-guo-cheng/ding-zu-zhi-chuang-jian.md)
       * [下级组织创建](zu-zhi-guan-li/zu-zhi-jia-gou-zu-zhi-zhi-wei-zu-zhi-shu-xing/zu-zhi-jia-gou-chuang-jian-guo-cheng/xia-ji-zu-zhi-chuang-jian.md)
       * [组织管理设定](zu-zhi-guan-li/zu-zhi-jia-gou-zu-zhi-zhi-wei-zu-zhi-shu-xing/zu-zhi-jia-gou-chuang-jian-guo-cheng/zu-zhi-guan-li-she-ding.md)
+    * [组织职位管理](zu-zhi-guan-li/zu-zhi-jia-gou-zu-zhi-zhi-wei-zu-zhi-shu-xing/zu-zhi-zhi-wei-guan-li.md)
+    * [组织职务意义与使用](zu-zhi-guan-li/zu-zhi-jia-gou-zu-zhi-zhi-wei-zu-zhi-shu-xing/zu-zhi-zhi-wu-yi-yi-yu-shi-yong.md)
   * [人员身份,人员属性](zu-zhi-guan-li/ren-yuan-shen-fen-ren-yuan-shu-xing/README.md)
     * [人员信息创建](zu-zhi-guan-li/ren-yuan-shen-fen-ren-yuan-shu-xing/ren-yuan-xin-xi-chuang-jian.md)
     * [人员与组织的关系（人员身份）](zu-zhi-guan-li/ren-yuan-shen-fen-ren-yuan-shu-xing/ren-yuan-yu-zu-zhi-de-guan-xi-ren-yuan-shen-fen.md)
