@@ -1,6 +1,6 @@
 # Table of contents
 
-* [O2OA培训教程](README.md)
+* [O2OA教程](README.md)
 * [平台实施](ping-tai-shi-shi/README.md)
   * [服务器下载和安装](ping-tai-shi-shi/ping-tai-de-bu-shu.md)
   * [平台能力介绍](ping-tai-shi-shi/ping-tai-neng-li-jie-shao.md)
