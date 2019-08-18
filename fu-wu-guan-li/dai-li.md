@@ -12,3 +12,16 @@
 
 点击“定时任务corn表达式”可选择corn表达式进行触发时间的配置。corn表达式详解[点击这里](http://www.o2oa.net/x_component_Template/widget/$CronPicker/cron_express_description.html)。
 
+## 调用服务
+
+### 调用O2OA后台服务
+
+#### GET方法
+
+```text
+var applications = resources.getContext().applications();
+applications.getQuery('x_processplatform_assemble_surface', "data/workcompleted/"+workCompletedId+"/publishFlag", "true" );
+```
+
+
+
