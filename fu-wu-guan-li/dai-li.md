@@ -12,6 +12,13 @@
 
 点击“定时任务corn表达式”可选择corn表达式进行触发时间的配置。corn表达式详解[点击这里](http://www.o2oa.net/x_component_Template/widget/$CronPicker/cron_express_description.html)。
 
+## 输出调试信息
+
+```text
+var text = "在服务器控制台输出的消息"
+print( text );
+```
+
 ## 调用JAVA类
 
 ```text
@@ -238,4 +245,16 @@ function sendRequest( xml ){
     }
 }
 ```
+
+## 人员组织操作
+
+组织管理中包括人员、人员属性、组织、组织属性、身份、群组和角色。有两种方法可以进行组织管理的操作：
+
+1、通过调用后台组织查询服务“x\_organization\_assemble\_express”进行组织管理的操作。具体服务请查看
+
+“http://applicationServer:20020/x\_organization\_assemble\_express/jest/index.html”
+
+2、你可以通过 this.org 获取组织中的人员、人员属性、组织、组织属性、身份、群组和角色。 
+
+具体请查看API的[org](http://www.o2oa.net/x_desktop/portal.html?id=dcd8e168-2da0-4496-83ee-137dc976c7f6&page=d26f71a1-0488-4171-8bc8-e7bffda81561)章节
 
