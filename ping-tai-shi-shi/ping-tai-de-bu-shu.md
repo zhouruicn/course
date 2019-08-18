@@ -1,4 +1,4 @@
-# 服务器下载和安装
+# 下载和安装
 
  访问 [www.o2oa.net/download.html](www.o2oa.net/download.html)
 

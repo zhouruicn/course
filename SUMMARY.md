@@ -2,7 +2,7 @@
 
 * [O2OA教程](README.md)
 * [平台实施](ping-tai-shi-shi/README.md)
-  * [服务器下载和安装](ping-tai-shi-shi/ping-tai-de-bu-shu.md)
+  * [下载和安装](ping-tai-shi-shi/ping-tai-de-bu-shu.md)
   * [平台能力介绍](ping-tai-shi-shi/ping-tai-neng-li-jie-shao.md)
   * [服务器目录结构](ping-tai-shi-shi/fu-wu-qi-mu-lu-jie-gou.md)
   * [移动办公介绍](ping-tai-shi-shi/yi-dong-ban-gong-pei-zhi-jie-shao.md)
@@ -92,8 +92,8 @@
     * [给分类配置信息发布流程](nei-rong-guan-li/ru-he-shi-yong-liu-cheng-fa-bu-xin-xi/gei-fen-lei-pei-zhi-xin-xi-fa-bu-liu-cheng.md)
 * [门户管理](untitled-2/README.md)
   * [功能简介](untitled-2/jian-jie.md)
-  * [表单设计](untitled-2/biao-dan-1.md)
   * [数据源使用](untitled-2/shu-ju-yuan-shi-yong.md)
+  * [表单设计](untitled-2/biao-dan-1.md)
   * [模板导入](untitled-2/mo-ban-dao-ru.md)
   * [脚本开发](untitled-2/jiao-ben-1.md)
   * [相关接口](untitled-2/xiang-guan-jie-kou.md)
