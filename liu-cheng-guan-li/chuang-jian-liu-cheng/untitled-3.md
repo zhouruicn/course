@@ -18,13 +18,13 @@
 
 ![](../../.gitbook/assets/image%20%2868%29.png)
 
-![](../../.gitbook/assets/image%20%28135%29.png)
+![](../../.gitbook/assets/image%20%28136%29.png)
 
 ![](../../.gitbook/assets/image%20%2883%29.png)
 
 财务部门复审：选择一个“未名称”活动，和申请人活动一样，把活动的名称修改为“财务部门复审”。再切换到“人员”标签页，在处理人配置中，在“用户标识”中选择合适的处理人。配置过程如下：
 
-![](../../.gitbook/assets/image%20%28133%29.png)
+![](../../.gitbook/assets/image%20%28134%29.png)
 
 
 
