@@ -4,15 +4,11 @@
 
 ![](../.gitbook/assets/zi-yuan.jpg)
 
-2、导入css
-
-![](../.gitbook/assets/css.jpg)
-
-3、导入html文件
-
-![](../.gitbook/assets/import.jpg)
+2、导入html，css文件
 
 ![](../.gitbook/assets/import%20%281%29.jpg)
+
+4、导入后效果
 
 ![](../.gitbook/assets/html.jpg)
 
