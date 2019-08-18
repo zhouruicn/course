@@ -6,6 +6,12 @@
 
 点系统的左上角导航-&gt;设计中心-&gt;数据中心-&gt;具体应用-&gt;视图打开。
 
+## 视图的后台服务
+
+[http://applicationServer:20020/x\_query\_assemble\_surface/jest/index.html](http://****:20020/x_query_assemble_surface/jest/index.html)
+
+![](../.gitbook/assets/qq-tu-pian-20190818223432.png)
+
 ## 视图属性
 
 ### 基本
