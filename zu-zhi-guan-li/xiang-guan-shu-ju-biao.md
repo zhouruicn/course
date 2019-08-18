@@ -2,7 +2,7 @@
 
 本地数据访问地址 ：[http://127.0.0.1:20051](http://127.0.0.1:20051)
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../.gitbook/assets/image%20%2848%29.png)
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2831%29.png)
 
