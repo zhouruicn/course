@@ -2,7 +2,7 @@
 
 O2OA除了自动备份，还支持手工将服务器数据库中所有的数据进行导出操作。
 
-![IMG\_257](file:///C:\Users\wwgwilly\AppData\Local\Temp\msohtmlclip1\01\clip_image002.gif)
+![](../../.gitbook/assets/image%20%2839%29.png)
 
 Winodws操作系统中操作步骤（其他操作系统中操作方式类似）：
 
@@ -12,13 +12,13 @@ Winodws操作系统中操作步骤（其他操作系统中操作方式类似）�
 
      执行命令：start data，启动完成后如下图所示：
 
-![IMG\_258](file:///C:\Users\wwgwilly\AppData\Local\Temp\msohtmlclip1\01\clip_image004.gif)
+![](../../.gitbook/assets/image%20%2869%29.png)
 
  3）导出数据
 
           执行命令：dump data o2  （说明：其中o2是服务器默认的管理员密码），执行效果如下图所示：
 
-![IMG\_259](file:///C:\Users\wwgwilly\AppData\Local\Temp\msohtmlclip1\01\clip_image006.gif)
+![](../../.gitbook/assets/image%20%2830%29.png)
 
 导出完成后，会显示：
 
@@ -34,7 +34,9 @@ Winodws操作系统中操作步骤（其他操作系统中操作方式类似）�
 
 如下图所示：
 
-![IMG\_260](file:///C:\Users\wwgwilly\AppData\Local\Temp\msohtmlclip1\01\clip_image008.gif)
+![](../../.gitbook/assets/image%20%28120%29.png)
 
 导出文件存放位置：
+
+![](../../.gitbook/assets/image%20%2826%29.png)
 
