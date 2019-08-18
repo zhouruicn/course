@@ -258,3 +258,14 @@ function sendRequest( xml ){
 
 具体请查看API的[org](http://www.o2oa.net/x_desktop/portal.html?id=dcd8e168-2da0-4496-83ee-137dc976c7f6&page=d26f71a1-0488-4171-8bc8-e7bffda81561)章节
 
+
+
+## 完整样例
+
+| 样例名称 | 链接 |
+| :--- | :--- |
+| 统一待办 | ​[链接](http://www.o2oa.net/x_component_service_AgentDesigner/sample/sync2todo_UnifiedWorkbench.js) |
+| EXCEL操作 | [链接](http://www.o2oa.net/x_component_service_AgentDesigner/sample/ImportPersonFormExcel.js) |
+
+更多样例可以查看 webServer/x\_component\_service\_AgentDesigner/sample/目录
+
