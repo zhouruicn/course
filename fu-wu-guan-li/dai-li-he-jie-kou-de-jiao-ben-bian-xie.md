@@ -1,12 +1,4 @@
-# 接口
-
-接口可以提供Http服务让外部程序调用，使用Javascript编写，可以直接调用Java类。
-
-## 入口 <a id="ru-kou"></a>
-
-点系统的左上角导航-&gt;设计中心-&gt;服务管理-&gt;接口打开。
-
-![](../.gitbook/assets/qq-tu-pian-20190818161636.png)
+# 代理和接口的脚本编写
 
 ## 输出调试信息
 
@@ -256,12 +248,5 @@ function sendRequest( xml ){
 
 
 
-## 完整样例
 
-| 样例名称 | 链接 |
-| :--- | :--- |
-| 统一待办 | ​[链接](http://www.o2oa.net/x_component_service_AgentDesigner/sample/sync2todo_UnifiedWorkbench.js) |
-| EXCEL操作 | [链接](http://www.o2oa.net/x_component_service_AgentDesigner/sample/ImportPersonFormExcel.js) |
-
-更多样例可以查看 webServer/x\_component\_service\_AgentDesigner/sample/目录
 
