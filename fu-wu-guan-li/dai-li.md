@@ -20,7 +20,7 @@
 
 打开 [http://centerserver:20030/x\_program\_center/jest/list.htm](http://dev.o2oa.net:20030/x_program_center/jest/list.html)l
 
-**本小节中的“服务根”如下**：
+**本小节中的“服务根\(**serviceRoot**\)”如下**：
 
 | x\_processplatform\_assemble\_surface | 流程平台相关服务 |
 | :--- | :--- |
@@ -37,7 +37,11 @@
 | x\_organization\_assemble\_personal | 个人设置相关服务 |
 | x\_attendance\_assemble\_control | 考勤模块相关服务 |
 
-**本小节中的“路径”**，可以在服务详情中找到，如下图：
+**查找method**，后台服务有GET\POST\PUT\DELET几种方法，可以在服务详情中找到，如下图：
+
+![](../.gitbook/assets/qq-tu-pian-20190818132014.png)
+
+**本小节中的“路径\(path\)”**，可以在服务详情中找到，如下图：
 
 ![](../.gitbook/assets/qq-tu-pian-20190818123643.png)
 
@@ -53,8 +57,88 @@ work/workorworkcompleted/dcd8e168-2da0-4496-83ee-137dc976c7f6
 
 ```text
 var applications = resources.getContext().applications();
-applications.getQuery('x_processplatform_assemble_surface', "data/workcompleted/"+workCompletedId+"/publishFlag", "true" );
+//serviceRoot 服务根
+//path 路径
+applications.getQuery( serviceRoot, path );
+```
+
+样例：
+
+已知work id为dcd8e168-2da0-4496-83ee-137dc976c7f6，获取work内容，并解析成JSON。
+
+```text
+var applications = resources.getContext().applications();
+var serviceRoot = "x_processplatform_assemble_surface";
+var path = "work/workorworkcompleted/dcd8e168-2da0-4496-83ee-137dc976c7f6"
+var resp = applications.getQuery( serviceRoot, path );
+var json = JSON.parse( resp.toString() );
 ```
 
 
+
+#### POST方法
+
+```text
+var applications = resources.getContext().applications();
+//serviceRoot 服务根
+//path 路径
+//string 数据字符串，json转字符串可以用 JSON.stringify( json )
+applications.postQuery( serviceRoot, path, string );
+```
+
+样例：
+
+已知发文流程的ID为“0b7c5c43-caa8-4789-a263-308508d44016”，发起人的dn是“张三@zhangsan@I”，。需要发起一个流程。
+
+查到发起流程的路径是“jaxrs/work/process/{processFlag}”。
+
+```text
+var applications = resources.getContext().applications();
+var serviceRoot = "x_processplatform_assemble_surface";
+var path = "work/process/0b7c5c43-caa8-4789-a263-308508d44016";
+var string = JSON.stringify({
+    "latest" : false,
+    "title" : "测试发文流程",
+    "identity" : "张三@zhangsan@I",
+    "data" : {  //业务数据
+         "fileNoPrefix" : "xxx"  //文号冠字
+    }
+});
+var resp = applications.postQuery( serviceRoot, path, string );
+var json = JSON.parse( resp.toString() );
+```
+
+
+
+#### PUT方法
+
+```text
+var applications = resources.getContext().applications();
+//serviceRoot 服务根
+//path 路径
+//string 数据字符串，json转字符串可以用 JSON.stringify( json )
+applications.putQuery( serviceRoot, path, string );
+```
+
+样例：
+
+已知发文流程的ID为“0b7c5c43-caa8-4789-a263-308508d44016”，发起人的dn是“张三@zhangsan@I”，。需要发起一个流程。
+
+查到发起流程的路径是“jaxrs/work/process/{processFlag}”。
+
+```text
+var applications = resources.getContext().applications();
+var serviceRoot = "x_processplatform_assemble_surface";
+var path = "work/process/0b7c5c43-caa8-4789-a263-308508d44016";
+var string = JSON.stringify({
+    "latest" : false,
+    "title" : "测试发文流程",
+    "identity" : "张三@zhangsan@I",
+    "data" : {  //业务数据
+         "fileNoPrefix" : "xxx"  //文号冠字
+    }
+});
+var resp = applications.postQuery( serviceRoot, path, string );
+var json = JSON.parse( resp.toString() );
+```
 
