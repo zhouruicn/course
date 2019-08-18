@@ -6,7 +6,7 @@
 
 点系统的左上角导航-&gt;设计中心-&gt;数据中心-&gt;具体应用-&gt;视图打开。
 
-### 视图属性
+## 视图属性
 
 ### 基本
 
@@ -198,7 +198,71 @@
 
 身份dn填写：identity.0.distinguishedName \(数组用 “.0” 来表示下标\)
 
-视图查询
+## 列属性
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x5C5E;&#x6027;</th>
+      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">&#x5217;&#x6807;&#x9898;</td>
+      <td style="text-align:left">&#x8868;&#x683C;&#x7684;&#x6807;&#x9898;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x5217;&#x540D;</td>
+      <td style="text-align:left">&#x5217;&#x540D;&#xFF0C;&#x5F53;&#x9700;&#x8981;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x8981;&#x7528;&#x5230;&#xFF08;&#x6BD4;&#x5982;&#x5D4C;&#x5165;&#x5230;&#x8868;&#x5355;&#x4E2D;&#x9009;&#x62E9;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#xFF09;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x9ED8;&#x8BA4;&#x503C;</td>
+      <td style="text-align:left">&#x5217;&#x503C;&#x4E3A;&#x7A7A;&#x65F6;&#x7684;&#x9ED8;&#x8BA4;&#x503C;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x6253;&#x5F00;&#x6587;&#x6863;</td>
+      <td style="text-align:left">&#x70B9;&#x51FB;&#x8BE5;&#x5217;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x662F;&#x5426;&#x6253;&#x5F00;&#x6587;&#x6863;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x6570;&#x636E;&#x8DEF;&#x5F84;</td>
+      <td style="text-align:left">&#x67E5;&#x770B;&#x672C;&#x7AE0;-&#x89C6;&#x56FE;&#x5C5E;&#x6027;-&#x8FC7;&#x6EE4;-&#x8DEF;&#x5F84;&#x7684;&#x4ECB;&#x7ECD;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x6392;&#x5E8F;</td>
+      <td style="text-align:left">&#x8BE5;&#x5217;&#x662F;&#x5426;&#x6392;&#x5E8F;&#xFF0C;&#x53EA;&#x6709;&#x7B2C;&#x4E00;&#x4E2A;&#x6392;&#x5E8F;&#x5217;&#x6709;&#x6548;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x5206;&#x7C7B;</td>
+      <td style="text-align:left">&#x8BE5;&#x5217;&#x662F;&#x5426;&#x5206;&#x7C7B;&#xFF0C;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x5206;&#x7C7B;&#x5217;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x9690;&#x85CF;</td>
+      <td style="text-align:left">&#x663E;&#x793A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8BE5;&#x5217;&#x662F;&#x5426;&#x9690;&#x85CF;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x7EC4;&#x7EC7;&#x5BF9;&#x8C61;</td>
+      <td style="text-align:left">&#x5982;&#x679C;&#x9009;&#x662F;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x663E;&#x793A;&#x6570;&#x7EC4;&#x7B2C;&#x4E00;&#x4E2A;&#x503C;&#x7684;
+        name &#x5C5E;&#x6027;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">HTML&#x503C;</td>
+      <td style="text-align:left">&#x5982;&#x679C;&#x9009;&#x62E9;&#x662F;&#xFF0C;&#x5219;&#x4F5C;&#x4E3A;&#x5355;&#x5143;&#x683C;&#x7684;innerHTML&#x663E;&#x793A;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x663E;&#x793A;&#x811A;&#x672C;</td>
+      <td style="text-align:left">
+        <p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x811A;&#x672C;&#x5BF9;&#x5217;&#x503C;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x3002;</p>
+        <p>this.value&#xFF1A;&#x4E3A;&#x5217;&#x539F;&#x6765;&#x7684;&#x503C;</p>
+        <p>this.entry.data: &#x8BE5;&#x884C;&#x6240;&#x6709;&#x5217;&#x7684;&#x503C;</p>
+        <p>&#x663E;&#x793A;&#x811A;&#x672C;&#x6700;&#x7EC8;&#x9700;&#x8981; return
+          &#x653E;&#x56DE;&#x503C;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## 视图查询
 
 ```text
 //获取“财务管理”应用中“报销审批数据”视图中的数据
