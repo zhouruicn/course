@@ -3,6 +3,7 @@
 * [O2OA教程](README.md)
 * [平台部署](ping-tai-shi-shi/README.md)
   * [下载和安装](ping-tai-shi-shi/ping-tai-de-bu-shu.md)
+  * [主机推荐配置](ping-tai-shi-shi/zhu-ji-tui-jian-pei-zhi.md)
   * [平台能力介绍](ping-tai-shi-shi/ping-tai-neng-li-jie-shao.md)
   * [服务器目录结构](ping-tai-shi-shi/fu-wu-qi-mu-lu-jie-gou.md)
   * [移动办公介绍](ping-tai-shi-shi/yi-dong-ban-gong-pei-zhi-jie-shao.md)
