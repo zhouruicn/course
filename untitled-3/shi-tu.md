@@ -260,27 +260,41 @@
       </td>
     </tr>
   </tbody>
-</table>
+</table>## 视图的使用
 
-## 视图查询
+### 在表单、页面中嵌入视图
+
+可以在表单中使用“嵌入视图”组件
+
+![](../.gitbook/assets/qq-tu-pian-20190818215632.png)
+
+### 选择视图的数据到表单 
+
+在表单中使用“选择视图”组件，可以进行流程、内容管理分类直接的数据关联。
+
+![](../.gitbook/assets/qq-tu-pian-20190818220436.png)
+
+当 选择结果处理 选择 “赋值”的时候：
+
+上图中的 field\_1 为本表单的组件标识，column\_1 为视图的列名。
+
+当用户选择视图后，会将选中行 column\_1 列的值赋值给 field\_1 。
+
+当 选择结果处理 选择 “脚本”的时候，可以通过 _this.target.selectedData_ 来获取用户选择行的数据。数据格式如下：
 
 ```text
-//获取“财务管理”应用中“报销审批数据”视图中的数据
-this.view.lookup({
-    "view": "报销审批数据",
-    "application": "财务管理",
-    "filter": [
-        {
-            "logic":"and",
-            "path":"$work.title",
-            "comparison":"like",
-            "value":"7月",
-            "formatType":"textValue"
-        }
-    ]
-}, function(data){
-    var result = data.grid; //得到过滤后的数据
-    //......
-});
+{[
+  bundle : "xxxx", //CMS文档Id/流程jobId
+  data : {  //列数据
+    column1Name : column1Value, //第一列的列名，第一列的列值
+    column2Name : column2Value, //第二列的列名，第二列的列值
+    ...
+  },
+  ...
+]}
 ```
+
+## 在脚本中的使用
+
+可以查看API的 view章节进行学习，[点击打开链接](http://www.o2oa.net/x_desktop/portal.html?id=dcd8e168-2da0-4496-83ee-137dc976c7f6&page=99d67d72-b744-4c36-852e-50254b5775ff)
 
