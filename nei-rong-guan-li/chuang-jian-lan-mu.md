@@ -8,7 +8,7 @@
 
 点击右上角新建按钮，可创建新的栏目。弹出栏目新建对话框：
 
-![](../.gitbook/assets/image%20%2898%29.png)
+![](../.gitbook/assets/image%20%2899%29.png)
 
 
 

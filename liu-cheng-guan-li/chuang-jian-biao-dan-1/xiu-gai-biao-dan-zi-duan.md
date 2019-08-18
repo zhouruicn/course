@@ -10,7 +10,7 @@
 
 ![](../../.gitbook/assets/image%20%2822%29.png)
 
-![](../../.gitbook/assets/image%20%28113%29.png)
+![](../../.gitbook/assets/image%20%28114%29.png)
 
 然后修改报销明细。 将下面的“订单信息”改为“报销明细”，然后修改明细表（设计元素为：数据网格）， 将数据网格的标识修改为“expenseList“。
 
@@ -20,7 +20,7 @@
 
 
 
-![](../../.gitbook/assets/image%20%28108%29.png)
+![](../../.gitbook/assets/image%20%28109%29.png)
 
 
 
@@ -34,7 +34,7 @@
 
 在第二列内容单元格中创建一个日期选择字段，命名为“expenseDate”； 在第三列内容单元格中创建一个 下拉框字段，命名为“expenseType”； 在第四列内容单元格中创建一个 文本字段，命名为“expenseExplain”； 在第五列内容单元格中创建一个 数字字段，命名为“expenseAmount”； 在第六列内容单元格中创建一个文本字段，命名为“expenseRemark”； 将“expenseDate”字段的选择类型改为“仅日期”； 设置“expenseType”字段的可选值：交通费、办公用品、办事处费用、培训费、通信费…… 配置完成后如下图:
 
-![](../../.gitbook/assets/image%20%28109%29.png)
+![](../../.gitbook/assets/image%20%28110%29.png)
 
 
 
