@@ -146,13 +146,7 @@ Data服务器
     </tr>
   </thead>
   <tbody></tbody>
-</table>4、将配置文件node\_192.168.0.1.json和node\_192.168.0.2.json，同时放到两台服务器的o2server/config目录内，如下图所示界面：
-
-![](O2OA集群部署配置步骤.files/image001.jpg)
-
-或者：
-
-![](O2OA集群部署配置步骤.files/image002.jpg)
+</table>4、将配置文件node\_192.168.0.1.json和node\_192.168.0.2.json，同时放到两台服务器的o2server/config目录内.
 
 ### 三、启动服务器
 
