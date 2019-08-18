@@ -135,8 +135,8 @@ result; //接口的输出
 
 | 样例名称 | 链接 |
 | :--- | :--- |
-| 统一待办 | ​[链接](http://www.o2oa.net/x_component_service_AgentDesigner/sample/sync2todo_UnifiedWorkbench.js) |
-| EXCEL操作 | [链接](http://www.o2oa.net/x_component_service_AgentDesigner/sample/ImportPersonFormExcel.js) |
+| 用户同步接口 | ​[链接](http://www.o2oa.net/x_component_service_InvokeDesigner/sample/personSync.js) |
+| 组织同步接口 | [链接](http://www.o2oa.net/x_component_service_AgentDesigner/sample/ImportPersonFormExcel.js) |
 
-更多样例可以查看 webServer/x\_component\_service\_AgentDesigner/sample/目录
+更多样例可以查看 webServer/x\_component\_service\_InvokeDesigner/sample/ 目录
 
