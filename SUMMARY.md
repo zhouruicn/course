@@ -110,7 +110,7 @@
   * [其他](untitled-2/qi-ta.md)
 * [数据中心](untitled-3/README.md)
   * [视图](untitled-3/shi-tu.md)
-  * [自建表](untitled-3/zi-jian-biao.md)
+  * [数据表](untitled-3/zi-jian-biao.md)
 * [服务管理](fu-wu-guan-li/README.md)
   * [前后端脚本的差异](fu-wu-guan-li/qian-hou-duan-jiao-ben-de-cha-yi.md)
   * [代理和接口的脚本编写](fu-wu-guan-li/dai-li-he-jie-kou-de-jiao-ben-bian-xie.md)
