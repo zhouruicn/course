@@ -12,6 +12,40 @@
 
 点击“定时任务corn表达式”可选择corn表达式进行触发时间的配置。corn表达式详解[点击这里](http://www.o2oa.net/x_component_Template/widget/$CronPicker/cron_express_description.html)。
 
+## 调用JAVA类
+
+```text
+//classString 为类名字符串，比如 "java.util.Calendar"
+var Class = Java.type( classString );
+var object = new Class();
+//object.method()
+```
+
+或者
+
+```text
+var object = new Class();
+//比如 var simpleDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+```
+
+样例:
+
+获取当前日期后的第5天
+
+```text
+function setDate(){
+    var Date = java.util.Date();
+    var Calendar = Java.type("java.util.Calendar");
+    var GregorianCalendar = Java.type("java.util.GregorianCalendar");
+    var now = new Date();
+    var calendar = new GregorianCalendar();
+    calendar.setTime(now);
+    calendar.set(Calendar.DATE, calendar.get(Calendar.DATE) - Config.waitDay);
+    return calendar.getTime();
+}
+
+```
+
 ## 调用服务
 
 ### 调用O2OA后台服务
@@ -88,7 +122,7 @@ applications.postQuery( serviceRoot, path, string );
 
 样例：
 
-已知发文流程的ID为“0b7c5c43-caa8-4789-a263-308508d44016”，发起人的dn是“张三@zhangsan@I”，。需要发起一个流程。
+已知发文流程的ID为“0b7c5c43-caa8-4789-a263-308508d44016”，发起人的dn是“张三@zhangsan@I”。需要发起一个流程。
 
 查到发起流程的路径是“jaxrs/work/process/{processFlag}”。
 
@@ -122,23 +156,48 @@ applications.putQuery( serviceRoot, path, string );
 
 样例：
 
-已知发文流程的ID为“0b7c5c43-caa8-4789-a263-308508d44016”，发起人的dn是“张三@zhangsan@I”，。需要发起一个流程。
+已知发文流程实例的work id为“0b7c5c43-caa8-4789-a263-308508d44016”，需要更新数据。
 
-查到发起流程的路径是“jaxrs/work/process/{processFlag}”。
+查到修改流程数据的路径是“jaxrs/data/work/{id}”。
 
 ```text
 var applications = resources.getContext().applications();
 var serviceRoot = "x_processplatform_assemble_surface";
-var path = "work/process/0b7c5c43-caa8-4789-a263-308508d44016";
+var path = "data/work/0b7c5c43-caa8-4789-a263-308508d44016";
 var string = JSON.stringify({
-    "latest" : false,
-    "title" : "测试发文流程",
-    "identity" : "张三@zhangsan@I",
-    "data" : {  //业务数据
-         "fileNoPrefix" : "xxx"  //文号冠字
-    }
+    "subject" : "测试流程11",
+    "fileNoPrefix" : "xxx1"
 });
-var resp = applications.postQuery( serviceRoot, path, string );
+var resp = applications.putQuery( serviceRoot, path, string );
 var json = JSON.parse( resp.toString() );
 ```
+
+#### 
+
+#### DELETE方法
+
+```text
+var applications = resources.getContext().applications();
+//serviceRoot 服务根
+//path 路径
+applications.deleteQuery( serviceRoot, path, string );
+```
+
+样例：
+
+已知发文流程实例的work id为“0b7c5c43-caa8-4789-a263-308508d44016”，需要删除改流程实例。
+
+查到删除流程实例的路径是“jaxrs/work/{id}”。
+
+```text
+var applications = resources.getContext().applications();
+var serviceRoot = "x_processplatform_assemble_surface";
+var path = "work/0b7c5c43-caa8-4789-a263-308508d44016";
+var resp = applications.deleteQuery( serviceRoot, path );
+var json = JSON.parse( resp.toString() );
+```
+
+### 调用本系统服务管理中的接口
+
+
 
