@@ -199,5 +199,43 @@ var json = JSON.parse( resp.toString() );
 
 ### 调用本系统服务管理中的接口
 
+样例：现有一个名称为“sendSMS”的接口，接收的requestText为 "{ mobile : mobile, content : content }"
 
+```text
+var CipherConnectionAction = Java.type('com.x.base.core.project.connection.CipherConnectionAction');
+var Config = Java.type('com.x.base.core.project.config.Config');
+var path = "invoke/sendSMS/execute";
+var dataString = JSON.stringify({
+    "mobile" : "13500000000",
+    "content" : "测试短信内容"
+});
+var resp = CipherConnectionAction.post(false, Config.x_program_centerUrlRoot() + path, dataString );
+var json = JSON.parse( resp.toString() );
+```
+
+
+
+### 调用外系统的服务
+
+样例：现有一个外系统的服务，url为 '[http://hostname/UnifiedWorkbench/ProcessTaskService](http://10.11.198.209:9083/UnifiedWorkbench/ProcessTaskService)'，接收的Content-type 为 'text/xml; charset=utf-8'
+
+```text
+function sendRequest( xml ){
+    try{
+        print("发起请求:"+xml);
+        var url =  'http://hostname/UnifiedWorkbench/ProcessTaskService'
+        var ArrayList = Java.type('java.util.ArrayList');
+        var heads = new ArrayList();
+        var NameValuePair = Java.type('com.x.base.core.project.bean.NameValuePair');
+        var p1 = new NameValuePair('Content-Type', 'text/xml; charset=utf-8');
+        heads.add(p1);
+        var HttpConnectionClass = Java.type('com.x.base.core.project.connection.HttpConnection');
+        var resp = HttpConnectionClass.postAsString(url, heads, xml);
+        print( "统一待办返回:"+ resp.toString());
+    }catch(e){
+        print("发送请求出错：");
+        print(  e.printStackTrace() );
+    }
+}
+```
 
