@@ -2,11 +2,11 @@
 
 在系统菜单-设计中心-流程管理应用中定制您的系统。点击系统菜单，找到“设计中心”，点击后打开设计中心。
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
-![](../.gitbook/assets/image%20%28113%29.png)
+![](../.gitbook/assets/image%20%28117%29.png)
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 
 

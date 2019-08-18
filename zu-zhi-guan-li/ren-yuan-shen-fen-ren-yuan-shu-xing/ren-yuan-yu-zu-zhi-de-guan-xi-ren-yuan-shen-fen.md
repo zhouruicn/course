@@ -7,13 +7,13 @@ description: >-
 
 打开指定组织的信息页面，如下图所示界面：
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%284%29.png)
 
 在组织信息界面中，显示组织成员标签，如下图所示：
 
-![](../../.gitbook/assets/image%20%2864%29.png)
+![](../../.gitbook/assets/image%20%2867%29.png)
 
 点击添加，选择需要添加到该组织的个人，或者选择一个或者多个个人信息从组织里删除，如下图所示：
 
-![](../../.gitbook/assets/image%20%28132%29.png)
+![](../../.gitbook/assets/image%20%28136%29.png)
 
