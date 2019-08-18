@@ -3,7 +3,7 @@ description: >-
   可以实现自动进行数据和文件存储的备份，服务器进行配置后，系统将会按指定的时间周期对服务器中的数据以及文件进行备份，有效地避免服务器使用中的数据误操作带来的数据丢失。
 ---
 
-# 自动备份数据
+# 自动执行数据备份与恢复
 
 ```text
  配置文件路径：o2server/config/node_127.0.0.1.json
@@ -25,7 +25,7 @@ description: >-
 
 备份文件存放位置：o2server\local\backup
 
-![](../../../.gitbook/assets/image%20%28121%29.png)
+![](../../.gitbook/assets/image%20%28121%29.png)
 
 配置说明：
 
