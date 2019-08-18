@@ -1,7 +1,7 @@
 # Table of contents
 
 * [O2OA教程](README.md)
-* [平台实施](ping-tai-shi-shi/README.md)
+* [平台部署](ping-tai-shi-shi/README.md)
   * [下载和安装](ping-tai-shi-shi/ping-tai-de-bu-shu.md)
   * [平台能力介绍](ping-tai-shi-shi/ping-tai-neng-li-jie-shao.md)
   * [服务器目录结构](ping-tai-shi-shi/fu-wu-qi-mu-lu-jie-gou.md)
@@ -23,11 +23,12 @@
     * [达梦](ping-tai-shi-shi/shu-ju-ku-shu-ju-biao-jie-shao/da-meng.md)
     * [人大金仓](ping-tai-shi-shi/shu-ju-ku-shu-ju-biao-jie-shao/ren-da-jin-cang.md)
     * [南大通用](ping-tai-shi-shi/shu-ju-ku-shu-ju-biao-jie-shao/nan-da-tong-yong.md)
-  * [源码的编译和源码结构](ping-tai-shi-shi/yuan-ma-de-bian-yi-he-yuan-ma-jie-gou.md)
+  * [编译源码](ping-tai-shi-shi/yuan-ma-de-bian-yi-he-yuan-ma-jie-gou.md)
   * [平台错误日志](ping-tai-shi-shi/ping-tai-cuo-wu-ri-zhi/README.md)
     * [日志所在目录](ping-tai-shi-shi/ping-tai-cuo-wu-ri-zhi/ri-zhi-suo-zai-mu-lu.md)
     * [日志使用class](ping-tai-shi-shi/ping-tai-cuo-wu-ri-zhi/ri-zhi-shi-yong-class.md)
   * [配置文件](ping-tai-shi-shi/pei-zhi-wen-jian.md)
+  * [审计日志](ping-tai-shi-shi/shen-ji-ri-zhi.md)
 * [组织管理](zu-zhi-guan-li/README.md)
   * [密码管理](zu-zhi-guan-li/mi-ma-guan-li/README.md)
     * [管理员密码管理](zu-zhi-guan-li/mi-ma-guan-li/guan-li-yuan-mi-ma-guan-li.md)
