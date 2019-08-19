@@ -4,13 +4,13 @@
 
 
 
-![](../../.gitbook/assets/image%20%2838%29.png)
+![](../../.gitbook/assets/image%20%2839%29.png)
 
 保留 “选择字段”和“简要说明”行，修改字段标题，将“选择字段”改为：“报销类型”；将“简要说明”改为“报销说明”。如下图：
 
 ![](../../.gitbook/assets/image%20%2822%29.png)
 
-![](../../.gitbook/assets/image%20%28117%29.png)
+![](../../.gitbook/assets/image%20%28118%29.png)
 
 然后修改报销明细。 将下面的“订单信息”改为“报销明细”，然后修改明细表（设计元素为：数据网格）， 将数据网格的标识修改为“expenseList“。
 
@@ -20,21 +20,21 @@
 
 
 
-![](../../.gitbook/assets/image%20%28112%29.png)
+![](../../.gitbook/assets/image%20%28113%29.png)
 
 
 
 然后删除数据网格第二行（数据网格内容行）中的所有字段。选中字段，在操作条上点击“删除”按钮，可将其删除。如下图：
 
-![](../../.gitbook/assets/image%20%2824%29.png)
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 再在内容单元格中创建相应的字段。从工具区将需要的元素拖动至合适的位置，可创建一个设计元素。
 
-![](../../.gitbook/assets/image%20%2862%29.png)
+![](../../.gitbook/assets/image%20%2863%29.png)
 
 在第二列内容单元格中创建一个日期选择字段，命名为“expenseDate”； 在第三列内容单元格中创建一个 下拉框字段，命名为“expenseType”； 在第四列内容单元格中创建一个 文本字段，命名为“expenseExplain”； 在第五列内容单元格中创建一个 数字字段，命名为“expenseAmount”； 在第六列内容单元格中创建一个文本字段，命名为“expenseRemark”； 将“expenseDate”字段的选择类型改为“仅日期”； 设置“expenseType”字段的可选值：交通费、办公用品、办事处费用、培训费、通信费…… 配置完成后如下图:
 
-![](../../.gitbook/assets/image%20%28113%29.png)
+![](../../.gitbook/assets/image%20%28114%29.png)
 
 
 
