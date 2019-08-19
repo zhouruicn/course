@@ -2,13 +2,13 @@
 
 在设计中心点击内容管理平台图标可进入内容管理界面（可使用快捷键Shift+C），如下图：
 
-![](../.gitbook/assets/image%20%2857%29.png)
+![](../.gitbook/assets/image%20%2858%29.png)
 
 
 
 点击右上角新建按钮，可创建新的栏目。弹出栏目新建对话框：
 
-![](../.gitbook/assets/image%20%2899%29.png)
+![](../.gitbook/assets/image%20%28102%29.png)
 
 
 
@@ -17,11 +17,11 @@
 
  “栏目描述”和“栏目排序”可随意填写； 点击“确定”按钮，就创建了新的栏目“通知公告”
 
-![](../.gitbook/assets/image%20%2846%29.png)
+![](../.gitbook/assets/image%20%2847%29.png)
 
 点击“通知公告”栏目，打开栏目设计界面
 
-![](../.gitbook/assets/image%20%2848%29.png)
+![](../.gitbook/assets/image%20%2849%29.png)
 
 
 

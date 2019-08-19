@@ -2,7 +2,7 @@
 
 ## 下载安装
 
-  [www.o2oa.net/download.html](www.o2oa.net/download.html)
+ http://www.o2oa.net/download.html
 
 下载与系统对应的版本.
 
@@ -36,7 +36,7 @@ O2OA支持windows/linux/macos/aix/中标麒麟操作系统，下载相应的安�
 
 启动界面如下图所示：
 
-![](../.gitbook/assets/image%20%2838%29.png)
+![](../.gitbook/assets/image%20%2839%29.png)
 
 ![](file://C:/Users/zhour/Desktop/qidong.jpg?lastModify=1565946515)
 
