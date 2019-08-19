@@ -28,6 +28,7 @@
     * [日志使用class](ping-tai-shi-shi/ping-tai-cuo-wu-ri-zhi/ri-zhi-shi-yong-class.md)
   * [配置文件](ping-tai-shi-shi/pei-zhi-wen-jian.md)
   * [审计日志](ping-tai-shi-shi/shen-ji-ri-zhi.md)
+  * [API接口服务](ping-tai-shi-shi/api-jie-kou-fu-wu.md)
 * [组织管理](zu-zhi-guan-li/README.md)
   * [密码管理](zu-zhi-guan-li/mi-ma-guan-li/README.md)
     * [管理员密码管理](zu-zhi-guan-li/mi-ma-guan-li/guan-li-yuan-mi-ma-guan-li.md)
