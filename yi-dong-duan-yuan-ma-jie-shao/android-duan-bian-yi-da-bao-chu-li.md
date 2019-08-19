@@ -192,6 +192,33 @@ BUGLY_APPID=71c852531c
 
 这里的签名版本V1和V2都勾选。点击 `Finish` 就开始打包了。 打包完成后，APK文件在 `./app/O2PLATFORM/release/O2PLATFORM-4.8.0.apk`
 
+### app下载地址配置
+
+我们O2OA平台登陆页扫码登录的二维码，有两个功能：
+
+第一个是通过app扫码登录
+
+第二个是如果手机还没有安装我们的app，通过其他app，如微信，扫码就会跳转到app的下载安装地址
+
+![&#x767B;&#x5F55;&#x9875;](http://img.muliba.net/post/20190819134437.png)
+
+![&#x767B;&#x5F55;&#x9875;2](http://img.muliba.net/post/20190819134447.png)
+
+app的下载安装地址可以配置，打开o2server/config/collect.json ，如果没有这个文件就到o2server/configSample目录下复制一个过去。
+
+```javascript
+
+  {
+  ...
+  "appUrl": "http://www.pgyer.com/ZhiHe_android" ##app下载地址
+  ...
+ }
+  
+
+```
+
+
+
 ### 官方网站:
 
 官方网站 : [http://www.o2oa.net](http://www.o2oa.net)
