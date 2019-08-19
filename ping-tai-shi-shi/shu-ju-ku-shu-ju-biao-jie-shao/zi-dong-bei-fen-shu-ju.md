@@ -25,7 +25,7 @@ description: >-
 
 备份文件存放位置：o2server\local\backup
 
-![](../../.gitbook/assets/image%20%28132%29.png)
+![](../../.gitbook/assets/image%20%28136%29.png)
 
 配置说明：
 

@@ -2,15 +2,15 @@
 
 war包部署路径：
 
-![](../../.gitbook/assets/image%20%2853%29.png)
+![](../../.gitbook/assets/image%20%2855%29.png)
 
 在application服务器启动时，会读取这个目录下所有war文件，自动地部署到jetty服务器。 
 
-![](../../.gitbook/assets/image%20%28101%29.png)
+![](../../.gitbook/assets/image%20%28104%29.png)
 
-![](../../.gitbook/assets/image%20%2839%29.png)
+![](../../.gitbook/assets/image%20%2840%29.png)
 
 应用服务器端口２００２０
 
-![](../../.gitbook/assets/image%20%2891%29.png)
+![](../../.gitbook/assets/image%20%2894%29.png)
 
