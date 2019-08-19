@@ -10,7 +10,7 @@
 
 ![](../../.gitbook/assets/image%20%2824%29.png)
 
-![](../../.gitbook/assets/image%20%28126%29.png)
+![](../../.gitbook/assets/image%20%28127%29.png)
 
 然后修改报销明细。 将下面的“订单信息”改为“报销明细”，然后修改明细表（设计元素为：数据网格）， 将数据网格的标识修改为“expenseList“。
 

@@ -15,5 +15,5 @@ description: >-
 
 点击添加，选择需要添加到该组织的个人，或者选择一个或者多个个人信息从组织里删除，如下图所示：
 
-![](../../.gitbook/assets/image%20%28154%29.png)
+![](../../.gitbook/assets/image%20%28155%29.png)
 

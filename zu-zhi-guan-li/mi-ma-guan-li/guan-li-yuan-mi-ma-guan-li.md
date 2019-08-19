@@ -4,7 +4,7 @@
 
 方法一：在系统控制台命令方式修改
 
-![](../../.gitbook/assets/image%20%28134%29.png)
+![](../../.gitbook/assets/image%20%28135%29.png)
 
 在控制台输入 setPassword o2 newpassword
 
@@ -20,7 +20,7 @@
 
 在基础配置 - 系统用户配置界面中，可以直接进行超级管理员\(xadmin\)密码修改，如下图所示：
 
-![](../../.gitbook/assets/image%20%28125%29.png)
+![](../../.gitbook/assets/image%20%28126%29.png)
 
 点击\[修改超级管理员密码\]，输入新密码，点击确定即可完成密码修改操作。管理员密码修改完成后，一定要重启服务。
 
