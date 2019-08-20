@@ -6,6 +6,10 @@
 
 3、脚本系统服务调用
 
+接口地址：
+
+[http://dev.o2oa.net:20030/x\_program\_center/jest/list.html](http://dev.o2oa.net:20030/x_program_center/jest/list.html)
+
 this.action\("xxx服务根"\)或者MWF.Actions.get\("xxxx服务根"\)；
 
 例如：引入了cms的文档服务方法，删除，修改，取消发布等方法。
