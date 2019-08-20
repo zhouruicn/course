@@ -47,7 +47,7 @@ function setDate(){
 
 服务查看和调试
 
-打开 [http://centerserver:20030/x\_program\_center/jest/list.htm](http://dev.o2oa.net:20030/x_program_center/jest/list.html)l
+打开 [http://centerserver:20030/x\_program\_center/jest/list.html](http://centerserver:20030/x_program_center/jest/list.html)
 
 **本小节中的“服务根\(**serviceRoot**\)”如下**：
 

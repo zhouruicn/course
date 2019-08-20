@@ -34,11 +34,11 @@ description: Statement
 
 ### 动态传参
 
-查询语句中的参数可以使用json传入
+查询语句中的where语句的值可以使用json传入
 
 如：
 
-查询语句的设计为 `select o from tableName o where o.name=?n`
+查询语句的设计为 `select o from tableName o where o.name=:n`
 
 在调用查询语句的时候传入 json
 
@@ -50,9 +50,11 @@ description: Statement
 
 则 最终在后台拼接成的语句为
 
-`select o from tableName o where o.name=‘’`
+`select o from tableName o where o.name='zhangsan'`
 
-![](../.gitbook/assets/qq-tu-pian-20190820111500.png)
+![](../.gitbook/assets/qq-tu-pian-20190820155112.png)
+
+了解JPQL语句动态传参可以点击链接查看：[https://www.objectdb.com/java/jpa/query/parameter](https://www.objectdb.com/java/jpa/query/parameter)
 
 ## 使用 <a id="shu-ju-biao-jiao-ben"></a>
 
@@ -76,7 +78,7 @@ o2.Actions.get( "x_query_assemble_surface" ).executeStatement(
 )
 ```
 
-例如：现在已有一个查询语句配置`select o from student o where o.class=?class`，存储的别名是 selectStudent，取第一页的10条，那么方法如下：
+例如：现在已有一个查询语句配置`select o from student o where o.class=:class`，存储的别名是 selectStudent，取第一页的10条，那么方法如下：
 
 ```text
 o2.Actions.get( "x_query_assemble_surface" ).executeStatement(
@@ -117,7 +119,7 @@ action.invoke({
 });
 ```
 
-例如：现在已有一个查询语句配置`select o from student o where o.class=?class`，存储的别名是 selectStudent，取第一页的10条，那么方法如下：
+例如：现在已有一个查询语句配置`select o from student o where o.class=:class`，存储的别名是 selectStudent，取第一页的10条，那么方法如下：
 
 ```text
 var action = new this.Action( "x_query_assemble_surface", {

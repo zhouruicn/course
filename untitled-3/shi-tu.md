@@ -98,7 +98,11 @@ description: View
     </tr>
     <tr>
       <td style="text-align:left">&#x65F6;&#x6BB5;</td>
-      <td style="text-align:left">&#x53EA;&#x663E;&#x793A;&#x7B26;&#x5408;&#x65F6;&#x6BB5;&#x5185;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5141;&#x8BB8;&#x6709;&#x504F;&#x79FB;&#x91CF;</td>
+      <td style="text-align:left">
+        <p>&#x53EA;&#x663E;&#x793A;&#x7B26;&#x5408;&#x65F6;&#x6BB5;&#x5185;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5141;&#x8BB8;&#x6709;&#x504F;&#x79FB;&#x91CF;</p>
+        <p><b>&#x89C6;&#x56FE;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x4E00;&#x5E74;&#x5185;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x66F4;&#x65E9;&#x65F6;&#x95F4;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8BF7;&#x914D;&#x7F6E;&#x65F6;&#x6BB5;&#x3002;</b>
+        </p>
+      </td>
     </tr>
   </tbody>
 </table>### 过滤
@@ -162,7 +166,7 @@ description: View
 
 标题填写：subject
 
-身份dn填写：identity.0.distinguishedName \(数组用 “.0” 来表示下标\)
+身份dn填写：identity1.0.distinguishedName \(数组用 “.0” 来表示下标\)
 
 #### 内容管理填写对应的以下路径：
 
@@ -206,7 +210,7 @@ description: View
 
 标题填写：subject
 
-身份dn填写：identity.0.distinguishedName \(数组用 “.0” 来表示下标\)
+身份dn填写：identity1.0.distinguishedName \(数组用 “.0” 来表示下标\)
 
 ## 列属性
 
