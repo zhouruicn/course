@@ -46,9 +46,37 @@ getDocument是系统中已经定义的方法，具体可以查看服务调用文
 
 4、操作嵌入视图数据
 
+5、服务调用实现翻页
 
+```javascript
+var action = new this.Action("x_cms_assemble_control", {
+    "del":{"uri": "/jaxrs/document/{id}", "method": "DELETE"},
+    "change":{"uri": "/jaxrs/document/category/change", "method": "PUT"},
+    "cancel":{"uri": "/jaxrs/document/publish/{id}/cancel", "method": "PUT"},
+    // 获取未读消息
+    "info":{"uri": "/jaxrs/viewrecord/unread", "method": "PUT"},
+    // 获取文档
+    "list":{"uri": "/jaxrs/document/filter/list/{id}/next/{count}", "method": "PUT"},
+    "publish":{"uri": "/jaxrs/document/publish/content", "method": "PUT"},
+});
 
-5、引入外部js框架，例如jquery
+this.data.add("curid","(0)");
+this.data.add("pageCount","10");
+
+this.define("loadList",function(id,count,data,callback){ 
+    action.invoke({"name": "list","parameter":{"id":id,"count":count},"data":data,"async": true, "success": function(json){if(callback)callback(json);}.bind(this)});
+}.bind(this));
+
+this.define("showList",function(json){
+    //alert(JSON.stringify(json));
+    var content = this.form.get("content").node;
+    json.data.each(function(data){
+        new Element("div",{text:data.title}).inject(content);
+    }.bind(this))
+}.bind(this))
+```
+
+6、引入外部js框架，例如jquery
 
 ```javascript
  o2.load("/o2_lib/jquery/jquery.min.js",function(){
