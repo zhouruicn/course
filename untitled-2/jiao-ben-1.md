@@ -46,35 +46,9 @@ getDocument是系统中已经定义的方法，具体可以查看服务调用文
 
 4、操作嵌入视图数据
 
-5、视图查询
 
-```javascript
-var title = this.form.get("title").getData();
 
-var filter = [];
-filter.push(
-    {
-        "logic":"and",
-        "path":"subject",
-        "comparison":"like",
-        "value":title,
-        "formatType":"textValue"
-    }
-)
-this.view.lookup({
-    "view": "9fc3e4b5-c1e5-413c-af2c-bff7a2a756c4",
-    "application": "公告",
-    "filter": filter
-}, function(data){
-    var result = data.grid; //得到过滤后的数据
-    // alert(JSON.stringify(result));debugger
-    // alert(result.length)
-    console.log(result);
-    // this.data = data;
-}.bind(this));
-```
-
-6、引入外部js框架，例如jquery
+5、引入外部js框架，例如jquery
 
 ```javascript
  o2.load("/o2_lib/jquery/jquery.min.js",function(){
