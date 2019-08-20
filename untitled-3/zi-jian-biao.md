@@ -1,3 +1,7 @@
+---
+description: Table
+---
+
 # 数据表
 
 数据表能够在系统数据库中自动创建真实表，并生成java实体对象，您可以使用JPQL操作数据表。当应用的数据特别大的时候，或者需要比视图更灵活的查询的时候，需要用到数据表。
@@ -21,6 +25,12 @@
 3、点击工具栏按钮，执行“编译所有数据表”操作
 
 4、重启服务器，数据表就可以使用了。
+
+## JPA JPQL语句
+
+在数据表的查询中，调用服务的时候需要传入JPA JPQL语句，如`o.name='zhangsan'`。
+
+了解JPQL语句可以点击链接查看：[https://www.objectdb.com/java/jpa/query/jpql/structure](https://www.objectdb.com/java/jpa/query/jpql/structure)
 
 ## 数据表脚本
 
@@ -46,7 +56,7 @@ window.QueryTableService = new Class({
                 "uri" : "/jaxrs/table/list/{tableFlag}/row/{id}/prev/{count}",
                 "method": "GET"
             },
-            //通过where 获取表中的数据,格式为jpql语法,o.name='zhangsan'
+            //通过where 获取表中的数据,格式为jpa jpql语法,o.name='zhangsan'
             "listRowSelectWhere" : {
                 "uri" : "/jaxrs/table/list/{tableFlag}/row/select/where/{where}",
                 "method": "GET"
