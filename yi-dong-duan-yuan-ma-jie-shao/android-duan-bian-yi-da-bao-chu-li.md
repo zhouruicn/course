@@ -1,5 +1,5 @@
 ---
-description: O2平台Android客户端，最低支持Android版本4.4 Android KitKat
+description: O2平台Android客户端，最低支持Android版本4.4 Android KitKat，编程语言主要使用kotlin
 ---
 
 # Android端编译打包处理

@@ -1,5 +1,5 @@
 ---
-description: O2OA平台IOS客户端，最低支持IOS版本10.0
+description: O2OA平台IOS客户端，最低支持IOS版本10.0，编程语言使用swift
 ---
 
 # IOS端打包处理
