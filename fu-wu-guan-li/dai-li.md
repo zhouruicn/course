@@ -10,7 +10,7 @@
 
 ## 触发时间
 
-点击“定时任务corn表达式”可选择corn表达式进行触发时间的配置。corn表达式详解[点击这里](http://www.o2oa.net/x_component_Template/widget/$CronPicker/cron_express_description.html)。
+点击“定时任务cron表达式”可选择cron表达式进行触发时间的配置。cron表达式详解[点击这里](http://www.o2oa.net/x_component_Template/widget/$CronPicker/cron_express_description.html)。
 
 
 
