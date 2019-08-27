@@ -103,6 +103,7 @@
 * [门户管理](untitled-2/README.md)
   * [功能简介](untitled-2/jian-jie.md)
   * [表单设计](untitled-2/biao-dan-1.md)
+  * [部件设计](untitled-2/bu-jian-she-ji.md)
   * [脚本开发](untitled-2/jiao-ben-1.md)
   * [数据源使用](untitled-2/shu-ju-yuan-shi-yong.md)
   * [相关接口](untitled-2/xiang-guan-jie-kou.md)
