@@ -24,7 +24,7 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 ## 我的工作台
 
-![](../.gitbook/assets/1%20%289%29.png)
+![](../.gitbook/assets/1%20%2810%29.png)
 
 ### 工作部署
 
@@ -38,7 +38,7 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 注：中心工作可以看作是一个工作集信息。
 
-![](../.gitbook/assets/3%20%282%29.png)
+![](../.gitbook/assets/3%20%283%29.png)
 
 1. 中心工作信息
 
@@ -50,7 +50,7 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 点击创建工作按钮，弹出工作详情对话框，填写完毕并保存。
 
-![](../.gitbook/assets/4%20%284%29.png)
+![](../.gitbook/assets/4%20%285%29.png)
 
 ![](../.gitbook/assets/5%20%282%29.png)
 
@@ -88,7 +88,7 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 委派：将此工作委派给同级别的员工去完成。
 
-![](../.gitbook/assets/8%20%286%29.png)
+![](../.gitbook/assets/8%20%287%29.png)
 
 （1）工作拆解
 
@@ -98,13 +98,13 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 拆解后的工作即已部署的工作，故拆解的工作可以在部署的工作处查看。点击部署，工作任务即被分配到被拆解后的负责人。
 
-![](../.gitbook/assets/10%20%284%29.png)
+![](../.gitbook/assets/10%20%285%29.png)
 
 （2）工作委派
 
 点击委派，弹出委派工作页面，可将此任务委派给他人。填写完毕后在部署中心工作页面，会看到被委派的工作左上角标有橙色委图标，被委派的工作任务也可以点击收回撤销之前操作。
 
-![](../.gitbook/assets/11%20%284%29.png)
+![](../.gitbook/assets/11%20%285%29.png)
 
 #### 工作进展情况汇报
 
@@ -116,7 +116,7 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 点击发起，填写该工作的汇报情况。若已完结，点击是否办结处的是。
 
-![](../.gitbook/assets/13%20%282%29.png)
+![](../.gitbook/assets/13%20%283%29.png)
 
 ### 工作汇报审批
 
@@ -135,17 +135,17 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 思维导图的建立有利于人们对其所思考的问题进行全方位和系统的描述与分析，非常有助于人们对所研究的问题进行深刻的和富有创造性的思考，从而有利于找到解决问题的关键因素或关键环节。
 
-![](../.gitbook/assets/17%20%282%29.png)
+![](../.gitbook/assets/17%20%283%29.png)
 
 点击脑图展示，在系统所示界面中点击某一项中心工作，系统会以脑图方式展示指定工作的部署情况。
 
-![](../.gitbook/assets/18.png)
+![](../.gitbook/assets/18%20%281%29.png)
 
 注：
 
 1）左下角是脑图展示工具；
 
-1. 若某工作被拆解过，此工作前会有一个![](../.gitbook/assets/19%20%282%29.png)图标，点击此图标会展示下级子目录；
+1. 若某工作被拆解过，此工作前会有一个![](../.gitbook/assets/19%20%283%29.png)图标，点击此图标会展示下级子目录；
 2. 双击某个具体工作，系统将会展示该工作的详细情况。
 
 ![1](../.gitbook/assets/20.png)
@@ -170,11 +170,11 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 ### 按部门统计
 
-![](../.gitbook/assets/24%20%282%29.png)
+![](../.gitbook/assets/24%20%283%29.png)
 
 按部门统计，通过图表形式，显示完成情况.
 
 系统提供搜索查询并导入导出功能，每周汇报和每月汇报
 
-![](../.gitbook/assets/25%20%282%29.png)
+![](../.gitbook/assets/25%20%283%29.png)
 

@@ -62,19 +62,9 @@ App内看到的一些O2OA相关的logo图标，可以不编译打包进App，我
 
 ![](http://img.muliba.net/post/20190105172349.png)
 
-### 直连版本配置
 
-如果你不希望连接到我们O2云，通过修改配置编译打包，生成的Android应用，就会直接连接到你们自己的O2OA服务器。目前这个直连版本是不能接收到通知消息的。 修改方式如下： 在app目录下的build.gradle文件中，找到 android -&gt; buildTypes ，把`InnerServer` 改成 `true` 。这里应用有两个 一个debug下的 一个是release下的
 
-```groovy
-buildConfigField "Boolean", "InnerServer", "true"
-```
-
-![](http://img.muliba.net/post/20190107162547.png)
-
-然后找到app-&gt;assets 目录下找到server.json文件，把里面的centerHost 、 centerPort、httpProtocol改成你们自己的O2OA中心服务器地址信息。
-
-![](http://img.muliba.net/post/20190107162607.png)
+### 
 
 ### 第三方SDK注册配置
 
@@ -179,6 +169,24 @@ BUGLY_APPID=71c852531c
 ![](http://img.muliba.net/post/20190108101315.png)
 
 ![](http://img.muliba.net/post/20190108101330.png)
+
+### 
+
+### 直连版本配置
+
+如果你不希望连接到我们O2云，通过修改配置编译打包，生成的Android应用，就会直接连接到你们自己的O2OA服务器。目前这个直连版本是不能接收到通知消息的。 修改方式如下： 在app目录下的build.gradle文件中，找到 android -&gt; buildTypes ，把`InnerServer` 改成 `true` 。这里应用有两个 一个debug下的 一个是release下的
+
+```groovy
+buildConfigField "Boolean", "InnerServer", "true"
+```
+
+![](http://img.muliba.net/post/20190107162547.png)
+
+然后找到app-&gt;assets 目录下找到server.json文件，把里面的centerHost 、 centerPort、httpProtocol改成你们自己的O2OA中心服务器地址信息。
+
+![](http://img.muliba.net/post/20190107162607.png)
+
+### 
 
 ### 打包Android apk
 

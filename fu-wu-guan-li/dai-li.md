@@ -14,7 +14,17 @@
 
 
 
+## 代理调试 <a id="jie-kou-tiao-shi"></a>
 
+‌
+
+打开URL： [http://centerServer:20030/x\_program\_center/jest/index.html](http://dev.o2oa.net:20030/x_program_center/jest/index.html#)​
+
+![](../.gitbook/assets/qq-tu-pian-20190823160633.png)
+
+在 上图的服务中填写代理的标识，然后点击GET，可以忽略触发时间设置，马上执行代理。
+
+可以在代理中使用`print( text )`在服务器控制台输出调试信息。
 
 ## 完整样例
 
