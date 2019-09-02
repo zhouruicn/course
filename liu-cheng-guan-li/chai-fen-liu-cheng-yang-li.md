@@ -30,7 +30,9 @@
 
 2、拆分后的文件data值和流程记录是即时合并的，每一个文件都可以看到其他部门的流转意见和填写的内容。
 
-样例地址：[http://samplebase.o2oa.net/x\_desktop/index.html](http://samplebase.o2oa.net/x_desktop/index.html)流程应用下的应用样例
+3、协办部门和协办人员是多人处理，在节点配置时需要选择处理方式为并行处理或串行处理
+
+样例地址：[http://sample.o2oa.net/x\_desktop/index.html](http://samplebase.o2oa.net/x_desktop/index.html)流程应用下的应用样例
 
 ![](../.gitbook/assets/image.png)
 
