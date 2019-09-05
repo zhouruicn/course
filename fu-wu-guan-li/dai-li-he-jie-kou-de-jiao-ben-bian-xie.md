@@ -179,7 +179,7 @@ var json = JSON.parse( resp.toString() );
 var applications = resources.getContext().applications();
 //serviceRoot 服务根
 //path 路径
-applications.deleteQuery( serviceRoot, path, string );
+applications.deleteQuery( serviceRoot, path );
 ```
 
 样例：
