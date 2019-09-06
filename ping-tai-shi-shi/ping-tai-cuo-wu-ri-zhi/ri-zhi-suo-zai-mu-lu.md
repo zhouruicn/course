@@ -2,9 +2,9 @@
 
 
 
-![](../../.gitbook/assets/image%20%2889%29.png)
+![](../../.gitbook/assets/image%20%2891%29.png)
 
 也可以通过平台的控制面板-&lt;错误日志进行查看三类日志.
 
-![](../../.gitbook/assets/image%20%28111%29.png)
+![](../../.gitbook/assets/image%20%28113%29.png)
 

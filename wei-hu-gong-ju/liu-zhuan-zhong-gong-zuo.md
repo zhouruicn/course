@@ -2,7 +2,7 @@
 
 ### 删除
 
-![](../.gitbook/assets/image%20%28137%29.png)
+![](../.gitbook/assets/image%20%28139%29.png)
 
 ### 尝试流转
 
@@ -14,7 +14,7 @@
 
 ### 维护附件
 
-![](../.gitbook/assets/image%20%2862%29.png)
+![](../.gitbook/assets/image%20%2863%29.png)
 
 ### 增加待阅
 
