@@ -63,96 +63,7 @@
       <td style="text-align:left">&#x5728;&#x6267;&#x884C;&#x91CD;&#x7F6E;&#x5904;&#x7406;&#x4EBA;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#x6267;&#x884C;&#x3002;</td>
     </tr>
   </tbody>
-</table>  
-&lt;!--  
- /\* Font Definitions \*/  
- @font-face  
-	{font-family:"Cambria Math";  
-	panose-1:2 4 5 3 5 4 6 3 2 4;  
-	mso-font-charset:0;  
-	mso-generic-font-family:roman;  
-	mso-font-pitch:variable;  
-	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}  
-@font-face  
-	{font-family:等线;  
-	panose-1:2 1 6 0 3 1 1 1 1 1;  
-	mso-font-alt:DengXian;  
-	mso-font-charset:134;  
-	mso-generic-font-family:auto;  
-	mso-font-pitch:variable;  
-	mso-font-signature:-1610612033 953122042 22 0 262159 0;}  
-@font-face  
-	{font-family:"\@等线";  
-	panose-1:2 1 6 0 3 1 1 1 1 1;  
-	mso-font-charset:134;  
-	mso-generic-font-family:auto;  
-	mso-font-pitch:variable;  
-	mso-font-signature:-1610612033 953122042 22 0 262159 0;}  
- /\* Style Definitions \*/  
- p.MsoNormal, li.MsoNormal, div.MsoNormal  
-	{mso-style-unhide:no;  
-	mso-style-qformat:yes;  
-	mso-style-parent:"";  
-	margin-top:2.5pt;  
-	margin-right:0cm;  
-	margin-bottom:2.5pt;  
-	margin-left:0cm;  
-	mso-para-margin-top:.5gd;  
-	mso-para-margin-right:0cm;  
-	mso-para-margin-bottom:.5gd;  
-	mso-para-margin-left:0cm;  
-	text-align:justify;  
-	text-justify:inter-ideograph;  
-	mso-pagination:none;  
-	font-size:12.0pt;  
-	font-family:等线;  
-	mso-ascii-font-family:等线;  
-	mso-ascii-theme-font:minor-latin;  
-	mso-fareast-font-family:等线;  
-	mso-fareast-theme-font:minor-fareast;  
-	mso-hansi-font-family:等线;  
-	mso-hansi-theme-font:minor-latin;  
-	mso-bidi-font-family:"Times New Roman";  
-	mso-bidi-theme-font:minor-bidi;  
-	mso-font-kerning:1.0pt;}  
-a:link, span.MsoHyperlink  
-	{mso-style-priority:99;  
-	mso-style-unhide:no;  
-	color:blue;  
-	text-decoration:underline;  
-	text-underline:single;}  
-a:visited, span.MsoHyperlinkFollowed  
-	{mso-style-noshow:yes;  
-	mso-style-qformat:yes;  
-	color:\#954F72;  
-	mso-themecolor:followedhyperlink;  
-	text-decoration:underline;  
-	text-underline:single;}  
-.MsoChpDefault  
-	{mso-style-type:export-only;  
-	mso-default-props:yes;  
-	font-size:12.0pt;  
-	mso-ansi-font-size:12.0pt;  
-	mso-bidi-font-size:12.0pt;  
-	font-family:等线;  
-	mso-bidi-font-family:"Times New Roman";  
-	mso-bidi-theme-font:minor-bidi;}  
- /\* Page Definitions \*/  
- @page  
-	{mso-page-border-surround-header:no;  
-	mso-page-border-surround-footer:no;}  
-@page WordSection1  
-	{size:612.0pt 792.0pt;  
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;  
-	mso-header-margin:36.0pt;  
-	mso-footer-margin:36.0pt;  
-	mso-paper-source:0;}  
-div.WordSection1  
-	{page:WordSection1;}  
---&gt;  
-
-
-| beforeRetract | 在执行撤回操作之前执行。 |
+</table>| beforeRetract | 在执行撤回操作之前执行。 |
 | :--- | :--- |
 | afterRetract | 在执行撤回操作之后执行。 |
 | beforeReroute | 在执行调度操作之前执行。 |
