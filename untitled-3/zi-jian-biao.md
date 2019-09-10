@@ -299,7 +299,7 @@ service.save({
     "name" : "zhangsan"
 }, function(){
     this.form.notice("保存成功", "success");
-}.bind(this)
+}.bind(this))
 
 //根据条件查询
 service.listByWhere("o.name='zhangsan'", function( json ){
