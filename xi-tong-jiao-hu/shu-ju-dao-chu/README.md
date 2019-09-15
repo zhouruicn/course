@@ -7,6 +7,10 @@
 二、通过下面代码获取token.
 
 ```java
+接口:http://127.0.0.1:20020/x_organization_assemble_authentication/jaxrs/sso
+```
+
+```java
 String token = ""; 
 //单点登入
 String path = "
@@ -36,7 +40,17 @@ try {
 
 ## 第二步：获取待办列表
 
-```text
+```java
+//获取待办数
+http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/work/count/%E6%88%91@9938@P；
+%E6%88%91@9938@P 为参数名
+//获取待办列表
+http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/task/list/(0)/next/"+count
+(0) 为开始参数名
+count为几条参数名
+```
+
+```java
       Map headMap = new HashMap();
       headMap.put("Cookie", "x-token=" + token); headMap.put("accept", "/"); 
       headMap.put("connection", "Keep-Alive"); 
@@ -78,24 +92,36 @@ try {
 
 ## 第三步：获取表单数据
 
-```text
-      //获取表单数据
-          url = "http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/work/workorworkcompleted/3085d704-bc2b-444b-9e00-114b96f7fe4e";
-          str =  httpClientUtils.httpGet(url,headMap);
-          try {
-              JSONObject jsonObj = (JSONObject)(new JSONParser().parse(str));
-              JSONObject data = (JSONObject) jsonObj.get("data");
-              data = (JSONObject) data.get("data");
-              String explain = (String) data.get("explain");
-              System.out.println(explain);
+```java
+http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/work/workorworkcompleted/3085d704-bc2b-444b-9e00-114b96f7fe4e";
+3085d704-bc2b-444b-9e00-114b96f7fe4e 为work id 参数名
+```
+
+```java
+ //获取表单数据
+  url = "http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/work/workorworkcompleted/3085d704-bc2b-444b-9e00-114b96f7fe4e";
+  str =  httpClientUtils.httpGet(url,headMap);
+  try {
+         JSONObject jsonObj = (JSONObject)(new JSONParser().parse(str));
+          JSONObject data = (JSONObject) jsonObj.get("data");
+          data = (JSONObject) data.get("data");
+          String explain = (String) data.get("explain");
+          System.out.println(explain);
           } catch (ParseException e) {
               e.printStackTrace();
           }
 ```
 
-## 四、下载附件
+## 四：下载附件
 
-```text
+```java
+http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/attachment/download/9e46ea49-ec79-4161-ad6c-23e0ccbc6c59/work/3085d704-bc2b-444b-9e00-114b96f7fe4e
+9e46ea49-ec79-4161-ad6c-23e0ccbc6c59 为附件id参数名
+3085d704-bc2b-444b-9e00-114b96f7fe4e 为work id 参数名
+
+```
+
+```java
    //下载附件       
   url = "http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/attachment/download/9e46ea49-ec79-4161-ad6c-23e0ccbc6c59/work/3085d704-bc2b-444b-9e00-114b96f7fe4e";
   String filePath = "d:\\5831241667.pdf";
@@ -105,9 +131,14 @@ try {
  }}, headMap);
 ```
 
-## 五、获取流程记录
+## 五：获取流程记录
 
-```text
+```java
+http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/worklog/list/workorworkcompleted/3085d704-bc2b-444b-9e00-114b96f7fe4e;
+3085d704-bc2b-444b-9e00-114b96f7fe4e 为work id 参数名
+```
+
+```java
  url = "http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/worklog/list/workorworkcompleted/3085d704-bc2b-444b-9e00-114b96f7fe4e";
  str = httpClientUtils.httpGet(url,headMap);
  try {
