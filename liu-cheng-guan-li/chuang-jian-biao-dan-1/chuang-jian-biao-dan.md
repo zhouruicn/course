@@ -4,7 +4,7 @@
 
 ![](../../.gitbook/assets/image%20%2817%29.png)
 
-![](../../.gitbook/assets/image%20%28118%29.png)
+![](../../.gitbook/assets/image%20%28119%29.png)
 
 点击“通用表单模板”，新建一个表单，并将表单名称改为“报销申请表单”。如下图
 

@@ -6,13 +6,13 @@
 
 二、增加运行配置
 
-![](../.gitbook/assets/image%20%28146%29.png)
+![](../.gitbook/assets/image%20%28147%29.png)
 
 三、启动调试
 
 点击左上角的绿色小虫，会提示Connected to the target VM, address: '127.0.0.1:5005', transport: 'socket'
 
-![](../.gitbook/assets/image%20%28125%29.png)
+![](../.gitbook/assets/image%20%28126%29.png)
 
 四、增加断点
 
