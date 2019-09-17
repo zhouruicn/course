@@ -1,28 +1,28 @@
 # 拆分流程样例
 
-![&#x62C6;&#x5206;&#x6D41;&#x7A0B;&#x56FE;](../.gitbook/assets/image%20%2858%29.png)
+![&#x62C6;&#x5206;&#x6D41;&#x7A0B;&#x56FE;](../.gitbook/assets/image%20%2859%29.png)
 
 多个协办处室且有分支的情况，我们建议使用拆分活动，拆分活动是将一个工单拆成多个，可同时处理，所有待办都处理完毕后合并，使用合并活动，所以拆分活动和合并活动是成对使用的。
 
-![&#x62C6;&#x5206;&#x4F9D;&#x636E;](../.gitbook/assets/image%20%2825%29.png)
+![&#x62C6;&#x5206;&#x4F9D;&#x636E;](../.gitbook/assets/image%20%2826%29.png)
 
 拆分节点需要拆分依据，来计算拆分成几份文档，我们这里可以使用表单上选择的协办部门来拆分。
 
-![&#x534F;&#x529E;&#x5904;&#x5BA4;&#x7684;&#x5904;&#x7406;&#x4EBA;](../.gitbook/assets/image%20%28136%29.png)
+![&#x534F;&#x529E;&#x5904;&#x5BA4;&#x7684;&#x5904;&#x7406;&#x4EBA;](../.gitbook/assets/image%20%28139%29.png)
 
 协办处室的处理人为协办部门的正职领导，我们在他的处理人这里可以配置职位，参数为拆分后的单个协办处室，代码：return this.workContext.getWork\(\).splitValue;然后协办人员配置为多人处理，处理完后返回到协办处室，由处室领导送合并汇总。
 
 表单配置：
 
-![&#x8868;&#x5355;&#x914D;&#x7F6E;](../.gitbook/assets/image%20%28164%29.png)
+![&#x8868;&#x5355;&#x914D;&#x7F6E;](../.gitbook/assets/image%20%28168%29.png)
 
 协办部门配置为选择部门，可多选。
 
-![&#x534F;&#x529E;&#x90E8;&#x95E8;](../.gitbook/assets/image%20%2889%29.png)
+![&#x534F;&#x529E;&#x90E8;&#x95E8;](../.gitbook/assets/image%20%2891%29.png)
 
 协办人员配置为选择人员，可多选。
 
-![&#x534F;&#x529E;&#x4EBA;&#x5458;](../.gitbook/assets/image%20%2870%29.png)
+![&#x534F;&#x529E;&#x4EBA;&#x5458;](../.gitbook/assets/image%20%2872%29.png)
 
 注意：
 
@@ -34,7 +34,7 @@
 
 样例地址：[http://sample.o2oa.net/x\_desktop/index.html](http://samplebase.o2oa.net/x_desktop/index.html)流程应用下的应用样例
 
-![](../.gitbook/assets/image.png)
+![](../.gitbook/assets/image%20%281%29.png)
 
 
 

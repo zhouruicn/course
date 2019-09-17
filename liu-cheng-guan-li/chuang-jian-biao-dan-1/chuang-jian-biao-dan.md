@@ -2,13 +2,13 @@
 
 在应用设计界面中选中“表单配置”导航，点击左上角的“新建表单”按钮 ，弹出表单模板选择对话框。
 
-![](../../.gitbook/assets/image%20%2816%29.png)
+![](../../.gitbook/assets/image%20%2817%29.png)
 
-![](../../.gitbook/assets/image%20%28116%29.png)
+![](../../.gitbook/assets/image%20%28118%29.png)
 
 点击“通用表单模板”，新建一个表单，并将表单名称改为“报销申请表单”。如下图
 
-![](../../.gitbook/assets/image%20%2881%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
 
 

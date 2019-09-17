@@ -148,4 +148,7 @@
   * [外系统启动流程](xi-tong-jiao-hu/wai-xi-tong-qi-dong-liu-cheng.md)
   * [数据导出](xi-tong-jiao-hu/shu-ju-dao-chu/README.md)
     * [数字档案](xi-tong-jiao-hu/shu-ju-dao-chu/shu-zi-dang-an.md)
+* [程序调试](cheng-xu-tiao-shi/README.md)
+  * [前端开发](cheng-xu-tiao-shi/qian-duan-kai-fa.md)
+  * [后端开发](cheng-xu-tiao-shi/hou-duan-kai-fa.md)
 
