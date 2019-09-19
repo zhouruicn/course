@@ -151,4 +151,7 @@
 * [程序调试](cheng-xu-tiao-shi/README.md)
   * [前端开发](cheng-xu-tiao-shi/qian-duan-kai-fa.md)
   * [后端开发](cheng-xu-tiao-shi/hou-duan-kai-fa.md)
+* [常见问题](chang-jian-cuo-wu/README.md)
+  * [集群配置](chang-jian-cuo-wu/ji-qun-pei-zhi.md)
+  * [数字字典使用](chang-jian-cuo-wu/shu-zi-zi-dian-shi-yong.md)
 

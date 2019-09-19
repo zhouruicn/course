@@ -6,7 +6,7 @@
 
 二、增加运行配置
 
-![](../.gitbook/assets/image%20%28150%29.png)
+![](../.gitbook/assets/image%20%28151%29.png)
 
 三、启动调试
 
@@ -26,7 +26,7 @@
 
 二、新增配置
 
-![](../.gitbook/assets/image%20%28165%29.png)
+![](../.gitbook/assets/image%20%28166%29.png)
 
 选择模块，输入主机ip地址与端口号
 
@@ -38,5 +38,5 @@
 
 三、在代码上增加断点设置
 
-![](../.gitbook/assets/image%20%28166%29.png)
+![](../.gitbook/assets/image%20%28167%29.png)
 

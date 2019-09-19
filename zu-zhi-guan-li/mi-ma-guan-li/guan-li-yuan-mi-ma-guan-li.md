@@ -4,7 +4,7 @@
 
 方法一：在系统控制台命令方式修改
 
-![](../../.gitbook/assets/image%20%28152%29.png)
+![](../../.gitbook/assets/image%20%28153%29.png)
 
 在控制台输入 setPassword o2 newpassword
 
