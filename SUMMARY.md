@@ -10,6 +10,7 @@
   * [钉钉和微信接入](ping-tai-shi-shi/ding-ding-he-wei-xin-jie-ru.md)
   * [配置绑定微信扫码登录](ping-tai-shi-shi/untitled.md)
   * [集群方式部署](ping-tai-shi-shi/ji-qun-fang-shi-bu-shu.md)
+  * [数据库驱动JAR包的更新或新增](ping-tai-shi-shi/shu-ju-ku-qu-dong-jar-bao-de-geng-xin-huo-xin-zeng.md)
   * [数据库配置](ping-tai-shi-shi/shu-ju-ku-shu-ju-biao-jie-shao/README.md)
     * [备份恢复数据](ping-tai-shi-shi/shu-ju-ku-shu-ju-biao-jie-shao/bei-fen-shu-ju-1.md)
     * [自动执行数据备份与恢复](ping-tai-shi-shi/shu-ju-ku-shu-ju-biao-jie-shao/zi-dong-bei-fen-shu-ju.md)
