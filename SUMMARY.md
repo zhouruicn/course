@@ -23,6 +23,7 @@
     * [达梦](ping-tai-shi-shi/shu-ju-ku-shu-ju-biao-jie-shao/da-meng.md)
     * [人大金仓](ping-tai-shi-shi/shu-ju-ku-shu-ju-biao-jie-shao/ren-da-jin-cang.md)
     * [南大通用](ping-tai-shi-shi/shu-ju-ku-shu-ju-biao-jie-shao/nan-da-tong-yong.md)
+  * [消息提醒相关配置](ping-tai-shi-shi/xiao-xi-ti-xing-xiang-guan-pei-zhi.md)
   * [编译源码](ping-tai-shi-shi/yuan-ma-de-bian-yi-he-yuan-ma-jie-gou.md)
   * [平台错误日志](ping-tai-shi-shi/ping-tai-cuo-wu-ri-zhi/README.md)
     * [日志所在目录](ping-tai-shi-shi/ping-tai-cuo-wu-ri-zhi/ri-zhi-suo-zai-mu-lu.md)
