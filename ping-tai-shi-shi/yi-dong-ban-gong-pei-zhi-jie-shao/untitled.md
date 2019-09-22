@@ -4,11 +4,11 @@
 
 在 [https://open.weixin.qq.com](https://open.weixin.qq.com/) 注册微信开发者帐号.
 
-![](../.gitbook/assets/image001.jpg)
+![](../../.gitbook/assets/image001.jpg)
 
 创建网站应用:
 
-![](../.gitbook/assets/image002.jpg)
+![](../../.gitbook/assets/image002.jpg)
 
 审核通过后在token.js中配置
 
@@ -42,9 +42,9 @@
 
 在使用前还需要进行绑定,使用用户名.密码登录后在个人设置中设置:
 
-![](../.gitbook/assets/image004.jpg)
+![](../../.gitbook/assets/image004.jpg)
 
 完成绑定即可使用微信扫码登录.
 
-![](../.gitbook/assets/image003.jpg)
+![](../../.gitbook/assets/image003.jpg)
 

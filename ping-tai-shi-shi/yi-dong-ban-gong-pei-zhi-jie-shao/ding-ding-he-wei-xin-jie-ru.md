@@ -22,21 +22,21 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 
 注册地址：https://oa.dingtalk.com/\#/login，此步骤需要企业自行准备。
 
-![&#x4F01;&#x4E1A;&#x6CE8;&#x518C;&#x9489;&#x9489;](../.gitbook/assets/5e08cfe7002c494242ca215bcfdc42e1065.jpg)
+![&#x4F01;&#x4E1A;&#x6CE8;&#x518C;&#x9489;&#x9489;](../../.gitbook/assets/5e08cfe7002c494242ca215bcfdc42e1065.jpg)
 
 需要提供使用钉钉的企业相关信息。
 
-![&#x4F01;&#x4E1A;&#x9996;&#x9875;](../.gitbook/assets/5ec1aa20b34173f743e65f1e81bf2048939.jpg)
+![&#x4F01;&#x4E1A;&#x9996;&#x9875;](../../.gitbook/assets/5ec1aa20b34173f743e65f1e81bf2048939.jpg)
 
 ## 三、添加钉钉微应用
 
 钉钉注册成功后，使用企业管理员账号登录企业钉钉，在\[工作台\] 页面中，点击**自建应用**链接，新建一个企业应用，如下图所示：
 
-![&#x4F01;&#x4E1A;&#x63A7;&#x5236;&#x53F0;&#x5DE5;&#x4F5C;&#x53F0;](../.gitbook/assets/0bcb3d6c87b4d20f3b52fda5b46b52e1a70.jpg)
+![&#x4F01;&#x4E1A;&#x63A7;&#x5236;&#x53F0;&#x5DE5;&#x4F5C;&#x53F0;](../../.gitbook/assets/0bcb3d6c87b4d20f3b52fda5b46b52e1a70.jpg)
 
 填写应用基本信息，如下图所示：
 
-![&#x521B;&#x5EFA;&#x81EA;&#x5EFA;&#x5E94;&#x7528;](../.gitbook/assets/0fde74eb66ff0284472db72a0f407b81f60.jpg)
+![&#x521B;&#x5EFA;&#x81EA;&#x5EFA;&#x5E94;&#x7528;](../../.gitbook/assets/0fde74eb66ff0284472db72a0f407b81f60.jpg)
 
 参数说明：
 
@@ -49,7 +49,7 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 
 填写完成后点击下一步，填写配置开发信息，如下图所示：
 
-![&#x914D;&#x7F6E;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;](../.gitbook/assets/5cdb4bafec322214e736ed2c06b3b8336bb.jpg)
+![&#x914D;&#x7F6E;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;](../../.gitbook/assets/5cdb4bafec322214e736ed2c06b3b8336bb.jpg)
 
 参数说明：
 
@@ -65,7 +65,7 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 
 填写完成后点击提交即可完成应用创建，填写好的界面如下图所示：
 
-![&#x81EA;&#x5EFA;&#x5E94;&#x7528;&#x521B;&#x5EFA;&#x5B8C;&#x6210;](../.gitbook/assets/1ec156f6f554f24eb6814a748e2b00924b3.jpg)
+![&#x81EA;&#x5EFA;&#x5E94;&#x7528;&#x521B;&#x5EFA;&#x5B8C;&#x6210;](../../.gitbook/assets/1ec156f6f554f24eb6814a748e2b00924b3.jpg)
 
 ## 四、查询应用的AgentId、appKey、appSecret和CorpId信息 <a id="h1_8"></a>
 
@@ -73,11 +73,11 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 
 点击自建应用设置，查看应用的详细设置信息
 
-![&#x67E5;&#x8BE2;&#x5E94;&#x7528;&#x8BBE;&#x7F6E;](../.gitbook/assets/6484c20a92e8f34891dc57d57ea8a86243c.jpg)
+![&#x67E5;&#x8BE2;&#x5E94;&#x7528;&#x8BBE;&#x7F6E;](../../.gitbook/assets/6484c20a92e8f34891dc57d57ea8a86243c.jpg)
 
 查询已经创建好的应用设置信息，如下图所示：
 
-![](../.gitbook/assets/cc0aaf6644cb5601b6bcb0584bbd06d0720.jpg)
+![](../../.gitbook/assets/cc0aaf6644cb5601b6bcb0584bbd06d0720.jpg)
 
 {% hint style="info" %}
  请记录应用的**AgentId、AppKey以及AppSecret**信息，后续需要配置到服务器设置里
@@ -87,7 +87,7 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 
 进入钉钉开放平台，点击左侧导航：开发信息 -&gt; 开发账号信息：
 
-![&#x67E5;&#x8BE2;CropId](../.gitbook/assets/1760272839045c8bbfef42d61f8810f89dc.jpg)
+![&#x67E5;&#x8BE2;CropId](../../.gitbook/assets/1760272839045c8bbfef42d61f8810f89dc.jpg)
 
 {% hint style="info" %}
  请记录企业的**CorpId**信息，后续需要配置到服务器设置里。
@@ -97,7 +97,7 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 
 在已经创建好的微应用的权限设置栏可以对应用的操作权限进行设置，如下图所示：
 
-![&#x8BBE;&#x7F6E;&#x901A;&#x8BAF;&#x5F55;&#x6743;&#x9650;](../.gitbook/assets/de90b8301614394041386d47149ed147e42.jpg)
+![&#x8BBE;&#x7F6E;&#x901A;&#x8BAF;&#x5F55;&#x6743;&#x9650;](../../.gitbook/assets/de90b8301614394041386d47149ed147e42.jpg)
 
 {% hint style="info" %}
 企业通讯录权限：请开启通讯录只读权限、手机号码信息以及邮箱等个人信息，并且将选择授权范围**设置为最顶层组织。**
@@ -147,7 +147,7 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 "messageEnable": "是否允许推送消息到企业钉钉: true | false"
 ```
 
-![&#x9489;&#x9489;&#x4E0A;&#x7684;&#x667A;&#x548C;&#x529E;&#x516C;&#x5E73;&#x53F0;](../.gitbook/assets/f99efbb29e6aeb6b38b8043b5479194d03b.jpg)
+![&#x9489;&#x9489;&#x4E0A;&#x7684;&#x667A;&#x548C;&#x529E;&#x516C;&#x5E73;&#x53F0;](../../.gitbook/assets/f99efbb29e6aeb6b38b8043b5479194d03b.jpg)
 
 完成以上配置后重启O2OA，即可完成O2OA在企业钉钉中的接入，可以在企业钉钉中看到自己配置的企业应用。
 
@@ -163,7 +163,7 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 **请注意，不要多次点击GET，**点击一次后，控制台会有正在拉取组织人员信息相关的日志。
 {% endhint %}
 
-![&#x4E2D;&#x5FC3;&#x670D;&#x52A1;&#x5668;API](../.gitbook/assets/qq-jie-tu-20190922144246.png)
+![&#x4E2D;&#x5FC3;&#x670D;&#x52A1;&#x5668;API](../../.gitbook/assets/qq-jie-tu-20190922144246.png)
 
 
 

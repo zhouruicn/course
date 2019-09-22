@@ -8,7 +8,7 @@ description: O2OA平台IOS客户端，最低支持IOS版本10.0，编程语言�
 
 Xcode版本10.3
 
- ![Screen Shot 2019-04-10 at 20.19.59](../.gitbook/assets/screen-shot-2019-08-17-at-10.52.37.png) 
+ ![Screen Shot 2019-04-10 at 20.19.59](../../.gitbook/assets/screen-shot-2019-08-17-at-10.52.37.png) 
 
 项目使用了COCOAPODS，需要本地安装最新版本的COCOAPODS。 然后到项目根目录执行pod命令：
 

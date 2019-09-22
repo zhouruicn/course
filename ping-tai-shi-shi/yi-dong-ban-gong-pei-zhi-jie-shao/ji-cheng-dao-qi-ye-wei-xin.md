@@ -18,31 +18,31 @@ description: O2OA平台可以以第自建应用的方式集成到企业微信，
 
 注册成功后，使用管理员账号登录企业微信，在\[我的企业\]信息最后一行可以获取企业的CropId，如下图所示：
 
-![&#x6211;&#x7684;&#x4F01;&#x4E1A;&#x4FE1;&#x606F;](../.gitbook/assets/07e2b7704784ec8927b4eb610fb8ea48b16.jpg)
+![&#x6211;&#x7684;&#x4F01;&#x4E1A;&#x4FE1;&#x606F;](../../.gitbook/assets/07e2b7704784ec8927b4eb610fb8ea48b16.jpg)
 
 ## 三、获取CropSecret信息 <a id="h1_4"></a>
 
 在管理工具 - 通讯录同步配置里进行API信息查询和配置
 
-![&#x7BA1;&#x7406;&#x5DE5;&#x5177;](../.gitbook/assets/ecbe863bf8af5344779bdb5b47dde8379b6.jpg)
+![&#x7BA1;&#x7406;&#x5DE5;&#x5177;](../../.gitbook/assets/ecbe863bf8af5344779bdb5b47dde8379b6.jpg)
 
  配置同步方式、权限，并且获取Secret，该Secret就是后续需要配置到O2OA里的**CropSecret**信息:
 
-![&#x901A;&#x8BAF;&#x5F55;&#x540C;&#x6B65;](../.gitbook/assets/70b5beddedcb09f336ef033644673dd8ccf.jpg)
+![&#x901A;&#x8BAF;&#x5F55;&#x540C;&#x6B65;](../../.gitbook/assets/70b5beddedcb09f336ef033644673dd8ccf.jpg)
 
 ## 四、添加O2OA为企业微信自建应用 <a id="h1_5"></a>
 
 注册成功后，使用管理员账号登录企业微信，如下图所示：
 
-![&#x4F01;&#x4E1A;&#x5FAE;&#x4FE1;&#x7BA1;&#x7406;&#x63A7;&#x5236;&#x53F0;](../.gitbook/assets/b1da324dd56723d2fd3ce88c061b00c97ef.jpg)
+![&#x4F01;&#x4E1A;&#x5FAE;&#x4FE1;&#x7BA1;&#x7406;&#x63A7;&#x5236;&#x53F0;](../../.gitbook/assets/b1da324dd56723d2fd3ce88c061b00c97ef.jpg)
 
 点击\[应用与小程序\]，如下图所示界面：
 
-![&#x5E94;&#x7528;&#x4E0E;&#x5C0F;&#x7A0B;&#x5E8F;](../.gitbook/assets/28a23f72b07f86fdd975fd22bb689c8914d.jpg)
+![&#x5E94;&#x7528;&#x4E0E;&#x5C0F;&#x7A0B;&#x5E8F;](../../.gitbook/assets/28a23f72b07f86fdd975fd22bb689c8914d.jpg)
 
 如上图所示，点击\[创建应用\]，继续在自建程序区域创建应用：
 
-![&#x521B;&#x5EFA;&#x81EA;&#x5EFA;&#x5E94;&#x7528;](../.gitbook/assets/829440fc2cbd56f13c6ebee3e0d27431981.jpg)
+![&#x521B;&#x5EFA;&#x81EA;&#x5EFA;&#x5E94;&#x7528;](../../.gitbook/assets/829440fc2cbd56f13c6ebee3e0d27431981.jpg)
 
 填写好应用相关信息后进行应用创建：填写好应用相关信息后进行应用创建：
 
@@ -55,7 +55,7 @@ description: O2OA平台可以以第自建应用的方式集成到企业微信，
 
 应用创建完成后，如下图所示界面：
 
-![&#x5E94;&#x7528;&#x521B;&#x5EFA;&#x5B8C;&#x6210;](../.gitbook/assets/4627af194ba3a85652d778572c5ea851ce0.jpg)
+![&#x5E94;&#x7528;&#x521B;&#x5EFA;&#x5B8C;&#x6210;](../../.gitbook/assets/4627af194ba3a85652d778572c5ea851ce0.jpg)
 
 您可以在界面中获取**AgentId**信息，这两个信息以及之前获取的CropId将配置到O2OA相关的接入配置中，请牢记此信息。
 
@@ -120,7 +120,7 @@ AgentId : 应用的agentId
 
 完成以上配置后重启O2OA，即可完成O2OA在企业微信中的接入，可以在企业微信 - 工作台中看到自己配置的企业应用。
 
-![&#x4F01;&#x4E1A;&#x5FAE;&#x4FE1;&#x5DE5;&#x4F5C;&#x53F0;](../.gitbook/assets/69cc9d7766cfc9e405a3c4a57426c23c3e6.jpg)
+![&#x4F01;&#x4E1A;&#x5FAE;&#x4FE1;&#x5DE5;&#x4F5C;&#x53F0;](../../.gitbook/assets/69cc9d7766cfc9e405a3c4a57426c23c3e6.jpg)
 
 {% hint style="info" %}
  **O2OA集成到微信时，需要将O2OA的HTTPS开启。方法请参考**[**《如何配置O2OA服务器来启用HTTPS（SSL）》**](https://my.oschina.net/u/3931542/blog/2999285)
@@ -138,7 +138,7 @@ AgentId : 应用的agentId
  **不要多次点击GET，**点击一次后，控制台会有，正在拉取组织人员信息相关的日志。
 {% endhint %}
 
-![&#x4E2D;&#x5FC3;&#x670D;&#x52A1;&#x5668;API&#x754C;&#x9762;](../.gitbook/assets/qq-jie-tu-20190922141109.png)
+![&#x4E2D;&#x5FC3;&#x670D;&#x52A1;&#x5668;API&#x754C;&#x9762;](../../.gitbook/assets/qq-jie-tu-20190922141109.png)
 
 
 
