@@ -58,6 +58,7 @@
   * [平台消息提醒配置](ping-tai-shi-shi/xiao-xi-ti-xing-xiang-guan-pei-zhi.md)
   * [平台审计日志配置](ping-tai-shi-shi/shen-ji-ri-zhi.md)
   * [API接口服务](ping-tai-shi-shi/api-jie-kou-fu-wu.md)
+  * [启用HTTPS（SSL）](ping-tai-shi-shi/qi-yong-httpsssl.md)
   * [SSO与单点认证](ping-tai-shi-shi/dan-dian-deng-ru/README.md)
     * [SSO配置](ping-tai-shi-shi/dan-dian-deng-ru/sso-pei-zhi.md)
     * [SSO客户端程序](ping-tai-shi-shi/dan-dian-deng-ru/sso-ke-hu-duan-cheng-xu.md)
