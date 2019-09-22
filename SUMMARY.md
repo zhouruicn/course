@@ -7,6 +7,7 @@
   * [平台能力介绍](ping-tai-shi-shi/ping-tai-neng-li-jie-shao.md)
   * [服务器目录结构](ping-tai-shi-shi/fu-wu-qi-mu-lu-jie-gou.md)
   * [移动办公介绍](ping-tai-shi-shi/yi-dong-ban-gong-pei-zhi-jie-shao.md)
+  * [集成到企业微信](ping-tai-shi-shi/ji-cheng-dao-qi-ye-wei-xin.md)
   * [集成到阿里钉钉\(DingTalk\)](ping-tai-shi-shi/ding-ding-he-wei-xin-jie-ru.md)
   * [配置绑定微信扫码登录](ping-tai-shi-shi/untitled.md)
   * [集群方式部署](ping-tai-shi-shi/ji-qun-fang-shi-bu-shu.md)
