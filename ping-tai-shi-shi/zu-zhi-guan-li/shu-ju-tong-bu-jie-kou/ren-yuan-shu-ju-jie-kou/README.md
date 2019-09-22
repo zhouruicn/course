@@ -31,7 +31,7 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% file src="../../../.gitbook/assets/personsync.json" %}
+</table>{% file src="../../../../.gitbook/assets/personsync.json" %}
 
 
 

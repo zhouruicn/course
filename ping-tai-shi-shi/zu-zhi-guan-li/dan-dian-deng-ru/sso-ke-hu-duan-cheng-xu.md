@@ -26,9 +26,9 @@ window.open\(url\)；
 
 post方式：
 
-![](../../.gitbook/assets/image%20%28106%29.png)
+![](../../../.gitbook/assets/image%20%28106%29.png)
 
 sso.html文件所在路径
 
-![](../../.gitbook/assets/image%20%28138%29.png)
+![](../../../.gitbook/assets/image%20%28138%29.png)
 
