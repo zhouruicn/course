@@ -85,11 +85,11 @@
   </tbody>
 </table>
 
-![](../.gitbook/assets/image%20%2884%29.png)
+![](../../.gitbook/assets/image%20%2884%29.png)
 
-![](../.gitbook/assets/image%20%28164%29.png)
+![](../../.gitbook/assets/image%20%28164%29.png)
 
-![](../.gitbook/assets/image%20%2879%29.png)
+![](../../.gitbook/assets/image%20%2879%29.png)
 
-![](../.gitbook/assets/image%20%28162%29.png)
+![](../../.gitbook/assets/image%20%28162%29.png)
 
