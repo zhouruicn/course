@@ -122,23 +122,11 @@ AgentId : 应用的agentId
 
 ![&#x4F01;&#x4E1A;&#x5FAE;&#x4FE1;&#x5DE5;&#x4F5C;&#x53F0;](../.gitbook/assets/69cc9d7766cfc9e405a3c4a57426c23c3e6.jpg)
 
-{% hint style="info" %}
- **O2OA集成到微信时，需要将O2OA的HTTPS开启。方法请参考**[**《如何配置O2OA服务器来启用HTTPS（SSL）》**](https://my.oschina.net/u/3931542/blog/2999285)
-{% endhint %}
 
-## **六**、手工从企业微信拉取组织人员数据 <a id="h1_7"></a>
 
- 服务地址：http://**localhost**:20030/x\_program\_center/jest/index.html
 
-服务名称：QiyeweixinAction.pullSync
 
-如下图所示界面，点击GET之后，观察服务器控制台或者日志文件信息（o2server/logs），可以查看到同步日志。
 
-{% hint style="info" %}
- **不要多次点击GET，**点击一次后，控制台会有，正在拉取组织人员信息相关的日志。
-{% endhint %}
-
-![&#x4E2D;&#x5FC3;&#x670D;&#x52A1;&#x5668;API&#x754C;&#x9762;](../.gitbook/assets/qq-jie-tu-20190922141109.png)
 
 
 
