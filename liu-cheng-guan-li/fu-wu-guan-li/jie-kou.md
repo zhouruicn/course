@@ -6,7 +6,7 @@
 
 点系统的左上角导航-&gt;设计中心-&gt;服务管理-&gt;接口打开。
 
-![](../.gitbook/assets/qq-tu-pian-20190818161636.png)
+![](../../.gitbook/assets/qq-tu-pian-20190818161636.png)
 
 ## 访问限制
 
@@ -54,7 +54,7 @@
 
 打开URL： [http://centerServer:20030/x\_program\_center/jest/index.html](http://dev.o2oa.net:20030/x_program_center/jest/index.html#)
 
-![](../.gitbook/assets/qq-tu-pian-20190818181007.png)
+![](../../.gitbook/assets/qq-tu-pian-20190818181007.png)
 
 在 上图的服务中填写接口的标识（接口别名、名称或者ID），在JsonElement区域输入接口接收数据，然后点击POST进行调试，接口会在Result区域输出返回数据。
 

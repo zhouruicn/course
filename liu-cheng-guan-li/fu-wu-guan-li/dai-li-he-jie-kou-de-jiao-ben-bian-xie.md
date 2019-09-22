@@ -72,11 +72,11 @@ function setDate(){
 
 **查找method**，后台服务有GET\POST\PUT\DELET几种方法，可以在服务详情中找到，如下图：
 
-![](../.gitbook/assets/qq-tu-pian-20190818132014.png)
+![](../../.gitbook/assets/qq-tu-pian-20190818132014.png)
 
 **本小节中的“路径\(path\)”**，可以在服务详情中找到，如下图：
 
-![](../.gitbook/assets/qq-tu-pian-20190818123643.png)
+![](../../.gitbook/assets/qq-tu-pian-20190818123643.png)
 
 以上图的服务为例，最后拼接成下列两种路径均可使用
 

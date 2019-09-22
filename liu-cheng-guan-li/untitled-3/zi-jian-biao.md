@@ -14,7 +14,7 @@ description: Table
 
 ​[http://applicationServer:20020/x\_query\_assemble\_surface/jest/index.html](http://:20020/****/x_query_assemble_surface/jest/index.html)​
 
-![](../.gitbook/assets/qq-tu-pian-20190818224434.png)
+![](../../.gitbook/assets/qq-tu-pian-20190818224434.png)
 
 ## 创建数据表
 

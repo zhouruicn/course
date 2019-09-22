@@ -6,13 +6,13 @@
 
 ### 新建部件
 
-![&#x3001;](../.gitbook/assets/qq-tu-pian-20190827105037%20%281%29.png)
+![&#x3001;](../../.gitbook/assets/qq-tu-pian-20190827105037%20%281%29.png)
 
 ### 选择容器元素创建
 
 从页面/部件中，选择容器元素（Div），创建部件，容器内的元素是作为新部件的元素保存。
 
-![](../.gitbook/assets/2019-08-27_10-54-42.png)
+![](../../.gitbook/assets/2019-08-27_10-54-42.png)
 
 ## 部件的使用
 
@@ -20,7 +20,7 @@
 
 可以在页面中插入部件，如果当前页面在设计PC端，那么插入的是部件的PC模式内容；如果当前页面在设计Mobile端，那么插入的是部件的Mobile模式内容。
 
-![](../.gitbook/assets/qq-tu-pian-20190827110715.png)
+![](../../.gitbook/assets/qq-tu-pian-20190827110715.png)
 
 1、计算部件
 
@@ -64,7 +64,7 @@ var par = this.page.getWidgetPrameters();
 
 可以在页面中插入部件的元素。如果当前页面在设计PC端，那么插入的是部件的PC模式内容；如果当前页面在设计Mobile端，那么插入的是部件的Mobile模式内容。
 
-![](../.gitbook/assets/qq-tu-pian-20190827113520.png)
+![](../../.gitbook/assets/qq-tu-pian-20190827113520.png)
 
 ## 获取部件内的元素
 

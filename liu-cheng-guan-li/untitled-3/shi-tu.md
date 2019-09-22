@@ -14,7 +14,7 @@ description: View
 
 [http://applicationServer:20020/x\_query\_assemble\_surface/jest/index.html](http://****:20020/x_query_assemble_surface/jest/index.html)
 
-![](../.gitbook/assets/qq-tu-pian-20190818223432.png)
+![](../../.gitbook/assets/qq-tu-pian-20190818223432.png)
 
 ## 视图属性
 
@@ -280,13 +280,13 @@ description: View
 
 可以在表单中使用“嵌入视图”组件
 
-![](../.gitbook/assets/qq-tu-pian-20190818215632.png)
+![](../../.gitbook/assets/qq-tu-pian-20190818215632.png)
 
 ### 选择视图的数据到表单 
 
 在表单中使用“选择视图”组件，可以进行流程、内容管理分类直接的数据关联。
 
-![](../.gitbook/assets/qq-tu-pian-20190818220436.png)
+![](../../.gitbook/assets/qq-tu-pian-20190818220436.png)
 
 当 选择结果处理 选择 “赋值”的时候：
 

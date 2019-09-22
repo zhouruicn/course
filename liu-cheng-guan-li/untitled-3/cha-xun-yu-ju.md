@@ -14,7 +14,7 @@ description: Statement
 
 ​[http://applicationServer:20020/x\_query\_assemble\_surface/jest/index.html](http://:20020/****/x_query_assemble_surface/jest/index.html)​
 
-![](../.gitbook/assets/qq-tu-pian-20190820103821.png)
+![](../../.gitbook/assets/qq-tu-pian-20190820103821.png)
 
 ## 创建查询配置
 
@@ -52,7 +52,7 @@ description: Statement
 
 `select o from tableName o where o.name='zhangsan'`
 
-![](../.gitbook/assets/qq-tu-pian-20190820155112.png)
+![](../../.gitbook/assets/qq-tu-pian-20190820155112.png)
 
 了解JPQL语句动态传参可以点击链接查看：[https://www.objectdb.com/java/jpa/query/parameter](https://www.objectdb.com/java/jpa/query/parameter)
 

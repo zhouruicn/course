@@ -6,7 +6,7 @@
 
 点系统的左上角导航-&gt;设计中心-&gt;服务管理-&gt;代理打开。
 
-![](../.gitbook/assets/qq-tu-pian-20190818120532.png)
+![](../../.gitbook/assets/qq-tu-pian-20190818120532.png)
 
 ## 触发时间
 
@@ -20,7 +20,7 @@
 
 打开URL： [http://centerServer:20030/x\_program\_center/jest/index.html](http://dev.o2oa.net:20030/x_program_center/jest/index.html#)​
 
-![](../.gitbook/assets/qq-tu-pian-20190823160633.png)
+![](../../.gitbook/assets/qq-tu-pian-20190823160633.png)
 
 在 上图的服务中填写代理的标识，然后点击GET，可以忽略触发时间设置，马上执行代理。
 
