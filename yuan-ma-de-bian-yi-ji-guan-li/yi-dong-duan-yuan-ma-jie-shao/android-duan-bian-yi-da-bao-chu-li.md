@@ -74,17 +74,17 @@ App内看到的一些O2OA相关的logo图标，可以不编译打包进App，我
 # 下面是第三方SDK 需要的key
 
 # 极光推送
-JPUSH_APPKEY=9aca7cc20fe0cc987cd913ca
+JPUSH_APPKEY_DEBUG=极光推送AppKey
 #蒲公英
-PGY_APP_ID=7132d159d08c8aa7e1f141f0ee20b9fe
+PGY_APP_ID_DEBUG=蒲公英AppId
 #百度语音
-BAIDU_SPEECH_APPID=9180689
-BAIDU_SPEECH_SECRET=gkAZkZ605YIDFoHuPsfvFROsorjDe36H
-BAIDU_SPEECH_APPKEY=l2yttjuKSSmggOKRY8nbWuDro7dX4gqq
+BAIDU_SPEECH_APPID=百度语音AppId
+BAIDU_SPEECH_SECRET=百度语音Secret
+BAIDU_SPEECH_APPKEY=百度语音Appkey
 #百度地图
-BAIDU_MAP_APPKEY=l2yttjuKSSmggOKRY8nbWuDro7dX4gqq
+BAIDU_MAP_APPKEY=百度地图Appkey
 #腾讯bugly
-BUGLY_APPID=71c852531c
+BUGLY_APPID=腾讯Bugly AppId
 ```
 
 这些key具体的注册获取，下面有大致说明。
