@@ -24,7 +24,7 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 ## 我的工作台
 
-![](../.gitbook/assets/1%20%2811%29.png)
+![](../.gitbook/assets/1%20%2812%29.png)
 
 ### 工作部署
 
@@ -52,7 +52,7 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 ![](../.gitbook/assets/4%20%285%29.png)
 
-![](../.gitbook/assets/5%20%282%29.png)
+![](../.gitbook/assets/5%20%283%29.png)
 
 1. 部署的工作
 
