@@ -22,7 +22,7 @@
 
 点击分区设置-创建分区，会弹出分区设置的页面。
 
-![](../.gitbook/assets/3%20%289%29.png)
+![](../.gitbook/assets/3%20%2810%29.png)
 
 ![](../.gitbook/assets/4%20%286%29.png)
 

@@ -61,6 +61,7 @@
   * [启用HTTPS（SSL）](ping-tai-shi-shi/qi-yong-httpsssl.md)
   * [SSO与单点认证](ping-tai-shi-shi/dan-dian-deng-ru/README.md)
     * [SSO配置](ping-tai-shi-shi/dan-dian-deng-ru/sso-pei-zhi.md)
+    * [约定密钥单点认证配置](ping-tai-shi-shi/dan-dian-deng-ru/yue-ding-mi-yao-dan-dian-ren-zheng-pei-zhi.md)
     * [SSO客户端程序](ping-tai-shi-shi/dan-dian-deng-ru/sso-ke-hu-duan-cheng-xu.md)
     * [SSO服务端程序](ping-tai-shi-shi/dan-dian-deng-ru/sso-guan-li-cheng-xu.md)
   * [平台维护工具](ping-tai-shi-shi/wei-hu-gong-ju/README.md)
