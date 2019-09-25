@@ -99,6 +99,7 @@
       * [保存表单](liu-cheng-guan-li/liu-cheng-ying-yong-kai-fa-yu-she-ji/chuang-jian-biao-dan-1/bao-cun-biao-dan.md)
     * [常用事件脚本说明](liu-cheng-guan-li/liu-cheng-ying-yong-kai-fa-yu-she-ji/chang-yong-shi-jian-jiao-ben-shuo-ming.md)
     * [数据字典配置](liu-cheng-guan-li/liu-cheng-ying-yong-kai-fa-yu-she-ji/shu-ju-zi-dian-pei-zhi.md)
+    * [Excel数据导入数据网格（仅支持IE）](liu-cheng-guan-li/liu-cheng-ying-yong-kai-fa-yu-she-ji/excel-shu-ju-dao-ru-shu-ju-wang-ge-jin-zhi-chi-ie.md)
     * [流程实际样例需求准备](liu-cheng-guan-li/liu-cheng-ying-yong-kai-fa-yu-she-ji/liu-cheng-shi-ji-yang-li.md)
     * [流程应用的导出导入](liu-cheng-guan-li/liu-cheng-ying-yong-kai-fa-yu-she-ji/liu-cheng-ying-yong-de-dao-chu-dao-ru.md)
     * [拆分流程样例](liu-cheng-guan-li/liu-cheng-ying-yong-kai-fa-yu-she-ji/chai-fen-liu-cheng-yang-li.md)
