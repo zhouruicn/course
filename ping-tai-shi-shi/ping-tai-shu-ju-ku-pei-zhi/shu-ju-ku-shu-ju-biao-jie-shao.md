@@ -64,7 +64,7 @@ logLevel:默认日志级别
 ## Oracle
 
 {% hint style="info" %}
-#### 仅支持Oracle12c以上版本,**不支持12c以下版本**
+#### 仅支持Oracle12c R2以上版本,**不支持Oracle12.2以下版本\(表名要支持30个以上的字符长度\)**
 {% endhint %}
 
 ```text
