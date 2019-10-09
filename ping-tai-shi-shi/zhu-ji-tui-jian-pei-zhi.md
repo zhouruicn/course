@@ -24,18 +24,18 @@ description: O2OA官网给出的服务器主机推荐配置
 
 | **操作系统** | **CPU** | **内存** | **硬盘** | **数量** | **服务器负载** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| windows/linux | 8核 | 16G | 20GSSD | 1 | web服务器 |
-| windows/linux | 4核 | 8G | 20GSSD | 1 | 中心服务器 |
+| windows/linux | 8核 | 16G | 20GSSD | 2 | web服务器 |
+| windows/linux | 4核 | 8G | 20GSSD | 2 | 中心服务器 |
 | windows/linux | 8核 | 16G | 100GSSD | 2 | 应用服务器 |
 | windows/linux | 8核 | 16G | 200GSSD | 2 | 数据服务器,建议使用MySQL,Oracle,DB2高性能商用数据库 |
 | windows/linux | 4核 | 8G | 300GSSD | 2 | 文件存储服务器 |
 
-## 20000用户以上
+## 20000用户以上（根据实际压力情况添加主机进行水平扩展）
 
 | **操作系统** | **CPU** | **内存** | **硬盘** | **数量** | **服务器负载** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| windows/linux | 8核 | 16G | 20GSSD | 1 | web服务器 |
-| windows/linux | 4核 | 8G | 20GSSD | 1 | 中心服务器 |
+| windows/linux | 8核 | 16G | 20GSSD | n | web服务器 |
+| windows/linux | 4核 | 8G | 20GSSD | n | 中心服务器 |
 | windows/linux | 8核 | 16G | 100GSSD | n | 应用服务器 |
 | windows/linux | 8核 | 16G | 200GSSD | n | 数据服务器,建议使用MySQL,Oracle,DB2高性能商用数据库 |
 | windows/linux | 4核 | 8G | 300GSSD | n | 文件存储服务器 |
