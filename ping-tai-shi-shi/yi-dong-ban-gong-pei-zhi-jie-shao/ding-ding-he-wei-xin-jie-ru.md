@@ -57,7 +57,9 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 开发模式       ：开发应用
 开发应用类型    ：微应用
 应用首页链接    ：http://[serverIp]:[port]/x_desktop/ddsso.html
-(其中[serverIp]为您部署的O2OA公网IP或者域名，[port]是开放的web端口，默认为80不用填写)
+(其中[serverIp]为您部署的O2OA公网IP或者域名。
+[port]是开放的web端口，默认为80不用填写。
+后面还可以跟一个redirect参数，如：?redirect=portalmobile.html%3Fid%3D********** ，就是登录成功后跳转到门户页面星号代表门户的id)
 开服务器出口IP  ：填写服务器公网出口IP地址
 首页地址       ：http://[serverIp]:[port]/x_desktop/ddsso.html
 可使用范围      ：根据要求填写

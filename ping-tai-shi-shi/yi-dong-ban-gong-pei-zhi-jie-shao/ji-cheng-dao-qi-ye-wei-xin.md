@@ -65,7 +65,7 @@ description: O2OA平台可以以第自建应用的方式集成到企业微信，
 
 ###  **工作台应用主页**
 
-> [https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect\_uri=https%3A%2F%2F\[host\]\[port\]%2Fx\_desktop%2Fqiyeweixinsso.html&response\_type=code&scope=snsapi\_base&agentid=1000004&\#wechat\_redirect](https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect_uri=https%3A%2F%2F[host][port]%2Fx_desktop%2Fqiyeweixinsso.html&response_type=code&scope=snsapi_base&agentid=1000004&#wechat_redirect)
+> [https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect\_uri=https%3A%2F%2F\[host\]\[port\]%2Fx\_desktop%2Fqiyeweixinsso.html%3Fredirect%3Dportalmobile.html%3Fid%3D\*\*\*\*\*\*\*\*\*&response\_type=code&scope=snsapi\_base&agentid=1000004&\#wechat\_redirect](www.o2oa.net)
 
 其中：
 
@@ -78,7 +78,11 @@ AgentId : 应用的agentId
 
 {% hint style="info" %}
  **redirect\_uri参数需要使用urlencode进行编码，不然会遇到50001错误，redirect\_uri不是可信域名。**
+
+**这个url是：**[**http://\[host\]:\[port\]/x\_desktop/qiyeweixinsso.html?redirect=portalmobile.html?id=\*\*\*\*\*\*\*\*\*\*\*\***](www.o2oa.net) **这样的形式。后面跟了一个redirect参数，就是需要跳转到一个门户页面，id就是门户的id，不配置这个参数也行，进入的是一个默认的待办列表页面。**
 {% endhint %}
+
+
 
 ## 五、O2OA接入配置 <a id="h1_6"></a>
 
