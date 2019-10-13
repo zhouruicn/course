@@ -147,6 +147,7 @@
     * [组织架构管理 - Object: org](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/README.md)
       * [人员信息: person 操作](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/ren-yuan-xin-xi-person-cao-zuo.md)
       * [人员属性: personAttribute操作](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/ren-yuan-shu-xing-personattribute-cao-zuo.md)
+      * [组织信息: unit操作](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/zu-zhi-xin-xi-unit-cao-zuo.md)
 * [平台内置应用介绍](xi-tong-ying-yong-jie-shao/README.md)
   * [会议管理](xi-tong-ying-yong-jie-shao/hui-yi-guan-li.md)
   * [日程安排](xi-tong-ying-yong-jie-shao/ri-cheng-an-pai.md)
