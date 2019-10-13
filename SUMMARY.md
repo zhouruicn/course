@@ -149,6 +149,7 @@
       * [人员属性: personAttribute操作](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/ren-yuan-shu-xing-personattribute-cao-zuo.md)
       * [组织信息: unit操作](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/zu-zhi-xin-xi-unit-cao-zuo.md)
       * [组织职务: unitDuty](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/zu-zhi-zhi-wu-unitduty.md)
+      * [组织属性: unitAttribute](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/zu-zhi-shu-xing-unitattribute.md)
 * [平台内置应用介绍](xi-tong-ying-yong-jie-shao/README.md)
   * [会议管理](xi-tong-ying-yong-jie-shao/hui-yi-guan-li.md)
   * [日程安排](xi-tong-ying-yong-jie-shao/ri-cheng-an-pai.md)
