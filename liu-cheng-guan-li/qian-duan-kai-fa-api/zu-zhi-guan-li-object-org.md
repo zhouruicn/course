@@ -246,6 +246,113 @@ person对象为JSON格式数据，其格式和主要数据如下：
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+### Method: listPersonWithGroup
+
+根据群组标识获取人员对象成员：person对象数组。
+
+#### Syntax:
+
+```javascript
+var personList = this.org.listPersonWithGroup( group );
+```
+
+#### Arguments:
+
+```text
+> group :　（string JsonObject or array）必选。可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。
+```
+
+{% code-tabs %}
+{% code-tabs-item title="参数group示例" %}
+```javascript
+//以下均为合法参数
+//群组属性值
+"工作汇报读者@ReportReader@G" //群组识别名
+"cce8bc22-225a-4f85-8132-7374d546886e" //id
+"ReportReader" //群组唯一标识
+"工作汇报读者" //群组名称
+
+//对象
+{ "distinguishedName": "工作汇报读者@ReportReader@G" } //群组识别名
+{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //群组唯一标识
+{ "unique": "ReportReader" } //群组唯一标识
+{ "name": "工作汇报读者" } //群组对象
+
+//上述属性组和对象数组
+[ "工作汇报读者", "公文阅读者" ] //名称数组
+[ { "name": "工作汇报读者" }, { "name": "公文阅读者" } ] //名称数组
+
+...其他属性值或对象数组
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### Return:
+
+```javascript
+> person array :　（Array）人员对象数组。
+```
+
+person对象为JSON格式数据，其格式和主要数据如下：
+
+{% code-tabs %}
+{% code-tabs-item title="person对象" %}
+```javascript
+{
+    "name": "李四",    //姓名
+    "genderType": "m", //性别， m为男性， f为女性， d未知
+    "signature": "", //签名
+    "description": "", //说明
+    "employee": "1111", //员工号
+    "unique": "lisi", //唯一标识
+    "distinguishedName": "李四@lisi@P", //识别名
+    "orderNumber": 14214946, //排序号
+    "mail": "", //邮箱
+    "weixin": "", //微信号
+    "qq": "", //qq号码
+    "mobile": "85252281460", //手机号码
+    "officePhone": "", //办公电话
+    "boardDate" : "", //入职日期
+    "birthday" : "", //生日
+    "age" : "", //年龄
+    "qiyeweixinId" : "", //企业微信id
+    "dingdingId" : "", //钉钉id
+    "zhengwuDingdingId" //政务钉钉id
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
