@@ -30,5 +30,5 @@ post方式：
 
 sso.html文件所在路径
 
-![](../../.gitbook/assets/image%20%28138%29.png)
+![](../../.gitbook/assets/image%20%28139%29.png)
 

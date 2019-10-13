@@ -28,7 +28,7 @@ Listening for transport dt\_socket at address: 6666
 
 ### 1、增加调试/运行配置
 
-![](../../.gitbook/assets/image%20%28151%29.png)
+![](../../.gitbook/assets/image%20%28152%29.png)
 
 ### 2、启动调试
 
@@ -36,7 +36,7 @@ Listening for transport dt\_socket at address: 6666
 
 Connected to the target VM, address: '127.0.0.1:6666', transport: 'socket'
 
-![](../../.gitbook/assets/image%20%28129%29.png)
+![](../../.gitbook/assets/image%20%28130%29.png)
 
 ### 3、增加断点
 
@@ -50,7 +50,7 @@ Connected to the target VM, address: '127.0.0.1:6666', transport: 'socket'
 
 ### 2、新增远程调试配置
 
-![](../../.gitbook/assets/image%20%28166%29.png)
+![](../../.gitbook/assets/image%20%28167%29.png)
 
 ### 3、选择需要调试的项目
 
@@ -64,7 +64,7 @@ Connected to the target VM, address: '127.0.0.1:6666', transport: 'socket'
 
 ### 5、在代码增加断点调试
 
-![](../../.gitbook/assets/image%20%28167%29.png)
+![](../../.gitbook/assets/image%20%28168%29.png)
 
 Eclipse远程调试教程很多，可以参考:
 
