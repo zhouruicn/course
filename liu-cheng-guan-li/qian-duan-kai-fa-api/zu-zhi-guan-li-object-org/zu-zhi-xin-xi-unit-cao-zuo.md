@@ -435,6 +435,228 @@ unit对象为JSON格式数据，其格式和主要数据如下：
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+### listAllSupUnitWithPerson
+
+列出人员所在组织的所有上级组织。
+
+#### Syntax:
+
+```javascript
+var unitList = this.org.listAllSupUunitnitWithPerson( person );
+```
+
+#### Arguments:
+
+```text
+> person :　（string JsonObjector array）必选。
+可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
+```
+
+{% code-tabs %}
+{% code-tabs-item title="参数person示例" %}
+```javascript
+//以下均为合法参数
+//人员属性值
+"李四@lisi@P" //人员别名
+"cce8bc22-225a-4f85-8132-7374d546886e" //id
+"lisi" //人员唯一标识
+"李四" //人员名称
+
+//对象
+{ "distinguishedName": "李四@lisi@P" } //人员识别名
+{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //人员唯一标识
+{ "unique": "lisi" } //人员唯一标识
+{ "name": "李四" } //名称对象
+
+//上述属性组和对象数组
+[ "张三", "李四" ] //名称数组
+[ { "name": "李四" }, { "name": "张三" } ] //名称数组
+
+...其他属性值或对象数组
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### Return:
+
+```javascript
+> unit array :　（Array）组织对象数组。
+```
+
+unit对象为JSON格式数据，其格式和主要数据如下：
+
+{% code-tabs %}
+{% code-tabs-item title="unit对象" %}
+```javascript
+{
+    "name": "开发部", //组织名称
+    "unique": "kfb",  //组织唯一标识
+    "distinguishedName": "开发部@kfb@U", //组织识别名
+    "typeList": [   //组织类型
+        "部门"
+    ],
+    "description": "", //组织描述
+    "shortName": "kfb", //组织简称
+    "level": 2, //组织层级
+    "levelName": "浙江兰德纵横/开发部", //层级名
+    "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+### listUnitWithAttribute
+
+根据组织属性，获取所有符合的组织。
+
+#### Syntax:
+
+```javascript
+var unitList = this.org.listUnitWithAttribute( attributeName, attributeValue );
+```
+
+#### Arguments:
+
+```javascript
+> attributeName :　（string ）必选。组织属性名称。
+> attributeValue :　（string ）必选。组织属性值。
+```
+
+#### Return:
+
+```text
+> unit array :　（Array）组织对象数组。
+```
+
+unit对象为JSON格式数据，其格式和主要数据如下：
+
+{% code-tabs %}
+{% code-tabs-item title="unit对象" %}
+```javascript
+{
+    "name": "开发部", //组织名称
+    "unique": "kfb",  //组织唯一标识
+    "distinguishedName": "开发部@kfb@U", //组织识别名
+    "typeList": [   //组织类型
+        "部门"
+    ],
+    "description": "", //组织描述
+    "shortName": "kfb", //组织简称
+    "level": 2, //组织层级
+    "levelName": "浙江兰德纵横/开发部", //层级名
+    "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+### listUnitWithDuty
+
+根据组织职务，获取所有符合的组织。
+
+#### Syntax:
+
+```javascript
+var unitList = this.org.listUnitWithDuty( dutyName, identity );
+```
+
+#### Arguments:
+
+```javascript
+> dutyName :　（string）必选。组织职务名称。
+> identity :　（string or JsonObject）必选。
+可以是身份的distinguishedName、name、id、unique属性值，身份对象。
+```
+
+{% code-tabs %}
+{% code-tabs-item title="参数identity示例" %}
+```javascript
+//以下均为合法参数
+//身份属性值
+"李四@23dd1b53-feed-485d-8c9c-1a4e64ff58a2@I" //身份识别名
+"23dd1b53-feed-485d-8c9c-1a4e64ff58a2" //id
+"lisi_i" //身份唯一标识
+"李四" //名称
+
+//对象
+{ "distinguishedName": "李四@23dd1b53-feed-485d-8c9c-1a4e64ff58a2@I" } //身份识别名
+{ "unique": "23dd1b53-feed-485d-8c9c-1a4e64ff58a2" } //身份唯一标识
+{ "unique": "lisi_i" } //身份唯一标识
+{ "name": "李四" } //名称对象
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### Return:
+
+```text
+> unit array :　（Array）组织对象数组。
+```
+
+unit对象为JSON格式数据，其格式和主要数据如下：
+
+{% code-tabs %}
+{% code-tabs-item title="unit对象" %}
+```javascript
+{
+    "name": "开发部", //组织名称
+    "unique": "kfb",  //组织唯一标识
+    "distinguishedName": "开发部@kfb@U", //组织识别名
+    "typeList": [   //组织类型
+        "部门"
+    ],
+    "description": "", //组织描述
+    "shortName": "kfb", //组织简称
+    "level": 2, //组织层级
+    "levelName": "浙江兰德纵横/开发部", //层级名
+    "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+### listTopUnit
+
+列出顶层组织。
+
+#### Syntax:
+
+```javascript
+var unitList = this.org.listTopUnit();
+```
+
+#### Return:
+
+```javascript
+> unit array :　（Array）组织对象数组。
+```
+
+unit对象为JSON格式数据，其格式和主要数据如下：
+
+{% code-tabs %}
+{% code-tabs-item title="unit对象" %}
+```javascript
+{
+    "name": "开发部", //组织名称
+    "unique": "kfb",  //组织唯一标识
+    "distinguishedName": "开发部@kfb@U", //组织识别名
+    "typeList": [   //组织类型
+        "部门"
+    ],
+    "description": "", //组织描述
+    "shortName": "kfb", //组织简称
+    "level": 2, //组织层级
+    "levelName": "浙江兰德纵横/开发部", //层级名
+    "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
+
+
+
 
 
 
