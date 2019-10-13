@@ -152,6 +152,7 @@
       * [组织属性: unitAttribute](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/zu-zhi-shu-xing-unitattribute.md)
       * [身份信息: identity](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/shen-fen-xin-xi-identity.md)
       * [角色信息: role](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/jiao-se-xin-xi-role.md)
+      * [群组信息: group](liu-cheng-guan-li/qian-duan-kai-fa-api/zu-zhi-guan-li-object-org/qun-zu-xin-xi-group.md)
 * [平台内置应用介绍](xi-tong-ying-yong-jie-shao/README.md)
   * [会议管理](xi-tong-ying-yong-jie-shao/hui-yi-guan-li.md)
   * [日程安排](xi-tong-ying-yong-jie-shao/ri-cheng-an-pai.md)
