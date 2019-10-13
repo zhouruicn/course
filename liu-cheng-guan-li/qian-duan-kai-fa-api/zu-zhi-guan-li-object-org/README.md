@@ -4,7 +4,7 @@
 
 你可以通过org对象获取组织中的**人员、人员属性、组织、组织属性、身份、群组和角色**。
 
-### Syntax:
+#### Syntax:
 
 您可以在流程表单、内容管理表单和门户页面中，通过this来获取当前实例的org对象，如下：
 
@@ -22,7 +22,11 @@ var org = this.org;
 
 {% page-ref page="zu-zhi-shu-xing-unitattribute.md" %}
 
+{% page-ref page="shen-fen-xin-xi-identity.md" %}
 
+{% page-ref page="jiao-se-xin-xi-role.md" %}
+
+{% page-ref page="qun-zu-xin-xi-group.md" %}
 
 
 
