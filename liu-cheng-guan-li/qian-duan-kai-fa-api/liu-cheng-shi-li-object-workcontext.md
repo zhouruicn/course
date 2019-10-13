@@ -12,19 +12,21 @@
 var context = this.workContext;
 ```
 
-## Method: getTask
+## 流程实例相关操作
+
+### getTask
 
 获取当前流程与当前用户相关的**待办对象**：task对象。 
 
 当前流程实例正在流转中，并且当前用户有待办，则返回当前用户的待办对象，否则返回null。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var task = this.workContext.getTask();
 ```
 
-### Return:
+#### Return:
 
 ```text
 > task :　（Object）当前用户的待办任务对象：task。
@@ -79,17 +81,17 @@ task对象为JSON格式数据，其格式和主要数据如下：
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## Method: getWork
+### getWork
 
 获取当前流程实例对象：work对象或workCompleted对象。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var work = this.workContext.getWork();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > work :　（Object）流程实例对象。
@@ -160,50 +162,50 @@ var workCompleted = {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## Method: getActivity
+### getActivity
 
 获取当前流程实例所在的**活动节点对象**：activity对象。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var activity = this.workContext.getActivity();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > activity :　（Object）当前流程实例所在的活动节点对象：activity。
 > null :　（null）如果当前流程实例已流转完成，则返回null。
 ```
 
-## Method: getTaskList
+### getTaskList
 
 获取当前流程实例的**所有待办对象**。如果流程实例已流转完成，则返回一个空数组。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var taskList = this.workContext.getTaskList();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > array of task :　（array）当前流程实例的所有待办。
 ```
 
-## Method: getReadList
+### getReadList
 
 获取当前流程实例的所有待阅对象。如果流程实例无待阅，则返回一个空数组。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var taskList = this.workContext.getReadList();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > array of read :　（array）当前流程实例的所有待阅。
@@ -244,17 +246,17 @@ var taskList = this.workContext.getReadList();
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## Method: getTaskCompletedList
+### getTaskCompletedList
 
 获取当前流程实例的所有已办对象。如果流程实例没有任何人处理过，则返回一个空数组。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var taskCompletedList = this.workContext.getTaskCompletedList();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > array of workCompleted :　（array）当前流程实例的所有已办。
@@ -299,17 +301,17 @@ var taskCompletedList = this.workContext.getTaskCompletedList();
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## Method: getControl
+### getControl
 
 获取当前人对流程实例的权限。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var control = this.workContext.getControl();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > Object :　（Object）当前人对流程实例的所拥有的权限。
@@ -334,17 +336,17 @@ var control = this.workContext.getControl();
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## Method: getWorkLogList
+### getWorkLogList
 
 获取当前流程实例的所有流程记录。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var workLogList = this.workContext.getWorkLogList();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > Array of Object :　（array）当前流程实例的所有流程记录。
@@ -382,17 +384,17 @@ var workLogList = this.workContext.getWorkLogList();
 },
 ```
 
-## Method: getAttachmentList
+### getAttachmentList
 
 获取当前流程实例的附件对象列表。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var attachmentList = this.workContext.getAttachmentList();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > Array of Object :　（array）当前流程实例的所有附件对象。
@@ -417,35 +419,35 @@ var attachmentList = this.workContext.getAttachmentList();
 }
 ```
 
-## Method: getRouteList
+### getRouteList
 
 获取当前待办的可选路由。与task对象中的routeNameList取值相同。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var routeList = this.workContext.getRouteList();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > Array of String :　（array）当前待办的可选路由。
 ```
 
-## Method: setTitle
+### setTitle
 
 重新设置流程实例标题。
 
 > 注意：如果表单中有名为“subject”或“title”的可输入元素，或给业务数据（data）的 “subject” 或 “title” 节点赋了值，那么每次流转后，流程实例的标题会自动设置为 “subject” 或 “title” 的值。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 this.workContext.setTitle("这是一个标题");
 ```
 
-### Return:
+#### Return:
 
 ```text
 无返回值

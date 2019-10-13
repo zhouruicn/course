@@ -28,6 +28,8 @@ description: >-
 
 {% page-ref page="nei-rong-guan-li-shi-li-object-documentcontext.md" %}
 
+{% page-ref page="zu-zhi-guan-li-object-org/" %}
+
 | 服务 |  |
 | :--- | :--- |
 | x\_processplatform\_assemble\_surface | 流程平台相关服务 |

@@ -13,13 +13,15 @@ data对象基本上是一个JSON对象，您可以用访问JSON对象的方法�
 var data = this.data;
 ```
 
-## \[property\]
+## 业务数据相关操作
+
+### \[property\]
 
 访问或修改data对象的数据。 
 
 data数据用于存储表单获取的数据，所有属性都是动态的，其格式和访问方式都和JSON类似。在表单脚本中使用data对象，实现了data和表单可编辑元素的双向绑定。改变data对象，会自动更新表单元素，修改表单可编辑元素，也会自动修改data对象。
 
-### Syntax:
+#### Syntax:
 
 {% code-tabs %}
 {% code-tabs-item title="Syntax:" %}
@@ -30,11 +32,11 @@ this.data.property = '123';   //将property的值修改为'123'
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Return:
+#### Return:
 
 > any : 任何数据类型。
 
-### Examples 1:
+#### Examples 1:
 
 获取流程文档的subject值：
 
@@ -46,7 +48,7 @@ var subject = this.data.subject;
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Examples 2:
+#### Examples 2:
 
 获取流程文档中的数据网格的值：
 
@@ -113,11 +115,11 @@ this.data.datagrid.data[0].nameCol.name='平板电脑';
 
 ![](http://www.o2oa.net:20020/x_portal_assemble_surface/jaxrs/file/65a2c334-85cf-4304-8c2f-bf858109640f/portal/dcd8e168-2da0-4496-83ee-137dc976c7f6/content)
 
-## Method: add
+### add
 
 为data对象添加一个数据节点。
 
-### Syntax:
+#### Syntax:
 
 {% code-tabs %}
 {% code-tabs-item title="Syntax:" %}
@@ -127,7 +129,7 @@ var newData = this.data.add(key, value, overwrite);
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Arguments:
+#### Arguments:
 
 ```javascript
 > key :　（string or number）必选，要添加的新的数据节点名称或数组索引号
@@ -135,13 +137,13 @@ var newData = this.data.add(key, value, overwrite);
 > overwrite :　（boolean）可选，如果要添加的节点已经存在，是否覆盖。默认为 false
 ```
 
-### Return:
+#### Return:
 
 ```text
 > any :　新添加的数据节点或原有的同名节点。
 ```
 
-### Examples:
+#### Examples:
 
 ```javascript
 //为data添加一个名为"remark"值为"I am remark"的数据
@@ -173,29 +175,29 @@ var orders = this.data.add("orders", [
 orders.add(0, {name: "mobile", count: 10}, true);
 ```
 
-## Method: del
+### del
 
 删除data对象中一个指定的数据节点。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var data = this.data.del(key);
 ```
 
-### Arguments:
+#### Arguments:
 
 ```javascript
 > key :　（string or number）必选，要删除的数据节点名称或数组索引号
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > data :　被删除数据节点的父节点
 ```
 
-### Examples:
+#### Examples:
 
 ```javascript
 //删除data下名为"remark"的数据节点
@@ -210,29 +212,29 @@ var person = this.data.add.person.del("age");
 this.data.orders.del(1);
 ```
 
-## Method: save
+### save
 
 保存data对象
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 this.data.save(callback);
 ```
 
-### Arguments:
+#### Arguments:
 
 ```javascript
 > callback :　（function）可选，保存成功后的回调函数
 ```
 
-### Return:
+#### Return:
 
 ```text
 没有返回值
 ```
 
-### Examples:
+#### Examples:
 
 ```javascript
 this.data.save(function(json){

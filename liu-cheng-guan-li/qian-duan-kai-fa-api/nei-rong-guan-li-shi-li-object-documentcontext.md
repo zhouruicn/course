@@ -12,17 +12,19 @@
 var context = this.documentContext;
 ```
 
-## Method: getDocument
+## 内容管理文档相关操作
+
+### getDocument
 
 获取当前内容管理实例的文档对象：document对象
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var doc = this.documentContext.getDocument();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > document :　（Object）内容管理实例对象。
@@ -72,17 +74,17 @@ document对象为JSON格式数据，其格式和主要数据如下：
 }
 ```
 
-## Method: getControl
+### getControl
 
 获取当前人对内容管理实例的权限。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var doc = this.documentContext.getControl();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > Object :　（Object）当前人对内容管理实例的所拥有的权限。
@@ -105,17 +107,17 @@ var doc = this.documentContext.getControl();
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## Method: getAttachmentList
+### getAttachmentList
 
 获取当前流程实例的附件对象列表。
 
-### Syntax:
+#### Syntax:
 
 ```javascript
 var attachmentList = this.documentContext.getAttachmentList();
 ```
 
-### Return:
+#### Return:
 
 ```javascript
 > Array of Object :　（array）当前流程实例的所有附件对象。
