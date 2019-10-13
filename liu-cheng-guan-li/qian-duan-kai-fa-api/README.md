@@ -3,7 +3,7 @@ description: >-
   主要介绍前端API，代码示例及写法，同步API文档：http://www.o2oa.net/x_desktop/portal.html?id=dcd8e168-2da0-4496-83ee-137dc976c7f6
 ---
 
-# 前端开发API
+# 前端开发API说明
 
 ## 概述
 

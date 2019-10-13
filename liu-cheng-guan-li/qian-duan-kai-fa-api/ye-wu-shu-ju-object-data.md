@@ -28,11 +28,11 @@ this.data.property = '123';   //将property的值修改为'123'
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## Return:
+### Return:
 
 > any : 任何数据类型。
 
-## Examples 1:
+### Examples 1:
 
 获取流程文档的subject值：
 
@@ -44,7 +44,7 @@ var subject = this.data.subject;
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## Examples 2:
+### Examples 2:
 
 获取流程文档中的数据网格的值：
 
@@ -170,6 +170,107 @@ var orders = this.data.add("orders", [
 //将第一条数据修改为name为mobile; count为10
 orders.add(0, {name: "mobile", count: 10}, true);
 ```
+
+## Method: del
+
+删除data对象中一个指定的数据节点。
+
+### Syntax:
+
+```javascript
+var data = this.data.del(key);
+```
+
+### Arguments:
+
+```javascript
+> key :　（string or number）必选，要删除的数据节点名称或数组索引号
+```
+
+### Return:
+
+```javascript
+> data :　被删除数据节点的父节点
+```
+
+### Examples:
+
+```javascript
+//删除data下名为"remark"的数据节点
+this.data.del("remark");
+//-------------------------------------------------------------------
+
+//删除"person"的age数据节点
+var person = this.data.add.person.del("age");
+//-------------------------------------------------------------------
+
+//删除"orders"数组对象中的第二条数据
+this.data.orders.del(1);
+```
+
+## Method: save
+
+保存data对象
+
+### Syntax:
+
+```javascript
+this.data.save(callback);
+```
+
+### Arguments:
+
+```javascript
+> callback :　（function）可选，保存成功后的回调函数
+```
+
+### Return:
+
+```text
+没有返回值
+```
+
+### Examples:
+
+```javascript
+this.data.save(function(json){
+    this.form.notice("save success!", "success")
+});
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
