@@ -22,6 +22,12 @@ description: >-
 | 视图\(view\) | 数据字典\(Dict\) | Action\(Action\) |
 | 引用\(include\) | 方法定义\(define\) | session\(session\) |
 
+{% page-ref page="ye-wu-shu-ju-object-data.md" %}
+
+{% page-ref page="liu-cheng-shi-li-object-workcontext.md" %}
+
+{% page-ref page="nei-rong-guan-li-shi-li-object-documentcontext.md" %}
+
 | 服务 |  |
 | :--- | :--- |
 | x\_processplatform\_assemble\_surface | 流程平台相关服务 |
