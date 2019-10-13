@@ -19,6 +19,8 @@ var data = this.data;
 
 data数据用于存储表单获取的数据，所有属性都是动态的，其格式和访问方式都和JSON类似。在表单脚本中使用data对象，实现了data和表单可编辑元素的双向绑定。改变data对象，会自动更新表单元素，修改表单可编辑元素，也会自动修改data对象。
 
+### Syntax:
+
 {% code-tabs %}
 {% code-tabs-item title="Syntax:" %}
 ```javascript
