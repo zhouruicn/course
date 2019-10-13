@@ -18,7 +18,9 @@ var org = this.org;
 
 {% page-ref page="zu-zhi-xin-xi-unit-cao-zuo.md" %}
 
+{% page-ref page="zu-zhi-zhi-wu-unitduty.md" %}
 
+{% page-ref page="zu-zhi-shu-xing-unitattribute.md" %}
 
 
 
