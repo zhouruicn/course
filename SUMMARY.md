@@ -78,7 +78,7 @@
     * [已完成工作](ping-tai-shi-shi/wei-hu-gong-ju/yi-wan-cheng-gong-zuo.md)
     * [授权管理](ping-tai-shi-shi/wei-hu-gong-ju/shou-quan-guan-li.md)
   * [相关数据表](ping-tai-shi-shi/xiang-guan-shu-ju-biao.md)
-  * [全文检索前端应用部署](ping-tai-shi-shi/quan-wen-jian-suo-qian-duan-ying-yong-bu-shu.md)
+  * [全文检索功能部署](ping-tai-shi-shi/quan-wen-jian-suo-qian-duan-ying-yong-bu-shu.md)
   * [平台错误日志](ping-tai-shi-shi/ping-tai-cuo-wu-ri-zhi/README.md)
     * [日志所在目录](ping-tai-shi-shi/ping-tai-cuo-wu-ri-zhi/ri-zhi-suo-zai-mu-lu.md)
     * [日志使用class](ping-tai-shi-shi/ping-tai-cuo-wu-ri-zhi/ri-zhi-shi-yong-class.md)
