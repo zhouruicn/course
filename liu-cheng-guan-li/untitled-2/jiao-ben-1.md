@@ -15,6 +15,13 @@ this.include({
 
 2、脚本方法定义 this.define\("xxx",function\(\){}.bind\(this\)\)
 
+```javascript
+//定义一个方法
+this.define("getUserName", function(){
+    return ( layout.desktop.session.user || layout.user ).name
+}.bind(this))
+```
+
 3、脚本系统服务调用
 
 接口地址：
