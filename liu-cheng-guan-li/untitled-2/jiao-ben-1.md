@@ -2,6 +2,17 @@
 
 1、表单引入脚本include
 
+```javascript
+this.include("initScript") //脚本配置的名称、别名或id
+
+//如果需要引用其他应用的脚本配置，将options设置为JsonObject
+this.include({
+    type : "portal", //应用类型。可以为 portal  process  cms。如果没有该选项或者值为空字符串，则表示应用脚本和被应用的脚本配置类型相同；比如在门户的A应用脚本中引用门户B应用的脚本配置，则type可以省略。
+    application : "首页", // 门户、流程、CMS的名称、别名、id。 默认为当前应用
+    name : "initScript" // 脚本配置的名称、别名或id
+})
+```
+
 2、脚本方法定义 this.define\("xxx",function\(\){}.bind\(this\)\)
 
 3、脚本系统服务调用
