@@ -6,6 +6,26 @@ description: 此示例演示如何通过登录用户名，和SSO相关的配置�
 
 > 涉及到加密解密，请使用非中文的唯一标识进行登录 ，中文登录 有可能会有找不到用户的问题。
 
+## 一、o2Server平台SSO配置
+
+### 1、使用管理员\(或者xadmin\)登录O2OA
+
+### 2、打开系统菜单-&gt;控制面板-&gt;系统设置-&gt;SSO配置
+
+![&#x6253;&#x5F00;&#x63A7;&#x5236;&#x9762;&#x677F;](../../../.gitbook/assets/qq-jie-tu-20191019161856.png)
+
+![&#x8FDB;&#x5165;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;](../../../.gitbook/assets/qq-jie-tu-20191019161909.png)
+
+![&#x8FDB;&#x5165;SSO&#x914D;&#x7F6E;](../../../.gitbook/assets/qq-jie-tu-20191019161927.png)
+
+### 3、添加SSO配置
+
+![&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;SSO&#x914D;&#x7F6E;](../../../.gitbook/assets/qq-jie-tu-20191019162037.png)
+
+### 4、重启o2server
+
+## 二、编写登录代码
+
 完整代码内容：
 
 {% code-tabs %}
@@ -386,5 +406,5 @@ pom.xml内容：
 
 示例下载（Eclipse, JDK1.8）：
 
-{% file src="../../../.gitbook/assets/test\_o2oa\_java\_demo \(1\).zip" caption="test\_o2oa\_java\_demo.zip" %}
+{% file src="../../../.gitbook/assets/test\_o2oa\_java\_demo \(2\).zip" caption="test\_o2oa\_java\_demo.zip" %}
 
