@@ -135,6 +135,7 @@
     * [代理](liu-cheng-guan-li/fu-wu-guan-li/dai-li.md)
     * [接口](liu-cheng-guan-li/fu-wu-guan-li/jie-kou.md)
   * [系统交互样例](liu-cheng-guan-li/xi-tong-jiao-hu/README.md)
+    * [登录认证 For Java](liu-cheng-guan-li/xi-tong-jiao-hu/deng-lu-ren-zheng-for-java.md)
     * [外系统启动流程](liu-cheng-guan-li/xi-tong-jiao-hu/wai-xi-tong-qi-dong-liu-cheng.md)
     * [数据导出](liu-cheng-guan-li/xi-tong-jiao-hu/shu-ju-dao-chu/README.md)
       * [数字档案](liu-cheng-guan-li/xi-tong-jiao-hu/shu-ju-dao-chu/shu-zi-dang-an.md)
