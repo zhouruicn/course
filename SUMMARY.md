@@ -136,7 +136,7 @@
     * [接口](liu-cheng-guan-li/fu-wu-guan-li/jie-kou.md)
   * [系统交互样例](liu-cheng-guan-li/xi-tong-jiao-hu/README.md)
     * [登录认证 For Java](liu-cheng-guan-li/xi-tong-jiao-hu/deng-lu-ren-zheng-for-java/README.md)
-      * [发送用户账号密码进行登录认证 For Java](liu-cheng-guan-li/xi-tong-jiao-hu/deng-lu-ren-zheng-for-java/fa-song-yong-hu-zhang-hao-mi-ma-jin-hang-deng-lu-ren-zheng-for-java.md)
+      * [发送用户账号密码进行登录认证](liu-cheng-guan-li/xi-tong-jiao-hu/deng-lu-ren-zheng-for-java/fa-song-yong-hu-zhang-hao-mi-ma-jin-hang-deng-lu-ren-zheng-for-java.md)
       * [发送用户名使用SSO进行登录认证](liu-cheng-guan-li/xi-tong-jiao-hu/deng-lu-ren-zheng-for-java/fa-song-yong-hu-ming-shi-yong-sso-jin-hang-deng-lu-ren-zheng.md)
     * [外系统启动流程](liu-cheng-guan-li/xi-tong-jiao-hu/wai-xi-tong-qi-dong-liu-cheng.md)
     * [数据导出](liu-cheng-guan-li/xi-tong-jiao-hu/shu-ju-dao-chu/README.md)

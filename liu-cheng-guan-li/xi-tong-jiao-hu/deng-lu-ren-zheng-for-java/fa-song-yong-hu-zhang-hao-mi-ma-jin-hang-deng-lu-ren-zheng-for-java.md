@@ -2,7 +2,7 @@
 description: 此示例演示如何使用java发送Http请求来登录o2server，获取登录认证xtoken信息
 ---
 
-# 发送用户账号密码进行登录认证 For Java
+# 发送用户账号密码进行登录认证
 
 完整代码示例：
 
