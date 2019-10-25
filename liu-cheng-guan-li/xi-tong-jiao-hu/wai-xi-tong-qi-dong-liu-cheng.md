@@ -36,26 +36,28 @@ try {
 
 ## 第二步：创建流程
 
-一、创建creatework
-
-二、创建流程获取workid
+一、设置x-token
 
 ```java
- path = "http://127.0.0.1:20030/x_program_center/jaxrs/invoke/creatework/execute";
- String string1 = "{\"latest\" : false,\"title\" : \"测试20190910\",\"identity\" : \"test@9d10d320-b20c-4dea-8194-9e0a70d2e1c6@I\",\"data\":{\"subject\":\"测试20190910\"}}";
- String strflow =  HttpClientUtils.getInstance().sendPost(path,string1);
- String work = "";
-   try {
-        JSONObject jsonObj = (JSONObject)(new JSONParser().parse(strflow));
-        JSONObject data = (JSONObject) jsonObj.get("data");
-        JSONObject value = (JSONObject) data.get("value");
-                    data = (JSONObject)value.get("data");
-        JSONObject data0 = (JSONObject)data.get("0");
-                    work = (String)data0.get("work");
-             //System.out.println(work);
-         } catch (ParseException e) {
-             e.printStackTrace();
-         }
+  path = "http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/work/process/e51984cb-bce9-42b3-9b6a-20fc1ef31676";
+  JSONObject result = new JSONObject();  
+  result.put("latest", false);  
+  result.put("title", "演示系统2019-10-19wwww");  
+  result.put("identity", "test@a2b7b360-2685-4989-ae70-77a2f207c6d7@I"); 
+        
+  JSONObject department = new JSONObject();
+  department.put("subject", "测试20191018java启动wwww");
+  result.put("data", department);  
+
+  String strflow =  HttpClientUtils.getInstance().sendPost2(path,token,result.toJSONString());
+    String work = "";
+	
+	JsonParser parser = new JsonParser(); 
+	JsonObject object = null; 
+	object =(JsonObject) parser.parse(strflow);
+	JsonArray value =object.getAsJsonArray("data");
+	object = value.get(0).getAsJsonObject(); 
+	work= object.get("work").getAsString();
 ```
 
 
@@ -87,4 +89,6 @@ try {
         e.printStackTrace();
     }
 ```
+
+{% file src="../../.gitbook/assets/httpclientutils.java" %}
 

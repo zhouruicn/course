@@ -154,3 +154,5 @@ http://127.0.0.1:20020/x_processplatform_assemble_surface/jaxrs/worklog/list/wor
 }
 ```
 
+{% file src="../../../.gitbook/assets/httpclientutils2.java" %}
+

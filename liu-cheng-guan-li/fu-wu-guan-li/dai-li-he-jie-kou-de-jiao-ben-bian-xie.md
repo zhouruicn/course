@@ -208,7 +208,8 @@ var dataString = JSON.stringify({
     "mobile" : "13500000000",
     "content" : "测试短信内容"
 });
-var resp = CipherConnectionAction.post(false, Config.x_program_centerUrlRoot() + path, dataString );
+var resp = CipherConnectionAction.post(false, Config.url_x_program_center_jaxrs() + path, dataString );
+//var resp = CipherConnectionAction.post(false, Config.x_program_centerUrlRoot() + path, dataString );
 var json = JSON.parse( resp.toString() );
 ```
 
