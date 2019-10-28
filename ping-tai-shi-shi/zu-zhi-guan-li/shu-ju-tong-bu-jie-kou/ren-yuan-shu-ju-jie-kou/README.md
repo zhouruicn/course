@@ -33,5 +33,3 @@
   <tbody></tbody>
 </table>{% file src="../../../../.gitbook/assets/personsync.json" %}
 
-
-
