@@ -1,4 +1,4 @@
-# 自签名ssl证书验证https功能
+# 自签名SSL证书验证HTTPS功能
 
 ## 使用openssl创建自签名证书
 
