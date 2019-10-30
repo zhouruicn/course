@@ -14,7 +14,7 @@ description: O2OA支持以SSL方式连接WEB服务器，应用服务器以及中
 
 如下图所示：
 
-![&#x590D;&#x5236;&#x914D;&#x7F6E;&#x6587;&#x4EF6;](../.gitbook/assets/892f3bd53ede2a1acddb7dd98db885988a6.jpg%20%281%29.webp)
+![&#x590D;&#x5236;&#x914D;&#x7F6E;&#x6587;&#x4EF6;](../../.gitbook/assets/892f3bd53ede2a1acddb7dd98db885988a6.jpg%20%281%29.webp)
 
 2、修改node\_127.0.0.1.json内容：
 
@@ -93,7 +93,7 @@ description: O2OA支持以SSL方式连接WEB服务器，应用服务器以及中
 
 如下图所示：
 
-![&#x590D;&#x5236;centerServer.json](../.gitbook/assets/742c0939a5fff8a82813ad8c58b25f7a2f7.jpg.webp)
+![&#x590D;&#x5236;centerServer.json](../../.gitbook/assets/742c0939a5fff8a82813ad8c58b25f7a2f7.jpg.webp)
 
 2、修改centerServer.json内容：
 
@@ -124,15 +124,15 @@ description: O2OA支持以SSL方式连接WEB服务器，应用服务器以及中
 
 百度云目前有免费的SSL域名证书申请：https://cloud.baidu.com/product/ssl.html
 
-![](../.gitbook/assets/screen-shot-2019-02-27-at-10.27.52.png.webp)
+![](../../.gitbook/assets/screen-shot-2019-02-27-at-10.27.52.png.webp)
 
  点击**立即购买**，进入购买页面，点击\`**下一步**\`完成购买。
 
-![](../.gitbook/assets/screen-shot-2019-02-27-at-10.28.36.png.webp)
+![](../../.gitbook/assets/screen-shot-2019-02-27-at-10.28.36.png.webp)
 
 完成购买后会在已购证书列表中找到买好的证书，然后点击证书申请。
 
-![](../.gitbook/assets/screen-shot-2019-02-27-at-10.41.55.png.webp)
+![](../../.gitbook/assets/screen-shot-2019-02-27-at-10.41.55.png.webp)
 
 进入一个申请证书的表单页面，这个表单页面主要是填写域名
 
@@ -142,23 +142,23 @@ description: O2OA支持以SSL方式连接WEB服务器，应用服务器以及中
 
  还有下面的公司信息尽量和域名申请的时候的信息一直，加大申请的成功率。
 
-![](../.gitbook/assets/screen-shot-2019-02-27-at-10.42.44.png.webp)
+![](../../.gitbook/assets/screen-shot-2019-02-27-at-10.42.44.png.webp)
 
 完成这个表单后，需要验证你的域名，还是到已购证书列表， 点击后面的查看申请，就会看到DNS验证的方式。
 
-![](../.gitbook/assets/screen-shot-2019-02-27-at-11.04.50.png.webp)
+![](../../.gitbook/assets/screen-shot-2019-02-27-at-11.04.50.png.webp)
 
 DNS验证：它会让你去DNS服务商那边配置一个TXT的域名解析，按照它给你的这个名称和设置值到DNS服务商那边配置好。
 
-![](../.gitbook/assets/screen-shot-2019-02-27-at-10.54.08.png.webp)
+![](../../.gitbook/assets/screen-shot-2019-02-27-at-10.54.08.png.webp)
 
 DNS那边配置好后就耐心等待，几分钟后等验证通过。
 
-![](../.gitbook/assets/screen-shot-2019-02-28-at-14.11.39.png.webp)
+![](../../.gitbook/assets/screen-shot-2019-02-28-at-14.11.39.png.webp)
 
 申请成功后点击查看证书，进入证书详情页面可以下载证书。
 
-![](../.gitbook/assets/screen-shot-2019-02-28-at-14.12.19.png.webp)
+![](../../.gitbook/assets/screen-shot-2019-02-28-at-14.12.19.png.webp)
 
 {% hint style="info" %}
 #### **下载证书的时候选择倒数第二个jks，还有那个解压密码一定要记住，后面配置文件需要用到。**

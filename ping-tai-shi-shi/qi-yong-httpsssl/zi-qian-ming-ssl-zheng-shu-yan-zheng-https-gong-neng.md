@@ -34,7 +34,7 @@ openssl pkcs12 -export -clcerts -in clientcert.cer -inkey clientkey.key -out key
 
 2.编辑o2server/config/token.json文件中的
 
-![token.json &#x914D;&#x7F6E;](../.gitbook/assets/tim-jie-tu-20191030154413.png)
+![token.json &#x914D;&#x7F6E;](../../.gitbook/assets/tim-jie-tu-20191030154413.png)
 
 sslKeyStorePassword: "您设置的密码"
 
@@ -42,7 +42,7 @@ sslKeyStorePassword: "您设置的密码"
 
 3.在node配置文件中的application,center,web设置sslEnable:true
 
-![](../.gitbook/assets/tim-jie-tu-20191030154616.png)
+![](../../.gitbook/assets/tim-jie-tu-20191030154616.png)
 
 4.重启服务器完成配置,使用https进行访问.
 
