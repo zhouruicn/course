@@ -20,6 +20,7 @@
     * [访问和操作H2数据库](ping-tai-shi-shi/ping-tai-shu-ju-ku-pei-zhi/fang-wen-he-cao-zuo-h2-shu-ju-ku.md)
     * [清除废弃的业务数据](ping-tai-shi-shi/ping-tai-shu-ju-ku-pei-zhi/qing-chu-fei-qi-de-ye-wu-shu-ju.md)
     * [压缩H2数据库](ping-tai-shi-shi/ping-tai-shu-ju-ku-pei-zhi/ya-suo-h2-shu-ju-ku.md)
+  * [平台存储库配置](ping-tai-shi-shi/ping-tai-cun-chu-ku-pei-zhi.md)
   * [组织人员架构及管理](ping-tai-shi-shi/zu-zhi-guan-li/README.md)
     * [密码管理](ping-tai-shi-shi/zu-zhi-guan-li/mi-ma-guan-li/README.md)
       * [管理员密码管理](ping-tai-shi-shi/zu-zhi-guan-li/mi-ma-guan-li/guan-li-yuan-mi-ma-guan-li.md)
