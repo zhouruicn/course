@@ -50,7 +50,7 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 点击创建工作按钮，弹出工作详情对话框，填写完毕并保存。
 
-![](../.gitbook/assets/4%20%285%29.png)
+![](../.gitbook/assets/4%20%286%29.png)
 
 ![](../.gitbook/assets/5%20%283%29.png)
 

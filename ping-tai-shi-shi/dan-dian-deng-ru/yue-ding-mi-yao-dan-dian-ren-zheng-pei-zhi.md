@@ -22,7 +22,7 @@ description: O2OA提供多种单点认证配置，如约定密钥的单点认证
 
 在控制面板 - 系统设置 - 基础配置 - 系统SSO配置界面添加一个SSO配置：
 
-![](../../.gitbook/assets/4%20%289%29.png)
+![](../../.gitbook/assets/4%20%2810%29.png)
 
 {% hint style="info" %}
 当然也可以在服务器配置文件：o2server/config/token.json中进行配置，如果config目录中没有该配置文件，可以从o2server/configSample目录中COPY文件token.json到o2server/config目录后再进行配置文件修改
