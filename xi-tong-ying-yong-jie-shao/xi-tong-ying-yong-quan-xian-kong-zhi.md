@@ -6,5 +6,5 @@
 
 点击编辑，可以设置访问权限
 
-![](../.gitbook/assets/1%20%281%29.png)
+![](../.gitbook/assets/1%20%282%29.png)
 

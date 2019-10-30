@@ -24,13 +24,13 @@ OKR全称是Objectives and Key Results，即目标与关键成果法。OKR是一
 
 ## 我的工作台
 
-![](../.gitbook/assets/1%20%2813%29.png)
+![](../.gitbook/assets/1%20%2814%29.png)
 
 ### 工作部署
 
 组织工作管理者可以进行工作部署。点击我的工作台-工作部署，进入部署工作页面。
 
-![](../.gitbook/assets/2%20%286%29.png)
+![](../.gitbook/assets/2%20%287%29.png)
 
 #### 部署新工作
 
