@@ -61,6 +61,7 @@
     * [非对称集群配置](ping-tai-shi-shi/ji-qun-fang-shi-bu-shu/fei-dui-cheng-ji-qun-pei-zhi.md)
   * [平台消息提醒配置](ping-tai-shi-shi/xiao-xi-ti-xing-xiang-guan-pei-zhi.md)
   * [平台审计日志配置](ping-tai-shi-shi/shen-ji-ri-zhi.md)
+  * [平台工作日节假日配置](ping-tai-shi-shi/ping-tai-gong-zuo-ri-jie-jia-ri-pei-zhi.md)
   * [API接口服务](ping-tai-shi-shi/api-jie-kou-fu-wu.md)
   * [启用HTTPS（SSL）](ping-tai-shi-shi/qi-yong-httpsssl/README.md)
     * [自签名SSL证书验证HTTPS功能](ping-tai-shi-shi/qi-yong-httpsssl/zi-qian-ming-ssl-zheng-shu-yan-zheng-https-gong-neng.md)
