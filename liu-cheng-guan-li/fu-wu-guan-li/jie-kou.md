@@ -69,34 +69,13 @@
 样例: 在调用接口的时候提交的报文为 { "subject" : "接口测试样例" }，那么脚本中的获取为：
 
 ```text
-var requestJson = JSON.parse(requestText);
-if( typeof(requestJson) === "string" ){ //某些情况下可能需要转换两次
-    requestJson = JSON.parse(requestJson);
-}
-var subject = requestJson.subject; //subject值为"接口测试样例"
-
-var result = { "result" : "已获取subject"+subject };
-result; //接口的输出
-
+var requestJson = JSON.parse(requestText);if( typeof(requestJson) === "string" ){ //某些情况下可能需要转换两次    requestJson = JSON.parse(requestJson);}var subject = requestJson.subject; //subject值为"接口测试样例"var result = { "result" : "已获取subject"+subject };result; //接口的输出
 ```
 
 最终接口的http request正文如下
 
 ```text
-{
-    "type": "success",
-    "data": {
-        "value": { //接口脚本的输出内容
-            "result": "已获取subject这是一个测试接口"
-        }
-    },
-    "message": "",
-    "date": "2019-08-18 18:09:24",
-    "spent": 397,
-    "size": -1,
-    "count": 0,
-    "position": 0
-}
+{    "type": "success",    "data": {        "value": { //接口脚本的输出内容            "result": "已获取subject这是一个测试接口"        }    },    "message": "",    "date": "2019-08-18 18:09:24",    "spent": 397,    "size": -1,    "count": 0,    "position": 0}
 ```
 
 ## 当前用户
@@ -106,33 +85,13 @@ result; //接口的输出
 如果未登录系统，返回如下：
 
 ```text
- {
- "tokenType": "anonymous",
- "token": "",
- "name": "anonymous",
- "unique": "anonymous",
- "distinguishedName": "anonymous",
- "debugger": true,
- "remoteAddress": "115.216.34.235",
- "uri": "/x_program_center/jaxrs/invoke/invokeTest/execute",
- "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0"
-}
+ { "tokenType": "anonymous", "token": "", "name": "anonymous", "unique": "anonymous", "distinguishedName": "anonymous", "debugger": true, "remoteAddress": "115.216.34.235", "uri": "/x_program_center/jaxrs/invoke/invokeTest/execute", "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0"}
 ```
 
 如果已登录系统，返回如下：
 
 ```text
-{
-"tokenType": "user", //如果是管理员为manager
-"token": "jlMh2guoFibWcTwR3NHdVTbw_ylqeq-uFLrLL9stmcruJSx7mPOjiX-euWIQv-ovp8orv1dTAwkavfdfdfdfdf",
-"name": "张三",
-"unique": "zhangsan",
-"distinguishedName": "张三@zhangsan@P",
-"debugger": true,
-"remoteAddress": "115.216.34.235",
-"uri": "/x_program_center/jaxrs/invoke/invokeTest/execute",
-"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134"
-}
+{"tokenType": "user", //如果是管理员为manager"token": "jlMh2guoFibWcTwR3NHdVTbw_ylqeq-uFLrLL9stmcruJSx7mPOjiX-euWIQv-ovp8orv1dTAwkavfdfdfdfdf","name": "张三","unique": "zhangsan","distinguishedName": "张三@zhangsan@P","debugger": true,"remoteAddress": "115.216.34.235","uri": "/x_program_center/jaxrs/invoke/invokeTest/execute","userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134"}
 ```
 
 ## 完整样例

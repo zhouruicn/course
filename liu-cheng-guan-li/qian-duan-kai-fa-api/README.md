@@ -261,33 +261,26 @@ description: >-
 
 3、在category1和category2两个下拉框的可选值脚本如下：　　
 
-{% code-tabs %}
-{% code-tabs-item title="category1的可选值脚本" %}
+{% tabs %}
+{% tab title="category1的可选值脚本" %}
 ```javascript
-var dict = new this.Dict("category"); //获取名为category的数据字典
-var categoryList = dict.get(); //获取数据字典
-var options = Object.keys(categoryList); //获取大类，赋值给options变量
-options.unshift("(请选择大类)|"); //在options数组首位插入提示选项，并将“”作为value，“(请选择大类)”作为text
-return options; //返回列表，作为列表框的可选值　　
+var dict = new this.Dict("category"); //获取名为category的数据字典var categoryList = dict.get(); //获取数据字典var options = Object.keys(categoryList); //获取大类，赋值给options变量options.unshift("(请选择大类)|"); //在options数组首位插入提示选项，并将“”作为value，“(请选择大类)”作为textreturn options; //返回列表，作为列表框的可选值　　
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="category2的可选值脚本" %}
+{% tabs %}
+{% tab title="category2的可选值脚本" %}
 ```javascript
-var dict = new this.Dict("category"); //获取名为category的数据字典
-var categoryList = dict.get(this.data.category1); //获取数据字典,以下拉框category1的值为关键字的数据值（数组）
-return categoryList; //返回列表，作为列表框的可选值
+var dict = new this.Dict("category"); //获取名为category的数据字典var categoryList = dict.get(this.data.category1); //获取数据字典,以下拉框category1的值为关键字的数据值（数组）return categoryList; //返回列表，作为列表框的可选值
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 　4、在category1的change事件中添加如下代码：
 
 ```javascript
-//获category2下拉框，并刷新可选项
-this.form.get("category2").resetOption();　
+//获category2下拉框，并刷新可选项this.form.get("category2").resetOption();　
 ```
 
 　5、设计数据字典如下图，并命名为："分类配置"，别名为：“category”。　　

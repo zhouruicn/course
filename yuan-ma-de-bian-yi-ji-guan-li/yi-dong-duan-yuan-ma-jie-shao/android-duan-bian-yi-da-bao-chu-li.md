@@ -71,20 +71,7 @@ App内看到的一些O2OA相关的logo图标，可以不编译打包进App，我
 找到项目根目录下的 `local.properties` 文件，里面有一些第三方SDK的key需要配置。
 
 ```text
-# 下面是第三方SDK 需要的key
-
-# 极光推送
-JPUSH_APPKEY_DEBUG=极光推送AppKey
-#蒲公英
-PGY_APP_ID_DEBUG=蒲公英AppId
-#百度语音
-BAIDU_SPEECH_APPID=百度语音AppId
-BAIDU_SPEECH_SECRET=百度语音Secret
-BAIDU_SPEECH_APPKEY=百度语音Appkey
-#百度地图
-BAIDU_MAP_APPKEY=百度地图Appkey
-#腾讯bugly
-BUGLY_APPID=腾讯Bugly AppId
+# 下面是第三方SDK 需要的key# 极光推送JPUSH_APPKEY_DEBUG=极光推送AppKey#蒲公英PGY_APP_ID_DEBUG=蒲公英AppId#百度语音BAIDU_SPEECH_APPID=百度语音AppIdBAIDU_SPEECH_SECRET=百度语音SecretBAIDU_SPEECH_APPKEY=百度语音Appkey#百度地图BAIDU_MAP_APPKEY=百度地图Appkey#腾讯buglyBUGLY_APPID=腾讯Bugly AppId
 ```
 
 这些key具体的注册获取，下面有大致说明。
@@ -215,14 +202,7 @@ buildConfigField "Boolean", "InnerServer", "true"
 app的下载安装地址可以配置，打开o2server/config/collect.json ，如果没有这个文件就到o2server/configSample目录下复制一个过去。
 
 ```javascript
-
-  {
-  ...
-  "appUrl": "http://www.pgyer.com/ZhiHe_android" ##app下载地址
-  ...
- }
-  
-
+  {  ...  "appUrl": "http://www.pgyer.com/ZhiHe_android" ##app下载地址  ... }  
 ```
 
 

@@ -47,10 +47,7 @@ description: O2OA平台可以以第自建应用的方式集成到企业微信，
 填写好应用相关信息后进行应用创建：填写好应用相关信息后进行应用创建：
 
 ```text
-应用LOGO：可以自行制作合适大小的LOGO，此LOGO将在企业微信中展示。
-应用名称：此应用的具体名称，可以随意命名，如O2OA，企业办公，XXOA都可以。
-应用介绍：此应用的具体用途介绍。
-可见范围：可使用此应用的人员范围设定，可以选择组织和个人成员。
+应用LOGO：可以自行制作合适大小的LOGO，此LOGO将在企业微信中展示。应用名称：此应用的具体名称，可以随意命名，如O2OA，企业办公，XXOA都可以。应用介绍：此应用的具体用途介绍。可见范围：可使用此应用的人员范围设定，可以选择组织和个人成员。
 ```
 
 应用创建完成后，如下图所示界面：
@@ -70,10 +67,7 @@ description: O2OA平台可以以第自建应用的方式集成到企业微信，
 其中：
 
 ```text
-appid : 企业的corpId
-host : O2OA服务器提供服务的域名
-port : O2OA服务器提供服务的端口
-AgentId : 应用的agentId
+appid : 企业的corpIdhost : O2OA服务器提供服务的域名port : O2OA服务器提供服务的端口AgentId : 应用的agentId
 ```
 
 {% hint style="info" %}
@@ -91,31 +85,13 @@ AgentId : 应用的agentId
 2、使用文本编辑器打开qiyeweixin.json进行编辑：
 
 ```text
-{
-  "enable": false,
-  "syncCron": "10 0/10 * * * ?",
-  "forceSyncCron": "10 45 8,12 * * ?",
-  "apiAddress": "https://qyapi.weixin.qq.com",
-  "corpId": "",
-  "corpSecret": "",
-  "agentId": "",
-  "token": "",
-  "encodingAesKey": "",
-  "messageEnable": true
-}
+{  "enable": false,  "syncCron": "10 0/10 * * * ?",  "forceSyncCron": "10 45 8,12 * * ?",  "apiAddress": "https://qyapi.weixin.qq.com",  "corpId": "",  "corpSecret": "",  "agentId": "",  "token": "",  "encodingAesKey": "",  "messageEnable": true}
 ```
 
 参数说明：
 
 ```text
-"enable": "是否启用企业微信接入: true | false",
-"syncCron": "拉入同步时间表达式, 默认每10分钟同步一次(10 0/10 * * * ?).",
-"forceSyncCron": "强制拉入同步cron, 默认在每天的8点和12点强制进行同步(10 45 8,12 * * ?)",
-"apiAddress": "企业微信api服务器地址, https://qyapi.weixin.qq.com",
-"corpId": "企业微信参数corpId（从企业微信后台管理信息中获取 '企业ID'）",
-"corpSecret": "企业微信参数corpSecret（从企业微信后台管理信息中获取 'Secret'）",
-"agentId": "企业微信参数agentId（从企业微信后台管理信息中获取 'AgentId'）",
-"messageEnable": "是否允许推送消息到企业微信: true | false"
+"enable": "是否启用企业微信接入: true | false","syncCron": "拉入同步时间表达式, 默认每10分钟同步一次(10 0/10 * * * ?).","forceSyncCron": "强制拉入同步cron, 默认在每天的8点和12点强制进行同步(10 45 8,12 * * ?)","apiAddress": "企业微信api服务器地址, https://qyapi.weixin.qq.com","corpId": "企业微信参数corpId（从企业微信后台管理信息中获取 '企业ID'）","corpSecret": "企业微信参数corpSecret（从企业微信后台管理信息中获取 'Secret'）","agentId": "企业微信参数agentId（从企业微信后台管理信息中获取 'AgentId'）","messageEnable": "是否允许推送消息到企业微信: true | false"
 ```
 
 {% hint style="info" %}

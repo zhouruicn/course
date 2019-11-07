@@ -27,35 +27,16 @@ var groupList = this.org.getGroup( group );
 #### Arguments:
 
 ```text
-> group :　（string JsonObject or array）必选。
-可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。
+> group :　（string JsonObject or array）必选。可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数group示例" %}
+{% tabs %}
+{% tab title="参数group示例" %}
 ```javascript
-//以下均为合法参数
-//群组属性值
-"工作汇报读者@ReportReader@G" //群组识别名
-"cce8bc22-225a-4f85-8132-7374d546886e" //id
-"ReportReader" //群组唯一标识
-"工作汇报读者" //群组名称
-
-//对象
-{ "distinguishedName": "工作汇报读者@ReportReader@G" } //群组识别名
-{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //群组唯一标识
-{ "unique": "ReportReader" } //群组唯一标识
-{ "name": "工作汇报读者" } //群组对象
-
-//上述属性组和对象数组
-[ "工作汇报读者", "公文阅读者" ] //名称数组
-[ { "name": "工作汇报读者" }, { "name": "公文阅读者" } ] //名称数组
-
-...其他属性值或对象数组
-
+//以下均为合法参数//群组属性值"工作汇报读者@ReportReader@G" //群组识别名"cce8bc22-225a-4f85-8132-7374d546886e" //id"ReportReader" //群组唯一标识"工作汇报读者" //群组名称//对象{ "distinguishedName": "工作汇报读者@ReportReader@G" } //群组识别名{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //群组唯一标识{ "unique": "ReportReader" } //群组唯一标识{ "name": "工作汇报读者" } //群组对象//上述属性组和对象数组[ "工作汇报读者", "公文阅读者" ] //名称数组[ { "name": "工作汇报读者" }, { "name": "公文阅读者" } ] //名称数组...其他属性值或对象数组
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -66,21 +47,7 @@ var groupList = this.org.getGroup( group );
 group对象为JSON格式数据，其格式和主要数据如下：
 
 ```javascript
-{
-    "name": "工作汇报读者", //群组名称
-    "unique": "ReportReader",   //群组唯一标志
-    "description": "可查看所有部门所有状态的工作汇报", //群组说明
-    "distinguishedName": "工作汇报读者@ReportReader@G", //群组全称
-    "orderNumber": 13699599,  //排序号
-    "personList": [     //个人成员
-        "张三@zhangsan@P",
-        "李四@lisi@P",
-    ],
-    "groupList": [  //群组成员
-        "所有部门领导@AllDepartLeader@G",
-        "所有部门汇报管理员@AllDepartReportManager@G"
-    ]
-}
+{    "name": "工作汇报读者", //群组名称    "unique": "ReportReader",   //群组唯一标志    "description": "可查看所有部门所有状态的工作汇报", //群组说明    "distinguishedName": "工作汇报读者@ReportReader@G", //群组全称    "orderNumber": 13699599,  //排序号    "personList": [     //个人成员        "张三@zhangsan@P",        "李四@lisi@P",    ],    "groupList": [  //群组成员        "所有部门领导@AllDepartLeader@G",        "所有部门汇报管理员@AllDepartReportManager@G"    ]}
 ```
 
 ### listSubGroup
@@ -96,35 +63,16 @@ var groupList = this.org.listSubGroup( group , nested );
 #### Arguments:
 
 ```text
-> group :　（string JsonObject or array）必选。
-可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。
-> nested :　（boolean）可选，true嵌套的所有下级群组；false直接群组；默认false
+> group :　（string JsonObject or array）必选。可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。> nested :　（boolean）可选，true嵌套的所有下级群组；false直接群组；默认false
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数group示例" %}
+{% tabs %}
+{% tab title="参数group示例" %}
 ```javascript
-//以下均为合法参数
-//群组属性值
-"工作汇报读者@ReportReader@G" //群组识别名
-"cce8bc22-225a-4f85-8132-7374d546886e" //id
-"ReportReader" //群组唯一标识
-"工作汇报读者" //群组名称
-
-//对象
-{ "distinguishedName": "工作汇报读者@ReportReader@G" } //群组识别名
-{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //群组唯一标识
-{ "unique": "ReportReader" } //群组唯一标识
-{ "name": "工作汇报读者" } //群组对象
-
-//上述属性组和对象数组
-[ "工作汇报读者", "公文阅读者" ] //名称数组
-[ { "name": "工作汇报读者" }, { "name": "公文阅读者" } ] //名称数组
-
-...其他属性值或对象数组
+//以下均为合法参数//群组属性值"工作汇报读者@ReportReader@G" //群组识别名"cce8bc22-225a-4f85-8132-7374d546886e" //id"ReportReader" //群组唯一标识"工作汇报读者" //群组名称//对象{ "distinguishedName": "工作汇报读者@ReportReader@G" } //群组识别名{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //群组唯一标识{ "unique": "ReportReader" } //群组唯一标识{ "name": "工作汇报读者" } //群组对象//上述属性组和对象数组[ "工作汇报读者", "公文阅读者" ] //名称数组[ { "name": "工作汇报读者" }, { "name": "公文阅读者" } ] //名称数组...其他属性值或对象数组
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -135,21 +83,7 @@ var groupList = this.org.listSubGroup( group , nested );
 group对象为JSON格式数据，其格式和主要数据如下：
 
 ```javascript
-{
-    "name": "工作汇报读者", //群组名称
-    "unique": "ReportReader",   //群组唯一标志
-    "description": "可查看所有部门所有状态的工作汇报", //群组说明
-    "distinguishedName": "工作汇报读者@ReportReader@G", //群组全称
-    "orderNumber": 13699599,  //排序号
-    "personList": [     //个人成员
-        "张三@zhangsan@P",
-        "李四@lisi@P",
-    ],
-    "groupList": [  //群组成员
-        "所有部门领导@AllDepartLeader@G",
-        "所有部门汇报管理员@AllDepartReportManager@G"
-    ]
-}
+{    "name": "工作汇报读者", //群组名称    "unique": "ReportReader",   //群组唯一标志    "description": "可查看所有部门所有状态的工作汇报", //群组说明    "distinguishedName": "工作汇报读者@ReportReader@G", //群组全称    "orderNumber": 13699599,  //排序号    "personList": [     //个人成员        "张三@zhangsan@P",        "李四@lisi@P",    ],    "groupList": [  //群组成员        "所有部门领导@AllDepartLeader@G",        "所有部门汇报管理员@AllDepartReportManager@G"    ]}
 ```
 
 ### listSupGroup
@@ -165,35 +99,16 @@ var groupList = this.org.listSupGroup( group , nested );
 #### Arguments:
 
 ```text
-> group :　（string JsonObject or array）必选。
-可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。
-> nested :　（boolean）可选，true嵌套的所有上级群组；false直接群组；默认false
+> group :　（string JsonObject or array）必选。可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。> nested :　（boolean）可选，true嵌套的所有上级群组；false直接群组；默认false
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数group示例" %}
+{% tabs %}
+{% tab title="参数group示例" %}
 ```javascript
-//以下均为合法参数
-//群组属性值
-"工作汇报读者@ReportReader@G" //群组识别名
-"cce8bc22-225a-4f85-8132-7374d546886e" //id
-"ReportReader" //群组唯一标识
-"工作汇报读者" //群组名称
-
-//对象
-{ "distinguishedName": "工作汇报读者@ReportReader@G" } //群组识别名
-{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //群组唯一标识
-{ "unique": "ReportReader" } //群组唯一标识
-{ "name": "工作汇报读者" } //群组对象
-
-//上述属性组和对象数组
-[ "工作汇报读者", "公文阅读者" ] //名称数组
-[ { "name": "工作汇报读者" }, { "name": "公文阅读者" } ] //名称数组
-
-...其他属性值或对象数组
+//以下均为合法参数//群组属性值"工作汇报读者@ReportReader@G" //群组识别名"cce8bc22-225a-4f85-8132-7374d546886e" //id"ReportReader" //群组唯一标识"工作汇报读者" //群组名称//对象{ "distinguishedName": "工作汇报读者@ReportReader@G" } //群组识别名{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //群组唯一标识{ "unique": "ReportReader" } //群组唯一标识{ "name": "工作汇报读者" } //群组对象//上述属性组和对象数组[ "工作汇报读者", "公文阅读者" ] //名称数组[ { "name": "工作汇报读者" }, { "name": "公文阅读者" } ] //名称数组...其他属性值或对象数组
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -204,21 +119,7 @@ var groupList = this.org.listSupGroup( group , nested );
 group对象为JSON格式数据，其格式和主要数据如下：
 
 ```javascript
-{
-    "name": "工作汇报读者", //群组名称
-    "unique": "ReportReader",   //群组唯一标志
-    "description": "可查看所有部门所有状态的工作汇报", //群组说明
-    "distinguishedName": "工作汇报读者@ReportReader@G", //群组全称
-    "orderNumber": 13699599,  //排序号
-    "personList": [     //个人成员
-        "张三@zhangsan@P",
-        "李四@lisi@P",
-    ],
-    "groupList": [  //群组成员
-        "所有部门领导@AllDepartLeader@G",
-        "所有部门汇报管理员@AllDepartReportManager@G"
-    ]
-}
+{    "name": "工作汇报读者", //群组名称    "unique": "ReportReader",   //群组唯一标志    "description": "可查看所有部门所有状态的工作汇报", //群组说明    "distinguishedName": "工作汇报读者@ReportReader@G", //群组全称    "orderNumber": 13699599,  //排序号    "personList": [     //个人成员        "张三@zhangsan@P",        "李四@lisi@P",    ],    "groupList": [  //群组成员        "所有部门领导@AllDepartLeader@G",        "所有部门汇报管理员@AllDepartReportManager@G"    ]}
 ```
 
 ### listGroupWithPerson
@@ -234,34 +135,16 @@ var groupList = this.org.listGroupWithPerson( person );
 #### Arguments:
 
 ```javascript
-> person :　（string JsonObject or array）必选。
-可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
+> person :　（string JsonObject or array）必选。可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数person示例" %}
+{% tabs %}
+{% tab title="参数person示例" %}
 ```javascript
-//以下均为合法参数
-//人员属性值
-"李四@lisi@P" //人员别名
-"cce8bc22-225a-4f85-8132-7374d546886e" //id
-"lisi" //人员唯一标识
-"李四" //人员名称
-
-//对象
-{ "distinguishedName": "李四@lisi@P" } //人员识别名
-{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //人员唯一标识
-{ "unique": "lisi" } //人员唯一标识
-{ "name": "李四" } //名称对象
-
-//上述属性组和对象数组
-[ "张三", "李四" ] //名称数组
-[ { "name": "李四" }, { "name": "张三" } ] //名称数组
-
-...其他属性值或对象数组
+//以下均为合法参数//人员属性值"李四@lisi@P" //人员别名"cce8bc22-225a-4f85-8132-7374d546886e" //id"lisi" //人员唯一标识"李四" //人员名称//对象{ "distinguishedName": "李四@lisi@P" } //人员识别名{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //人员唯一标识{ "unique": "lisi" } //人员唯一标识{ "name": "李四" } //名称对象//上述属性组和对象数组[ "张三", "李四" ] //名称数组[ { "name": "李四" }, { "name": "张三" } ] //名称数组...其他属性值或对象数组
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -272,20 +155,6 @@ var groupList = this.org.listGroupWithPerson( person );
 group对象为JSON格式数据，其格式和主要数据如下：
 
 ```javascript
-{
-    "name": "工作汇报读者", //群组名称
-    "unique": "ReportReader",   //群组唯一标志
-    "description": "可查看所有部门所有状态的工作汇报", //群组说明
-    "distinguishedName": "工作汇报读者@ReportReader@G", //群组全称
-    "orderNumber": 13699599,  //排序号
-    "personList": [     //个人成员
-        "张三@zhangsan@P",
-        "李四@lisi@P",
-    ],
-    "groupList": [  //群组成员
-        "所有部门领导@AllDepartLeader@G",
-        "所有部门汇报管理员@AllDepartReportManager@G"
-    ]
-}
+{    "name": "工作汇报读者", //群组名称    "unique": "ReportReader",   //群组唯一标志    "description": "可查看所有部门所有状态的工作汇报", //群组说明    "distinguishedName": "工作汇报读者@ReportReader@G", //群组全称    "orderNumber": 13699599,  //排序号    "personList": [     //个人成员        "张三@zhangsan@P",        "李四@lisi@P",    ],    "groupList": [  //群组成员        "所有部门领导@AllDepartLeader@G",        "所有部门汇报管理员@AllDepartReportManager@G"    ]}
 ```
 

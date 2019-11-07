@@ -5,10 +5,7 @@
 config/logLevel.json文件中:
 
 ```text
-  "audit": {
-    "enable": true,
-    "logSize": 21
-  }
+  "audit": {    "enable": true,    "logSize": 21  }
 ```
 
 enable:是否启用审计日志,默认不启用.

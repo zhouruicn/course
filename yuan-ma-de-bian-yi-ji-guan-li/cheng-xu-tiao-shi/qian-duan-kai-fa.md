@@ -106,17 +106,7 @@ chrome开发者工具最常用的四个功能模块：
 也可以是一些指定条件指定条件有哪些？
 
 ```text
-domain：资源所在的域，即url中的域名部分。如 domain:api.github.com
-has-response-header：资源是否存在响应头，无论其值是什么。如 has-response-header：Access-Control-Allow-Origin
-is：当前时间点在执行的请求。当前可用值：running
-larger-than：显示大于指定值大小规格的资源。单位是字节(B),但是K(kB)和M(MB)也是可以的~ 如larger-than:150K
-method：使用何种HTTP请求方式。如 GET
-mime-type：也写作content-type，是资源类型的标识符。如 text/html
-scheme：协议规定。如 HTTPS
-set-cookie-name：服务器设置的cookies名称
-set-cookie-value：服务器设置的cookies的值
-set-cookie-domain：服务器设置的cookies的域
-status-code：HTTP响应头的状态码
+domain：资源所在的域，即url中的域名部分。如 domain:api.github.comhas-response-header：资源是否存在响应头，无论其值是什么。如 has-response-header：Access-Control-Allow-Originis：当前时间点在执行的请求。当前可用值：runninglarger-than：显示大于指定值大小规格的资源。单位是字节(B),但是K(kB)和M(MB)也是可以的~ 如larger-than:150Kmethod：使用何种HTTP请求方式。如 GETmime-type：也写作content-type，是资源类型的标识符。如 text/htmlscheme：协议规定。如 HTTPSset-cookie-name：服务器设置的cookies名称set-cookie-value：服务器设置的cookies的值set-cookie-domain：服务器设置的cookies的域status-code：HTTP响应头的状态码
 ```
 
 * ![](https://images2018.cnblogs.com/blog/1377691/201808/1377691-20180824163013483-1490909242.png)：显示详细信息
@@ -159,10 +149,7 @@ status-code：HTTP响应头的状态码
 * Initiator：解释请求是怎么发起的，有四种可能的值
 
   ```text
-         1.Parser  ：请求是由页面的html解析时发送
-         2.Redirect：请求是由页面重定向发送
-         3.script  ：请求是由script脚本处理发送
-         4.other   ：请求是由其他过程发送的，比如页面里的Link链接点击
+         1.Parser  ：请求是由页面的html解析时发送       2.Redirect：请求是由页面重定向发送       3.script  ：请求是由script脚本处理发送       4.other   ：请求是由其他过程发送的，比如页面里的Link链接点击
   ```
 
 * size/content：size是响应头部和响应体结合的大小，content是请求解码后的大小
