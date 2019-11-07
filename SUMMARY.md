@@ -188,5 +188,6 @@
     * [阿里云ECS服务器的端口启用](chang-jian-cuo-wu/o2oa-ping-tai-yi-chang/e-li-yun-ecs-fu-wu-qi-de-duan-kou-qi-yong.md)
     * [IOS移动办公无法收到验证码](chang-jian-cuo-wu/o2oa-ping-tai-yi-chang/ios-yi-dong-ban-gong-wu-fa-shou-dao-yan-zheng-ma.md)
     * [集群配置](chang-jian-cuo-wu/o2oa-ping-tai-yi-chang/ji-qun-pei-zhi.md)
+  * [数据导出或者导入时发生OOM异常](chang-jian-cuo-wu/shu-ju-dao-chu-huo-zhe-dao-ru-shi-fa-sheng-oom-yi-chang.md)
   * [服务器错误](chang-jian-cuo-wu/fu-wu-qi-cuo-wu.md)
 
