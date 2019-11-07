@@ -14,7 +14,10 @@ this.headers.put(“name”, “value”);
 或者一次添加多个HttpHeader：
 
 ```javascript
-this.headers.put({    "name1": "value1",    "name2": "value2"});
+this.headers.put({
+    "name1": "value1",
+    "name2": "value2"
+});
 ```
 
 如下图所示：

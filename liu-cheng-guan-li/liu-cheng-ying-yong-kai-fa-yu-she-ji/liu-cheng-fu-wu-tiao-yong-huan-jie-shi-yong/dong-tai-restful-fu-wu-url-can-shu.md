@@ -19,7 +19,10 @@ description: >-
 添加脚本内容：
 
 ```javascript
-this.address = {"host": "dev.o2oa.net","port": "8000"}
+this.address = {
+"host": "dev.o2oa.net",
+"port": "8000"
+}
 ```
 
 这里定义了一个address对象，用于存储服务的地址和端口，以备后续使用。
@@ -39,7 +42,8 @@ this.address = {"host": "dev.o2oa.net","port": "8000"}
 在代码框中输入代码： 
 
 ```javascript
-this.parameters.put("host", this.address.host); this.parameters.put("port", this.address.port); 
+this.parameters.put("host", this.address.host); 
+this.parameters.put("port", this.address.port); 
 ```
 
 将host和port设置为脚本中配置的值。

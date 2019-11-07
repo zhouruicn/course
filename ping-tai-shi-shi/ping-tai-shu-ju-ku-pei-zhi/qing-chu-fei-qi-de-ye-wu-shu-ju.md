@@ -11,7 +11,11 @@ description: 当O2OA业务开发完成时，上线前通常需要清除已经存
 服务器启动完成后，应用已经能够访问，由于开发环境可能迁移过来的模块可能包含很多测试文件，可以通过erase命令来清理垃圾数据。
 
 ```text
-erase content cms   密码（内容管理类）erase content bbs   密码 （论坛类）erase content pp    密码 （流程类）erase content log   密码 （相关日志）erase content report 密码 （相关报表）
+erase content cms   密码（内容管理类）
+erase content bbs   密码 （论坛类）
+erase content pp    密码 （流程类）
+erase content log   密码 （相关日志）
+erase content report 密码 （相关报表）
 ```
 
 {% hint style="info" %}

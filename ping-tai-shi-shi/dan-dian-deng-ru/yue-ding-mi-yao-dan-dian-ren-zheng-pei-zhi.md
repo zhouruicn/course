@@ -29,13 +29,21 @@ description: O2OA提供多种单点认证配置，如约定密钥的单点认证
 {% endhint %}
 
 ```text
-"ssos": [    {      "enable": true,      "client": "ERP",      "key": "password"    }  ],
+"ssos": [
+    {
+      "enable": true,
+      "client": "ERP",
+      "key": "password"
+    }
+  ],
 ```
 
 参数配置：
 
 ```text
-"enable": "是否启用","client": "名称","key": "密钥"
+"enable": "是否启用",
+"client": "名称",
+"key": "密钥"
 ```
 
 ## 数据加密工具类（Java）
@@ -43,7 +51,76 @@ description: O2OA提供多种单点认证配置，如约定密钥的单点认证
 Crypto.java
 
 ```text
-import java.io.IOException;import java.net.URLDecoder;import java.net.URLEncoder;import java.security.SecureRandom;import javax.crypto.Cipher;import javax.crypto.SecretKey;import javax.crypto.SecretKeyFactory;import javax.crypto.spec.DESKeySpec;import org.apache.commons.codec.binary.Base64;import org.apache.commons.lang3.StringUtils;/** * encrypt and decrypt utils * @author O2OA * */public class Crypto {	private static final String utf8 = "UTF-8";	private final static String DES = "DES";	private final static String cipher_init = "DES";	public static String encrypt(String data, String key) throws Exception {		byte[] bt = encrypt(data.getBytes(), key.getBytes());		String str = Base64.encodeBase64URLSafeString(bt);		return URLEncoder.encode( str, utf8 );	}	public static byte[] encrypt(byte[] data, byte[] key) throws Exception {		// 生成一个可信任的随机数源		SecureRandom sr = new SecureRandom();		// 从原始密钥数据创建DESKeySpec对象		DESKeySpec dks = new DESKeySpec(key);		// 创建一个密钥工厂，然后用它把DESKeySpec转换成SecretKey对象		SecretKeyFactory keyFactory = SecretKeyFactory.getInstance(DES);		SecretKey securekey = keyFactory.generateSecret(dks);		// Cipher对象实际完成加密操作		Cipher cipher = Cipher.getInstance(cipher_init);		// 用密钥初始化Cipher对象		cipher.init(Cipher.ENCRYPT_MODE, securekey, sr);		return cipher.doFinal(data);	}	public static String decrypt(String data, String key) throws IOException, Exception {		if (StringUtils.isEmpty(data)) {			return null;		}		String str = URLDecoder.decode(data, utf8);		byte[] buf = Base64.decodeBase64(str);		byte[] bt = decrypt(buf, key.getBytes());		return new String(bt);	}	public static byte[] decrypt(byte[] data, byte[] key) throws Exception {		// 生成一个可信任的随机数源		SecureRandom sr = new SecureRandom();		// 从原始密钥数据创建DESKeySpec对象		DESKeySpec dks = new DESKeySpec(key);		// 创建一个密钥工厂，然后用它把DESKeySpec转换成SecretKey对象		SecretKeyFactory keyFactory = SecretKeyFactory.getInstance(DES);		SecretKey securekey = keyFactory.generateSecret(dks);		// Cipher对象实际完成解密操作		Cipher cipher = Cipher.getInstance(cipher_init);		// 用密钥初始化Cipher对象		cipher.init(Cipher.DECRYPT_MODE, securekey, sr);		return cipher.doFinal(data);	}}
+import java.io.IOException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.security.SecureRandom;
+
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESKeySpec;
+
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.lang3.StringUtils;
+
+/**
+ * encrypt and decrypt utils
+ * @author O2OA
+ *
+ */
+public class Crypto {
+
+	private static final String utf8 = "UTF-8";
+	private final static String DES = "DES";
+	private final static String cipher_init = "DES";
+
+	public static String encrypt(String data, String key) throws Exception {
+		byte[] bt = encrypt(data.getBytes(), key.getBytes());
+		String str = Base64.encodeBase64URLSafeString(bt);
+		return URLEncoder.encode( str, utf8 );
+	}
+
+	public static byte[] encrypt(byte[] data, byte[] key) throws Exception {
+		// 生成一个可信任的随机数源
+		SecureRandom sr = new SecureRandom();
+		// 从原始密钥数据创建DESKeySpec对象
+		DESKeySpec dks = new DESKeySpec(key);
+		// 创建一个密钥工厂，然后用它把DESKeySpec转换成SecretKey对象
+		SecretKeyFactory keyFactory = SecretKeyFactory.getInstance(DES);
+		SecretKey securekey = keyFactory.generateSecret(dks);
+		// Cipher对象实际完成加密操作
+		Cipher cipher = Cipher.getInstance(cipher_init);
+		// 用密钥初始化Cipher对象
+		cipher.init(Cipher.ENCRYPT_MODE, securekey, sr);
+		return cipher.doFinal(data);
+	}
+
+	public static String decrypt(String data, String key) throws IOException, Exception {
+		if (StringUtils.isEmpty(data)) {
+			return null;
+		}
+		String str = URLDecoder.decode(data, utf8);
+		byte[] buf = Base64.decodeBase64(str);
+		byte[] bt = decrypt(buf, key.getBytes());
+		return new String(bt);
+	}
+
+	public static byte[] decrypt(byte[] data, byte[] key) throws Exception {
+		// 生成一个可信任的随机数源
+		SecureRandom sr = new SecureRandom();
+		// 从原始密钥数据创建DESKeySpec对象
+		DESKeySpec dks = new DESKeySpec(key);
+		// 创建一个密钥工厂，然后用它把DESKeySpec转换成SecretKey对象
+		SecretKeyFactory keyFactory = SecretKeyFactory.getInstance(DES);
+		SecretKey securekey = keyFactory.generateSecret(dks);
+		// Cipher对象实际完成解密操作
+		Cipher cipher = Cipher.getInstance(cipher_init);
+		// 用密钥初始化Cipher对象
+		cipher.init(Cipher.DECRYPT_MODE, securekey, sr);
+		return cipher.doFinal(data);
+	}
+}
 ```
 
 ## 从第三方系统登录O2OA
@@ -51,7 +128,29 @@ import java.io.IOException;import java.net.URLDecoder;import java.net.URLEncoder
 ### 第三方系统使用数据加密登录O2OA
 
 ```text
-/**	 * 从系统中获取已经登录第三方系统的用户账号，并且进行账号和信息加密，送到到O2OA进行登录*///sso名称和密码是在O2OA平台中约定的配置项String sso_client_name = "ERP";String sso_key = "password";//sso_url在O2OA平台中准备好的单点登录页面模板//文件路径：o2server/servers/webserver/x_desktop/sso.htmlString sso_url = "http://o2oa_hostip:port/x_desktop/sso.html";		//login_uid为在第三方系统中识别的登录账号名，这里理解为双方系统账号是统一的账号String login_uid = "user1";		//获取当前时间long time = new Date().getTime();//将用户账号和登录时间一起使用sso_key进行信息加密String xtoken = null;try {	xtoken = Crypto.encrypt( login_uid + "#" + time, sso_key );	response.sendRedirect( sso_url + "?client=" + sso_client_name + "&xtoken=" + xtoken );} catch (Exception e) {	e.printStackTrace();}
+/**
+	 * 从系统中获取已经登录第三方系统的用户账号，并且进行账号和信息加密，送到到O2OA进行登录
+*/
+//sso名称和密码是在O2OA平台中约定的配置项
+String sso_client_name = "ERP";
+String sso_key = "password";
+//sso_url在O2OA平台中准备好的单点登录页面模板
+//文件路径：o2server/servers/webserver/x_desktop/sso.html
+String sso_url = "http://o2oa_hostip:port/x_desktop/sso.html";
+		
+//login_uid为在第三方系统中识别的登录账号名，这里理解为双方系统账号是统一的账号
+String login_uid = "user1";
+		
+//获取当前时间
+long time = new Date().getTime();
+//将用户账号和登录时间一起使用sso_key进行信息加密
+String xtoken = null;
+try {
+	xtoken = Crypto.encrypt( login_uid + "#" + time, sso_key );
+	response.sendRedirect( sso_url + "?client=" + sso_client_name + "&xtoken=" + xtoken );
+} catch (Exception e) {
+	e.printStackTrace();
+}
 ```
 
 {% hint style="info" %}
@@ -63,7 +162,40 @@ import java.io.IOException;import java.net.URLDecoder;import java.net.URLEncoder
 文件路径：o2server/servers/webServer/x\_desktop/sso.html 修改登录相关的代码
 
 ```text
-......COMMON.setContentPath("/x_desktop");COMMON.AjaxModule.load("mwf", function(){    MWF.getJSON("res/config/config.json", function(config){        getServiceAddress(config, function(address){            var uri = new URI(window.location.toString());            var xtoken = uri.getData("xtoken");            var client = uri.getData("client");            if (xtoken){                var res = new Request.JSON({                    url: address+"/jaxrs/sso",                    secure: false,                    method: "POST",                    noCache: true,                    withCredentials: true,                    onSuccess: function(responseJSON, responseText){                         window.location = "/index.html" ;                    }.bind(this),                    onFailure: function(xhr){                         window.location = "/index.html";                    }.bind(this),                    onError: function(text, error){                        window.location = "/index.html";                    }.bind(this)                });                res.setHeader("Content-Type", "application/json; charset=utf-8");                var json = {"token": xtoken, "client": client};                res.send(JSON.encode(json));            }else{                window.location = "/index.html";            }});});
+......
+COMMON.setContentPath("/x_desktop");
+COMMON.AjaxModule.load("mwf", function(){
+    MWF.getJSON("res/config/config.json", function(config){
+        getServiceAddress(config, function(address){
+            var uri = new URI(window.location.toString());
+            var xtoken = uri.getData("xtoken");
+            var client = uri.getData("client");
+            if (xtoken){
+                var res = new Request.JSON({
+                    url: address+"/jaxrs/sso",
+                    secure: false,
+                    method: "POST",
+                    noCache: true,
+                    withCredentials: true,
+                    onSuccess: function(responseJSON, responseText){
+                         window.location = "/index.html" ;
+                    }.bind(this),
+                    onFailure: function(xhr){
+                         window.location = "/index.html";
+                    }.bind(this),
+                    onError: function(text, error){
+                        window.location = "/index.html";
+                    }.bind(this)
+                });
+                res.setHeader("Content-Type", "application/json; charset=utf-8");
+                var json = {"token": xtoken, "client": client};
+                res.send(JSON.encode(json));
+            }else{
+                window.location = "/index.html";
+            }
+});
+});
+
 ```
 
 {% hint style="info" %}

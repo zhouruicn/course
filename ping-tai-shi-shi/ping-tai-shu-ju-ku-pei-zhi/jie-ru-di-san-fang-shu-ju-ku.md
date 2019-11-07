@@ -28,7 +28,54 @@ Mysql修改数据库连接数：https://blog.csdn.net/zhya910702/article/details
 {% endhint %}
 
 ```text
-{  "enable": true,  "port":null,  "sslEnable":false,  "logLevel":"info",  "isPrimaryCenter": true,  "nodeAgentEnable": true,  "application": {    "enable": true,    "port": null,    "sslEnable": false,    "proxyHost": "",    "proxyPort": null,    "forceRedeploy": true,    "scanInterval":5,    "includes":[],    "excludes":[]  },  "web": {    "enable": true,    "port": null,    "sslEnable": false,    "proxyHost": "",    "proxyPort": null,    "forceRedeploy": true  },  "storage": {    "enable": true,    "port": null,    "sslEnable": false,    "name" : ""  },  "data": {             #内置数据库相关配置，可以修改端口以及是否启用    "enable": true,     #修改enable的值为false    "tcpPort": null,    "webPort": null,    "includes": [],    "excludes": []  },  "dumpData":{    "cron" : "0 0 21 * * ?",    "size" : 14  },  "dumpStorage":{    "cron" : "0 0 21 * * ?",    "size" : 14  }}
+{
+  "enable": true,
+  "port":null,
+  "sslEnable":false,
+  "logLevel":"info",
+  "isPrimaryCenter": true,
+  "nodeAgentEnable": true,
+  "application": {
+    "enable": true,
+    "port": null,
+    "sslEnable": false,
+    "proxyHost": "",
+    "proxyPort": null,
+    "forceRedeploy": true,
+    "scanInterval":5,
+    "includes":[],
+    "excludes":[]
+  },
+  "web": {
+    "enable": true,
+    "port": null,
+    "sslEnable": false,
+    "proxyHost": "",
+    "proxyPort": null,
+    "forceRedeploy": true
+  },
+  "storage": {
+    "enable": true,
+    "port": null,
+    "sslEnable": false,
+    "name" : ""
+  },
+  "data": {             #内置数据库相关配置，可以修改端口以及是否启用
+    "enable": true,     #修改enable的值为false
+    "tcpPort": null,
+    "webPort": null,
+    "includes": [],
+    "excludes": []
+  },
+  "dumpData":{
+    "cron" : "0 0 21 * * ?",
+    "size" : 14
+  },
+  "dumpStorage":{
+    "cron" : "0 0 21 * * ?",
+    "size" : 14
+  }
+}
 ```
 
 ###  **2、开启和配置外部数据库信息**
@@ -44,13 +91,31 @@ Mysql修改数据库连接数：https://blog.csdn.net/zhya910702/article/details
 将其中的url、username、password以及enable信息修改为上述Mysql的相关信息，如：
 
 ```text
-[    {        "url":"jdbc:mysql://127.0.0.1:3306/X?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC",        "username" : "root",        "password" :"password",        "includes": [],        "excludes": [],        "enable" : true    }]
+[
+    {
+        "url":"jdbc:mysql://127.0.0.1:3306/X?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC",
+        "username" : "root",
+        "password" :"password",
+        "includes": [],
+        "excludes": [],
+        "enable" : true
+    }
+]
 ```
 
  URL参数说明如下**：**
 
 ```text
-useUnicode: 是否使用Unicode字符集，如果参数characterEncoding设置为gb2312或gbk，本参数值必须设置为true false 1.1g characterEncoding: 当useUnicode设置为true时，指定字符编码。比如可设置为gb2312或gbk false 1.1g autoReconnect: 当数据库连接异常中断时，是否自动重新连接？ false 1.1 autoReconnectForPools: 是否使用针对数据库连接池的重连策略 false 3.1.3 failOverReadOnly: 自动重连成功后，连接是否设置为只读？ true 3.0.12 maxReconnects: autoReconnect设置为true时，重试连接的次数 3 1.1 initialTimeout: autoReconnect设置为true时，两次重连之间的时间间隔，单位：秒 2 1.1 connectTimeout: 和数据库服务器建立socket连接时的超时，单位：毫秒。 0表示永不超时，适用于JDK 1.4及更高版本 0 3.0.1 socketTimeout: socket操作（读写）超时，单位：毫秒。 0表示永不超时 0 3.0.1 serverTimezone: 服务器时区（避免数据与正确时间相关8小时的问题）
+useUnicode: 是否使用Unicode字符集，如果参数characterEncoding设置为gb2312或gbk，本参数值必须设置为true false 1.1g 
+characterEncoding: 当useUnicode设置为true时，指定字符编码。比如可设置为gb2312或gbk false 1.1g 
+autoReconnect: 当数据库连接异常中断时，是否自动重新连接？ false 1.1 
+autoReconnectForPools: 是否使用针对数据库连接池的重连策略 false 3.1.3 
+failOverReadOnly: 自动重连成功后，连接是否设置为只读？ true 3.0.12 
+maxReconnects: autoReconnect设置为true时，重试连接的次数 3 1.1 
+initialTimeout: autoReconnect设置为true时，两次重连之间的时间间隔，单位：秒 2 1.1 
+connectTimeout: 和数据库服务器建立socket连接时的超时，单位：毫秒。 0表示永不超时，适用于JDK 1.4及更高版本 0 3.0.1 
+socketTimeout: socket操作（读写）超时，单位：毫秒。 0表示永不超时 0 3.0.1 
+serverTimezone: 服务器时区（避免数据与正确时间相关8小时的问题）
 ```
 
 {% hint style="info" %}

@@ -17,7 +17,27 @@ description: O2OA支持对单个组件进行负载均衡设置，可以将某一
 文件内容如下：
 
 ```text
-{  "enable": true,  "isPrimaryCenter": true,  "application": {    "enable": true,    "port": 20020.0,    "sslEnable": false,    "proxyHost": "",    "proxyPort": 20020.0,    "redeploy": true,    "scanInterval": 0.0,    "includes": [x_file_assemble_control],    #这里填入需要启动的服务    "excludes": [],                           #这里填写不需要启动（排除）的服务    "weights": [],    "###includes": "承载的应用,在集群环境下可以选择仅承载部分应用以降低服务器负载,可以使用*作为通配符.###",    "###excludes": "选择不承载的应用,和includes的值配合使用可以选择或者排除承载的应用,可以使用*作为通配符.###",    "###weights": "设置应用的权重,在集群环境中,一个应用可以部署多个实例提供负载均衡.通过合计占比来分配应用占比.###"  },  ......}
+{
+  "enable": true,
+  "isPrimaryCenter": true,
+  "application": {
+    "enable": true,
+    "port": 20020.0,
+    "sslEnable": false,
+    "proxyHost": "",
+    "proxyPort": 20020.0,
+    "redeploy": true,
+    "scanInterval": 0.0,
+    "includes": [x_file_assemble_control],    #这里填入需要启动的服务
+    "excludes": [],                           #这里填写不需要启动（排除）的服务
+    "weights": [],
+    "###includes": "承载的应用,在集群环境下可以选择仅承载部分应用以降低服务器负载,可以使用*作为通配符.###",
+    "###excludes": "选择不承载的应用,和includes的值配合使用可以选择或者排除承载的应用,可以使用*作为通配符.###",
+    "###weights": "设置应用的权重,在集群环境中,一个应用可以部署多个实例提供负载均衡.通过合计占比来分配应用占比.###"
+  },
+  ......
+}
+
 ```
 
 其中application为应用服务器配置，在配置中的includes和excludes可以对该应用服务器包含的应用或者排除的应用进行编辑，以实现非对称集群配置

@@ -55,7 +55,8 @@ App内看到的一些O2OA相关的logo图标，可以不编译打包进App，我
 在 O2Platform -&gt; config -&gt; config.swift 文件中找到
 
 ```groovy
-//改为false就是直连版本let O2IsConnect2Collect = false
+//改为false就是直连版本
+let O2IsConnect2Collect = false
 ```
 
 然后找到O2Platform 目录下找到Info.plist文件，把里面的centerHost 、 centerPort、httpProtocol改成你们自己的O2OA中心服务器地址信息。

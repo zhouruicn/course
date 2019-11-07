@@ -25,7 +25,12 @@ O2OA默认内嵌了H2数据库，H2数据库支持两种访问方式：
 **参数说明**
 
 ```text
-Saved Settings: Generic H2 （Server）Setting Name: Generic H2 （Server）Driver Class: org.h2.DriverJDBC URL: jdbc:h2:tcp://localhost:20050/XUser Name：saPassword: o2
+Saved Settings: Generic H2 （Server）
+Setting Name: Generic H2 （Server）
+Driver Class: org.h2.Driver
+JDBC URL: jdbc:h2:tcp://localhost:20050/X
+User Name：sa
+Password: o2
 ```
 
 {% hint style="info" %}
@@ -63,7 +68,12 @@ DBeaver官网：https://dbeaver.io  或者 从其他网站下载均可，安装�
 **参数说明**
 
 ```text
-JDBC URL: 自动生成主机：服务器所在的主机IP，如127.0.0.1端口：默认为20050数据库/模式：X01用户名：sa密码：o2
+JDBC URL: 自动生成
+主机：服务器所在的主机IP，如127.0.0.1
+端口：默认为20050
+数据库/模式：X01
+用户名：sa
+密码：o2
 ```
 
 {% hint style="info" %}

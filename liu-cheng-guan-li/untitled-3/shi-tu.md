@@ -116,7 +116,50 @@ description: View
 #### 平台流程填写对应的以下路径：
 
 ```text
-{    "$work" : {        "title" : "" , //标题        "startTime" : "", //创建时间        "startTimeMonth": "", //创建月份        "completedTime": "", //完成时间        "completedTimeMonth": "", //完成月份        "creatorPerson": "", //拟稿人        "creatorIdentity": "", //拟稿人身份        "creatorUnit": "", //拟稿组织        "creatorUnitLevelName": "", //拟稿组织层级        "application": "", //应用ID        "applicationName": "", //应用名称        "applicationAlias": "", //应用别名        "process": "", //流程ID        "processName": "", //流程名称        "processAlias": "", //流程别名        "serial": "", //编号        "activityType": "", //活动类型        "activityName": "", //活动名称        "activityArrivedTime": "", //活动到达时间        "workId": "", //工作ID        "workCompletedId": "", //已完成工作ID        "job": "", //JOB的ID(job)        "completed": "", //是否已完成(completed)    },    "subject" : "", //标题    "identity1" : [{ //身份/人员/组织/职务/群组 的存储形式        {            "name": "李四",  //身份名称，不唯一            "unique": "23dd1b53-feed-485d-8c9c-1a4e64ff58a2", //身份唯一标识            "description": "", //身份描述            "distinguishedName": "李四@23dd1b53-feed-485d-8c9c-1a4e64ff58a2@I", //身份全称            "person": "李四@lisi@P", //人员            "unit": "开发部@kfb@U",  //组织            "unitName": "开发部",   //组织名称, 不唯一            "unitLevel": 2,         //组织层级            "unitLevelName": "浙江兰德纵横/开发部", //组织层级名            "orderNumber": 24920439 //排序号        }        ...    }]     ...}
+{
+    "$work" : {
+        "title" : "" , //标题
+        "startTime" : "", //创建时间
+        "startTimeMonth": "", //创建月份
+        "completedTime": "", //完成时间
+        "completedTimeMonth": "", //完成月份
+        "creatorPerson": "", //拟稿人
+        "creatorIdentity": "", //拟稿人身份
+        "creatorUnit": "", //拟稿组织
+        "creatorUnitLevelName": "", //拟稿组织层级
+        "application": "", //应用ID
+        "applicationName": "", //应用名称
+        "applicationAlias": "", //应用别名
+        "process": "", //流程ID
+        "processName": "", //流程名称
+        "processAlias": "", //流程别名
+        "serial": "", //编号
+        "activityType": "", //活动类型
+        "activityName": "", //活动名称
+        "activityArrivedTime": "", //活动到达时间
+        "workId": "", //工作ID
+        "workCompletedId": "", //已完成工作ID
+        "job": "", //JOB的ID(job)
+        "completed": "", //是否已完成(completed)
+    },
+    "subject" : "", //标题
+    "identity1" : [{ //身份/人员/组织/职务/群组 的存储形式
+        {
+            "name": "李四",  //身份名称，不唯一
+            "unique": "23dd1b53-feed-485d-8c9c-1a4e64ff58a2", //身份唯一标识
+            "description": "", //身份描述
+            "distinguishedName": "李四@23dd1b53-feed-485d-8c9c-1a4e64ff58a2@I", //身份全称
+            "person": "李四@lisi@P", //人员
+            "unit": "开发部@kfb@U",  //组织
+            "unitName": "开发部",   //组织名称, 不唯一
+            "unitLevel": 2,         //组织层级
+            "unitLevelName": "浙江兰德纵横/开发部", //组织层级名
+            "orderNumber": 24920439 //排序号
+        }
+        ...
+    }] 
+    ...
+}
 ```
 
 如：流程ID "$work.workId"
@@ -128,7 +171,39 @@ description: View
 #### 内容管理填写对应的以下路径：
 
 ```text
-{    "$document" : {        "title" : "", //标题        "publishTime" : "", //发布时间        "creatorPerson" : "", //拟稿人        "creatorIdentity" : "", //拟稿人身份        "creatorUnitName" : "", //拟稿组织        "creatorTopUnitName" : "", //拟稿顶级组织        "appId" : "", //栏目ID        "appName" : "", //栏目名称        "categoryId" : "", //分类ID        "categoryName" : "", //分类名称        "categoryAlias" : "", //分类别名        "docid" : "", //文档ID    },    "subject" : "", //标题    "identity1" : [{ //身份/人员/组织/职务/群组 的存储形式        {            "name": "李四",  //身份名称，不唯一            "unique": "23dd1b53-feed-485d-8c9c-1a4e64ff58a2", //身份唯一标识            "description": "", //身份描述            "distinguishedName": "李四@23dd1b53-feed-485d-8c9c-1a4e64ff58a2@I", //身份全称            "person": "李四@lisi@P", //人员            "unit": "开发部@kfb@U",  //组织            "unitName": "开发部",   //组织名称, 不唯一            "unitLevel": 2,         //组织层级            "unitLevelName": "浙江兰德纵横/开发部", //组织层级名            "orderNumber": 24920439 //排序号        }        ...    }]     ...}
+{
+    "$document" : {
+        "title" : "", //标题
+        "publishTime" : "", //发布时间
+        "creatorPerson" : "", //拟稿人
+        "creatorIdentity" : "", //拟稿人身份
+        "creatorUnitName" : "", //拟稿组织
+        "creatorTopUnitName" : "", //拟稿顶级组织
+        "appId" : "", //栏目ID
+        "appName" : "", //栏目名称
+        "categoryId" : "", //分类ID
+        "categoryName" : "", //分类名称
+        "categoryAlias" : "", //分类别名
+        "docid" : "", //文档ID
+    },
+    "subject" : "", //标题
+    "identity1" : [{ //身份/人员/组织/职务/群组 的存储形式
+        {
+            "name": "李四",  //身份名称，不唯一
+            "unique": "23dd1b53-feed-485d-8c9c-1a4e64ff58a2", //身份唯一标识
+            "description": "", //身份描述
+            "distinguishedName": "李四@23dd1b53-feed-485d-8c9c-1a4e64ff58a2@I", //身份全称
+            "person": "李四@lisi@P", //人员
+            "unit": "开发部@kfb@U",  //组织
+            "unitName": "开发部",   //组织名称, 不唯一
+            "unitLevel": 2,         //组织层级
+            "unitLevelName": "浙江兰德纵横/开发部", //组织层级名
+            "orderNumber": 24920439 //排序号
+        }
+        ...
+    }] 
+    ...
+}
 ```
 
 如：文档ID填写 "$document.docid"
@@ -222,7 +297,15 @@ description: View
 当 选择结果处理 选择 “脚本”的时候，可以通过 _this.target.selectedData_ 来获取用户选择行的数据。数据格式如下：
 
 ```text
-{[  bundle : "xxxx", //CMS文档Id/流程jobId  data : {  //列数据    column1Name : column1Value, //第一列的列名，第一列的列值    column2Name : column2Value, //第二列的列名，第二列的列值    ...  },  ...]}
+{[
+  bundle : "xxxx", //CMS文档Id/流程jobId
+  data : {  //列数据
+    column1Name : column1Value, //第一列的列名，第一列的列值
+    column2Name : column2Value, //第二列的列名，第二列的列值
+    ...
+  },
+  ...
+]}
 ```
 
 ## 在脚本中的使用

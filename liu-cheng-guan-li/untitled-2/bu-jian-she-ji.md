@@ -27,7 +27,11 @@
 如果使用计算部件，可以通过条件计算来插入部件。如：
 
 ```text
-if( this.page.get("type").getData() == "yes" ){    return "部件1"; //需返回部件名称或部件ID}else{    return "部件2";}
+if( this.page.get("type").getData() == "yes" ){
+    return "部件1"; //需返回部件名称或部件ID
+}else{
+    return "部件2";
+}
 ```
 
 2、参数
@@ -37,7 +41,10 @@ if( this.page.get("type").getData() == "yes" ){    return "部件1"; //需返回
 参数脚本
 
 ```text
-return {  //如果使用脚本，需要返回参数对象    "par1" : "参数值1",    "par2" : "参数值2"}
+return {  //如果使用脚本，需要返回参数对象
+    "par1" : "参数值1",
+    "par2" : "参数值2"
+}
 ```
 
 在 部件中可以通过· this.page.getWidgetPrameters\(\); 来获取页面传入的参数
@@ -45,7 +52,12 @@ return {  //如果使用脚本，需要返回参数对象    "par1" : "参数值
 比如上面的参数脚本
 
 ```text
-var par = this.page.getWidgetPrameters();//获取的par是//{//    "par1" : "参数值1",//    "par2" : "参数值2"//}
+var par = this.page.getWidgetPrameters();
+//获取的par是
+//{
+//    "par1" : "参数值1",
+//    "par2" : "参数值2"
+//}
 ```
 
 ### 插入部件元素

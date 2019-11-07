@@ -41,7 +41,10 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 参数说明：
 
 ```text
-应用Logo：您可以上传您需要显示在钉钉里的O2OA办公应用图标。应用名称：填写您指定的钉钉里O2OA办公应用的应用名称，如移动办公，企业办公，O2OA办公等等。功能介绍：填写应用的功能介绍开发方式：企业内部自主开发
+应用Logo：您可以上传您需要显示在钉钉里的O2OA办公应用图标。
+应用名称：填写您指定的钉钉里O2OA办公应用的应用名称，如移动办公，企业办公，O2OA办公等等。
+功能介绍：填写应用的功能介绍
+开发方式：企业内部自主开发
 ```
 
 填写完成后点击下一步，填写配置开发信息，如下图所示：
@@ -51,7 +54,15 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 参数说明：
 
 ```text
-开发模式       ：开发应用开发应用类型    ：微应用应用首页链接    ：http://[serverIp]:[port]/x_desktop/ddsso.html(其中[serverIp]为您部署的O2OA公网IP或者域名。[port]是开放的web端口，默认为80不用填写。后面还可以跟一个redirect参数，如：?redirect=portalmobile.html%3Fid%3D********** ，就是登录成功后跳转到门户页面星号代表门户的id)开服务器出口IP  ：填写服务器公网出口IP地址首页地址       ：http://[serverIp]:[port]/x_desktop/ddsso.html可使用范围      ：根据要求填写
+开发模式       ：开发应用
+开发应用类型    ：微应用
+应用首页链接    ：http://[serverIp]:[port]/x_desktop/ddsso.html
+(其中[serverIp]为您部署的O2OA公网IP或者域名。
+[port]是开放的web端口，默认为80不用填写。
+后面还可以跟一个redirect参数，如：?redirect=portalmobile.html%3Fid%3D********** ，就是登录成功后跳转到门户页面星号代表门户的id)
+开服务器出口IP  ：填写服务器公网出口IP地址
+首页地址       ：http://[serverIp]:[port]/x_desktop/ddsso.html
+可使用范围      ：根据要求填写
 ```
 
 填写完成后点击提交即可完成应用创建，填写好的界面如下图所示：
@@ -103,13 +114,39 @@ description: O2OA平台可以以第微应用的方式集成到阿里钉钉，同
 2、使用文本编辑器打开dingding.json进行编辑：
 
 ```text
-{  "enable": true,  "corpId": "",  "agentId": "",  "appKey": "",  "appSecret": "",  "syncCron": "10 0/10 * * * ?",  "forceSyncCron": "10 45 8,12 * * ?",  "oapiAddress": "https://oapi.dingtalk.com",  "messageEnable": true,  "###enable": "是否启用###",  "###corpId": "钉钉corpId###",  "###agentId": "agentId###",  "###appKey": "应用的key,唯一标识###",  "###appSecret": "应用的密钥###",  "###syncCron": "组织同步cron,默认每10分钟同步一次.###",  "###forceSyncCron": "强制拉入同步cron,默认在每天的8点和12点强制进行同步.###",  "###oapiAddress": "oapi服务器地址###",  "###messageEnable": "是否启用消息推送###"}
+{
+  "enable": true,
+  "corpId": "",
+  "agentId": "",
+  "appKey": "",
+  "appSecret": "",
+  "syncCron": "10 0/10 * * * ?",
+  "forceSyncCron": "10 45 8,12 * * ?",
+  "oapiAddress": "https://oapi.dingtalk.com",
+  "messageEnable": true,
+  "###enable": "是否启用###",
+  "###corpId": "钉钉corpId###",
+  "###agentId": "agentId###",
+  "###appKey": "应用的key,唯一标识###",
+  "###appSecret": "应用的密钥###",
+  "###syncCron": "组织同步cron,默认每10分钟同步一次.###",
+  "###forceSyncCron": "强制拉入同步cron,默认在每天的8点和12点强制进行同步.###",
+  "###oapiAddress": "oapi服务器地址###",
+  "###messageEnable": "是否启用消息推送###"
+}
 ```
 
 参数说明：
 
 ```text
-"enable": "是否启用企业钉钉接入: true | false",  "agentId": "企业钉钉应用信息AgentId（从企业钉钉信息中获取 'AgentId'）","appKey": "企业钉钉参数SSOsecret（从企业钉钉开放平台信息中获取 'AppKey'）","appSecret": "企业钉钉参数SSOsecret（从企业钉钉开放平台信息中获取 'AppSecret'）","syncCron": "拉入同步时间表达式, 默认每10分钟同步一次(10 0/10 * * * ?).","forceSyncCron": "强制拉入同步cron, 默认在每天的8点和12点强制进行同步(10 45 8,12 * * ?)","oapiAddress": "企业钉钉api服务器地址, 固定填写：https://oapi.dingtalk.com","messageEnable": "是否允许推送消息到企业钉钉: true | false"
+"enable": "是否启用企业钉钉接入: true | false",  
+"agentId": "企业钉钉应用信息AgentId（从企业钉钉信息中获取 'AgentId'）",
+"appKey": "企业钉钉参数SSOsecret（从企业钉钉开放平台信息中获取 'AppKey'）",
+"appSecret": "企业钉钉参数SSOsecret（从企业钉钉开放平台信息中获取 'AppSecret'）",
+"syncCron": "拉入同步时间表达式, 默认每10分钟同步一次(10 0/10 * * * ?).",
+"forceSyncCron": "强制拉入同步cron, 默认在每天的8点和12点强制进行同步(10 45 8,12 * * ?)",
+"oapiAddress": "企业钉钉api服务器地址, 固定填写：https://oapi.dingtalk.com",
+"messageEnable": "是否允许推送消息到企业钉钉: true | false"
 ```
 
 ![&#x9489;&#x9489;&#x4E0A;&#x7684;&#x667A;&#x548C;&#x529E;&#x516C;&#x5E73;&#x53F0;](../../.gitbook/assets/f99efbb29e6aeb6b38b8043b5479194d03b.jpg)

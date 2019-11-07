@@ -26,7 +26,8 @@ data数据用于存储表单获取的数据，所有属性都是动态的，其�
 {% tabs %}
 {% tab title="Syntax:" %}
 ```javascript
-var value = this.data.property;  //获取名为property的数据值this.data.property = '123';   //将property的值修改为'123'
+var value = this.data.property;  //获取名为property的数据值
+this.data.property = '123';   //将property的值修改为'123'
 ```
 {% endtab %}
 {% endtabs %}
@@ -68,19 +69,46 @@ var data = this.data.datagrid;
 获取到data的值如下：
 
 ```javascript
-{    "data": [        {            "amountCol": { "amount": "12000" },            "countCol": { "number": "10" },            "nameCol": { "name": "手机" },            "priceCol": { "price": "1200" }        },        {            "amountCol": { "amount": "15000" },            "countCol": { "number": "5" },            "nameCol": { "name": "电脑" },            "priceCol": { "price": "3000" }        }    ],    "total": {        "amountCol": "27000",        "countCol": "15"    }}
+{
+    "data": [
+        {
+            "amountCol": { "amount": "12000" },
+            "countCol": { "number": "10" },
+            "nameCol": { "name": "手机" },
+            "priceCol": { "price": "1200" }
+        },
+        {
+            "amountCol": { "amount": "15000" },
+            "countCol": { "number": "5" },
+            "nameCol": { "name": "电脑" },
+            "priceCol": { "price": "3000" }
+        }
+    ],
+    "total": {
+        "amountCol": "27000",
+        "countCol": "15"
+    }
+}
 ```
 
 获取到数据网格中的其他数据：
 
 ```javascript
-//获取数据网格中的第一条数据var data = this.data.datagrid.data[0];//获取数据网格中的第一条数据的 nameCol 列的值var data = this.data.datagrid.data[0].nameCol.name;//获取数据网格中的 amountCol 列的总计值var data = this.data.datagrid.total.amountCol; 
+//获取数据网格中的第一条数据
+var data = this.data.datagrid.data[0];
+
+//获取数据网格中的第一条数据的 nameCol 列的值
+var data = this.data.datagrid.data[0].nameCol.name;
+
+//获取数据网格中的 amountCol 列的总计值
+var data = this.data.datagrid.total.amountCol; 
 ```
 
 修改数据网格中的数据：
 
 ```javascript
-//修改数据网格中的第一条数据的 nameCol 列的值this.data.datagrid.data[0].nameCol.name='平板电脑'; 
+//修改数据网格中的第一条数据的 nameCol 列的值
+this.data.datagrid.data[0].nameCol.name='平板电脑'; 
 ```
 
 修改后数据网格中的数据为：
@@ -104,7 +132,9 @@ var newData = this.data.add(key, value, overwrite);
 #### Arguments:
 
 ```javascript
-> key :　（string or number）必选，要添加的新的数据节点名称或数组索引号> value :　（string, number, array or JsonObject）必选，新的数据节点的值> overwrite :　（boolean）可选，如果要添加的节点已经存在，是否覆盖。默认为 false
+> key :　（string or number）必选，要添加的新的数据节点名称或数组索引号
+> value :　（string, number, array or JsonObject）必选，新的数据节点的值
+> overwrite :　（boolean）可选，如果要添加的节点已经存在，是否覆盖。默认为 false
 ```
 
 #### Return:
@@ -116,7 +146,33 @@ var newData = this.data.add(key, value, overwrite);
 #### Examples:
 
 ```javascript
-//为data添加一个名为"remark"值为"I am remark"的数据this.data.add("remark", "I am remark");//-------------------------------------------------------------------//为data添加一个名为"person"的Object对象数据var person = this.data.add("person", {});person.add("name", "Tom");person.add("age", 23);//或者可以这样var person = this.data.add("person", {name: "Tom", "age": "23"});//-------------------------------------------------------------------//为data添加一个名为"orders"的数组对象数据var orders = this.data.add("orders", []);orders.add({name: "phone", count: 5});orders.add({name: "computer", count: 10});orders[0].add("count", 10, true);  //将第一条数据的count修改为10//或者可以这样var orders = this.data.add("orders", [    {name: "phone", count: 5},    {name: "computer", count: 10}]);//将第一条数据修改为name为mobile; count为10orders.add(0, {name: "mobile", count: 10}, true);
+//为data添加一个名为"remark"值为"I am remark"的数据
+this.data.add("remark", "I am remark");
+//-------------------------------------------------------------------
+
+//为data添加一个名为"person"的Object对象数据
+var person = this.data.add("person", {});
+person.add("name", "Tom");
+person.add("age", 23);
+
+//或者可以这样
+var person = this.data.add("person", {name: "Tom", "age": "23"});
+//-------------------------------------------------------------------
+
+//为data添加一个名为"orders"的数组对象数据
+var orders = this.data.add("orders", []);
+orders.add({name: "phone", count: 5});
+orders.add({name: "computer", count: 10});
+orders[0].add("count", 10, true);  //将第一条数据的count修改为10
+
+//或者可以这样
+var orders = this.data.add("orders", [
+    {name: "phone", count: 5},
+    {name: "computer", count: 10}
+]);
+
+//将第一条数据修改为name为mobile; count为10
+orders.add(0, {name: "mobile", count: 10}, true);
 ```
 
 ### del
@@ -144,7 +200,16 @@ var data = this.data.del(key);
 #### Examples:
 
 ```javascript
-//删除data下名为"remark"的数据节点this.data.del("remark");//-------------------------------------------------------------------//删除"person"的age数据节点var person = this.data.add.person.del("age");//-------------------------------------------------------------------//删除"orders"数组对象中的第二条数据this.data.orders.del(1);
+//删除data下名为"remark"的数据节点
+this.data.del("remark");
+//-------------------------------------------------------------------
+
+//删除"person"的age数据节点
+var person = this.data.add.person.del("age");
+//-------------------------------------------------------------------
+
+//删除"orders"数组对象中的第二条数据
+this.data.orders.del(1);
 ```
 
 ### save
@@ -172,7 +237,9 @@ this.data.save(callback);
 #### Examples:
 
 ```javascript
-this.data.save(function(json){    this.form.notice("save success!", "success")});
+this.data.save(function(json){
+    this.form.notice("save success!", "success")
+});
 ```
 
 

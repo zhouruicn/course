@@ -31,8 +31,8 @@ var unitList = this.org.getUnit( unit );
 可以是组织的distinguishedName、name、id、unique属性值，组织对象，或者是上述属性值和对象的数组。
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数person示例" %}
+{% tabs %}
+{% tab title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -53,8 +53,8 @@ var unitList = this.org.getUnit( unit );
 
 ...其他属性值或对象数组
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -64,8 +64,8 @@ var unitList = this.org.getUnit( unit );
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -81,8 +81,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### listSubUnit
 
@@ -102,8 +102,8 @@ var unitList = this.org.listSubUnit( unit , nested );
 > nested :　（boolean）可选，true嵌套的所有组织；false直接组织；默认false
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数unit示例" %}
+{% tabs %}
+{% tab title="参数unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -124,8 +124,8 @@ var unitList = this.org.listSubUnit( unit , nested );
 
 ...其他属性值或对象数组
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -135,8 +135,8 @@ var unitList = this.org.listSubUnit( unit , nested );
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -152,8 +152,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### listSupUnit
 
@@ -173,8 +173,8 @@ var unitList = this.org.listSupUnit( unit , nested );
 > nested :　（boolean）可选，true嵌套的所有组织；false直接组织；默认false
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数unit示例" %}
+{% tabs %}
+{% tab title="参数unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -195,8 +195,8 @@ var unitList = this.org.listSupUnit( unit , nested );
 
 ...其他属性值或对象数组
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -206,8 +206,8 @@ var unitList = this.org.listSupUnit( unit , nested );
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -223,8 +223,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### getUnitByIdentity
 
@@ -247,8 +247,8 @@ var unitList = this.org.getUnitByIdentity( identity, flag );
         当值为空的时候，表示获取直接所在组织。
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数identity示例" %}
+{% tabs %}
+{% tab title="参数identity示例" %}
 ```javascript
 //以下均为合法参数
 //身份属性值
@@ -263,8 +263,8 @@ var unitList = this.org.getUnitByIdentity( identity, flag );
 { "unique": "lisi_i" } //身份唯一标识
 { "name": "李四" } //名称对象
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -274,8 +274,8 @@ var unitList = this.org.getUnitByIdentity( identity, flag );
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -291,8 +291,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### listAllSupUnitWithIdentity
 
@@ -311,8 +311,8 @@ var unitList = this.org.listAllSupUnitWithIdentity( identity );
 可以是身份的distinguishedName、name、id、unique属性值，身份对象，或者是上述属性值和对象的数组。
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数identity示例" %}
+{% tabs %}
+{% tab title="参数identity示例" %}
 ```javascript
 //以下均为合法参数
 //身份属性值
@@ -334,8 +334,8 @@ var unitList = this.org.listAllSupUnitWithIdentity( identity );
 ...其他属性值或对象数组
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -345,8 +345,8 @@ var unitList = this.org.listAllSupUnitWithIdentity( identity );
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -362,8 +362,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### listUnitWithPerson
 
@@ -382,8 +382,8 @@ var unitList = this.org.listUnitWithPerson( person );
 可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数person示例" %}
+{% tabs %}
+{% tab title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -404,8 +404,8 @@ var unitList = this.org.listUnitWithPerson( person );
 
 ...其他属性值或对象数组
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -415,8 +415,8 @@ var unitList = this.org.listUnitWithPerson( person );
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -432,8 +432,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### listAllSupUnitWithPerson
 
@@ -452,8 +452,8 @@ var unitList = this.org.listAllSupUunitnitWithPerson( person );
 可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数person示例" %}
+{% tabs %}
+{% tab title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -474,8 +474,8 @@ var unitList = this.org.listAllSupUunitnitWithPerson( person );
 
 ...其他属性值或对象数组
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -485,8 +485,8 @@ var unitList = this.org.listAllSupUunitnitWithPerson( person );
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -502,8 +502,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### listUnitWithAttribute
 
@@ -530,8 +530,8 @@ var unitList = this.org.listUnitWithAttribute( attributeName, attributeValue );
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -547,8 +547,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### listUnitWithDuty
 
@@ -568,8 +568,8 @@ var unitList = this.org.listUnitWithDuty( dutyName, identity );
 可以是身份的distinguishedName、name、id、unique属性值，身份对象。
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="参数identity示例" %}
+{% tabs %}
+{% tab title="参数identity示例" %}
 ```javascript
 //以下均为合法参数
 //身份属性值
@@ -584,8 +584,8 @@ var unitList = this.org.listUnitWithDuty( dutyName, identity );
 { "unique": "lisi_i" } //身份唯一标识
 { "name": "李四" } //名称对象
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Return:
 
@@ -595,8 +595,8 @@ var unitList = this.org.listUnitWithDuty( dutyName, identity );
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -612,8 +612,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### listTopUnit
 
@@ -633,8 +633,8 @@ var unitList = this.org.listTopUnit();
 
 unit对象为JSON格式数据，其格式和主要数据如下：
 
-{% code-tabs %}
-{% code-tabs-item title="unit对象" %}
+{% tabs %}
+{% tab title="unit对象" %}
 ```javascript
 {
     "name": "开发部", //组织名称
@@ -650,8 +650,8 @@ unit对象为JSON格式数据，其格式和主要数据如下：
     "superior": "浙江兰德纵横@a706f5f0-4a3b-4785-8e1d-0a944bfad4eb@U" //上级组织
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 
 

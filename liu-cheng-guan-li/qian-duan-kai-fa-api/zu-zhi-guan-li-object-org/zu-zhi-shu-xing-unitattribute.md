@@ -27,13 +27,27 @@ this.org.appendUnitAttribute( unit, attribute, valueArray);
 #### Arguments:
 
 ```text
-> unit :　（string or JsonObject ）必选。可以是组织的distinguishedName、name、id、unique属性值，组织对象。> attribute :　（string）必选，属性名称> valueArray :　（Array）必选，属性值，必须为数组
+> unit :　（string or JsonObject ）必选。
+可以是组织的distinguishedName、name、id、unique属性值，组织对象。
+> attribute :　（string）必选，属性名称
+> valueArray :　（Array）必选，属性值，必须为数组
 ```
 
 {% tabs %}
 {% tab title="参数Unit示例" %}
 ```javascript
-//以下均为合法参数//组织属性值"开发部@kfb@U" //组织标识名"cce8bc22-225a-4f85-8132-7374d546886e" //id"kfb" //组织唯一标识"开发部" //组织名称//对象{ "distinguishedName": "开发部@kfb@U" } //组织识别名{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识{ "unique": "kfb" } //组织唯一标识{ "name": "开发部" } //组织对象
+//以下均为合法参数
+//组织属性值
+"开发部@kfb@U" //组织标识名
+"cce8bc22-225a-4f85-8132-7374d546886e" //id
+"kfb" //组织唯一标识
+"开发部" //组织名称
+
+//对象
+{ "distinguishedName": "开发部@kfb@U" } //组织识别名
+{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识
+{ "unique": "kfb" } //组织唯一标识
+{ "name": "开发部" } //组织对象
 ```
 {% endtab %}
 {% endtabs %}
@@ -57,13 +71,27 @@ this.org.setUnitAttribute( unit, attribute, valueArray );
 #### Arguments:
 
 ```text
-> unit :　（string or JsonObject ）必选。可以是组织的distinguishedName、name、id、unique属性值，组织对象。> attribute :　（string）必选，属性名称> valueArray :　（Array）必选，属性值，必须为数组
+> unit :　（string or JsonObject ）必选。
+可以是组织的distinguishedName、name、id、unique属性值，组织对象。
+> attribute :　（string）必选，属性名称
+> valueArray :　（Array）必选，属性值，必须为数组
 ```
 
 {% tabs %}
 {% tab title="参数Unit示例" %}
 ```javascript
-//以下均为合法参数//组织属性值"开发部@kfb@U" //组织标识名"cce8bc22-225a-4f85-8132-7374d546886e" //id"kfb" //组织唯一标识"开发部" //组织名称//对象{ "distinguishedName": "开发部@kfb@U" } //组织识别名{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识{ "unique": "kfb" } //组织唯一标识{ "name": "开发部" } //组织对象
+//以下均为合法参数
+//组织属性值
+"开发部@kfb@U" //组织标识名
+"cce8bc22-225a-4f85-8132-7374d546886e" //id
+"kfb" //组织唯一标识
+"开发部" //组织名称
+
+//对象
+{ "distinguishedName": "开发部@kfb@U" } //组织识别名
+{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识
+{ "unique": "kfb" } //组织唯一标识
+{ "name": "开发部" } //组织对象
 ```
 {% endtab %}
 {% endtabs %}
@@ -87,13 +115,26 @@ var valueList = this.org.getUnitAttribute( unit, attributeName );
 #### Arguments:
 
 ```text
-> unit :　（string or JsonObject ）必选。可以是组织的distinguishedName、name、id、unique属性值，组织对象。> attributeName :　（string）必选，属性名称
+> unit :　（string or JsonObject ）必选。
+可以是组织的distinguishedName、name、id、unique属性值，组织对象。
+> attributeName :　（string）必选，属性名称
 ```
 
 {% tabs %}
 {% tab title="参数Unit示例" %}
 ```javascript
-//以下均为合法参数//组织属性值"开发部@kfb@U" //组织标识名"cce8bc22-225a-4f85-8132-7374d546886e" //id"kfb" //组织唯一标识"开发部" //组织名称//对象{ "distinguishedName": "开发部@kfb@U" } //组织识别名{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识{ "unique": "kfb" } //组织唯一标识{ "name": "开发部" } //组织对象
+//以下均为合法参数
+//组织属性值
+"开发部@kfb@U" //组织标识名
+"cce8bc22-225a-4f85-8132-7374d546886e" //id
+"kfb" //组织唯一标识
+"开发部" //组织名称
+
+//对象
+{ "distinguishedName": "开发部@kfb@U" } //组织识别名
+{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识
+{ "unique": "kfb" } //组织唯一标识
+{ "name": "开发部" } //组织对象
 ```
 {% endtab %}
 {% endtabs %}
@@ -117,13 +158,31 @@ var valueList = this.org.listUnitAttributeName( unit );
 #### Arguments:
 
 ```text
-> unit :　（string or JsonObject ）必选。可以是组织的distinguishedName、name、id、unique属性值，组织对象。
+> unit :　（string or JsonObject ）必选。
+可以是组织的distinguishedName、name、id、unique属性值，组织对象。
 ```
 
 {% tabs %}
 {% tab title="参数Unit示例" %}
 ```javascript
-//以下均为合法参数//组织属性值"开发部@kfb@U" //组织标识名"cce8bc22-225a-4f85-8132-7374d546886e" //id"kfb" //组织唯一标识"开发部" //组织名称//对象{ "distinguishedName": "开发部@kfb@U" } //组织识别名{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识{ "unique": "kfb" } //组织唯一标识{ "name": "开发部" } //组织对象//上述属性组和对象数组[ "开发部", "综合部" ] //名称数组[ { "name": "开发部" }, { "name": "综合部" } ] //名称数组...其他属性值或对象数组
+//以下均为合法参数
+//组织属性值
+"开发部@kfb@U" //组织标识名
+"cce8bc22-225a-4f85-8132-7374d546886e" //id
+"kfb" //组织唯一标识
+"开发部" //组织名称
+
+//对象
+{ "distinguishedName": "开发部@kfb@U" } //组织识别名
+{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识
+{ "unique": "kfb" } //组织唯一标识
+{ "name": "开发部" } //组织对象
+
+//上述属性组和对象数组
+[ "开发部", "综合部" ] //名称数组
+[ { "name": "开发部" }, { "name": "综合部" } ] //名称数组
+
+...其他属性值或对象数组
 ```
 {% endtab %}
 {% endtabs %}
@@ -147,13 +206,31 @@ var valueList = this.org.listUnitAllAttribute( unit );
 #### Arguments:
 
 ```text
-> unit :　（string or JsonObject ）必选。可以是组织的distinguishedName、name、id、unique属性值，组织对象。
+> unit :　（string or JsonObject ）必选。
+可以是组织的distinguishedName、name、id、unique属性值，组织对象。
 ```
 
 {% tabs %}
 {% tab title="参数Unit示例" %}
 ```javascript
-//以下均为合法参数//组织属性值"开发部@kfb@U" //组织标识名"cce8bc22-225a-4f85-8132-7374d546886e" //id"kfb" //组织唯一标识"开发部" //组织名称//对象{ "distinguishedName": "开发部@kfb@U" } //组织识别名{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识{ "unique": "kfb" } //组织唯一标识{ "name": "开发部" } //组织对象//上述属性组和对象数组[ "开发部", "综合部" ] //名称数组[ { "name": "开发部" }, { "name": "综合部" } ] //名称数组...其他属性值或对象数组
+//以下均为合法参数
+//组织属性值
+"开发部@kfb@U" //组织标识名
+"cce8bc22-225a-4f85-8132-7374d546886e" //id
+"kfb" //组织唯一标识
+"开发部" //组织名称
+
+//对象
+{ "distinguishedName": "开发部@kfb@U" } //组织识别名
+{ "unique": "cce8bc22-225a-4f85-8132-7374d546886e" } //组织唯一标识
+{ "unique": "kfb" } //组织唯一标识
+{ "name": "开发部" } //组织对象
+
+//上述属性组和对象数组
+[ "开发部", "综合部" ] //名称数组
+[ { "name": "开发部" }, { "name": "综合部" } ] //名称数组
+
+...其他属性值或对象数组
 ```
 {% endtab %}
 {% endtabs %}
@@ -169,7 +246,13 @@ unitAttribute对象为JSON格式数据，其格式和主要数据如下：
 {% tabs %}
 {% tab title="unitAttribute对象" %}
 ```javascript
-{    "name": "部门类别",    "unit": "开发部@kfb@U",    "attributeList": [        "生产部门"    ]}
+{
+    "name": "部门类别",
+    "unit": "开发部@kfb@U",
+    "attributeList": [
+        "生产部门"
+    ]
+}
 ```
 {% endtab %}
 {% endtabs %}
