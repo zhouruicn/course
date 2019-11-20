@@ -31,8 +31,7 @@ var identityList = this.org.getIdentity( identity );
 可以是身份的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数identity示例" %}
+{% code title="参数identity示例" %}
 ```javascript
 //以下均为合法参数
 //身份属性值
@@ -53,8 +52,7 @@ var identityList = this.org.getIdentity( identity );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -64,8 +62,7 @@ var identityList = this.org.getIdentity( identity );
 
 identity对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="identity对象" %}
+{% code title="identity对象" %}
 ```javascript
 {
     "name": "李四",  //身份名称，不唯一
@@ -80,8 +77,7 @@ identity对象为JSON格式数据，其格式和主要数据如下：
     "orderNumber": 24920439 //排序号
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listIdentityWithPerson
 
@@ -100,8 +96,7 @@ var identityList = this.org.listIdentityWithPerson( person );
 可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数person示例" %}
+{% code title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -122,8 +117,7 @@ var identityList = this.org.listIdentityWithPerson( person );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -133,8 +127,7 @@ var identityList = this.org.listIdentityWithPerson( person );
 
 identity对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="identity对象" %}
+{% code title="identity对象" %}
 ```javascript
 {
     "name": "李四",  //身份名称，不唯一
@@ -149,8 +142,7 @@ identity对象为JSON格式数据，其格式和主要数据如下：
     "orderNumber": 24920439 //排序号
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listIdentityWithUnit
 
@@ -170,8 +162,7 @@ var identityList = this.org.listIdentityWithUnit( unit, nested );
 > nested :　（boolean）可选，true嵌套的所有身份成员；false直接身份成员；默认false
 ```
 
-{% tabs %}
-{% tab title="参数unit示例" %}
+{% code title="参数unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -192,8 +183,7 @@ var identityList = this.org.listIdentityWithUnit( unit, nested );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -203,8 +193,7 @@ var identityList = this.org.listIdentityWithUnit( unit, nested );
 
 identity对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="identity对象" %}
+{% code title="identity对象" %}
 ```javascript
 {
     "name": "李四",  //身份名称，不唯一
@@ -219,8 +208,7 @@ identity对象为JSON格式数据，其格式和主要数据如下：
     "orderNumber": 24920439 //排序号
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 
 

@@ -92,8 +92,7 @@ var doc = this.documentContext.getControl();
 
 返回内容如下：
 
-{% tabs %}
-{% tab title="内容管理实例的权限" %}
+{% code title="内容管理实例的权限" %}
 ```javascript
 {
     "allowRead": true,              //是否允许阅读文档
@@ -104,8 +103,7 @@ var doc = this.documentContext.getControl();
     "allowDeleteDocument": true     //是否允许删除文档
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### getAttachmentList
 
@@ -125,8 +123,7 @@ var attachmentList = this.documentContext.getAttachmentList();
 
 附件对象是一个JSON数组。每个对象的格式和主要数据如下：
 
-{% tabs %}
-{% tab title="附件对象" %}
+{% code title="附件对象" %}
 ```javascript
 {
     "id": "a5cc5858-cac5-445a-a0a5-888d224eb2f6",   //附件ID
@@ -140,6 +137,5 @@ var attachmentList = this.documentContext.getAttachmentList();
     "length": 364507,                               //附件大小
 },
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 

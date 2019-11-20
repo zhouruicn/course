@@ -44,7 +44,7 @@ O2OA支持windows/linux/macos/aix/中标麒麟操作系统，下载相应的安�
 
 启动界面如下图所示：
 
-![](../.gitbook/assets/image%20%2853%29.png)
+![](../.gitbook/assets/image%20%2854%29.png)
 
 ![&#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;&#x987A;&#x5E8F;](file://C:/Users/zhour/Desktop/qidong.jpg?lastModify=1565946515)
 

@@ -35,8 +35,7 @@ var task = this.workContext.getTask();
 
 task对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="task对象" %}
+{% code title="task对象" %}
 ```javascript
 {
     "id": "dd476045-7c79-44f7-9dba-f51d322de40f",   //待办ID
@@ -78,8 +77,7 @@ task对象为JSON格式数据，其格式和主要数据如下：
     ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### getWork
 
@@ -100,8 +98,7 @@ var work = this.workContext.getWork();
 
 work对象或workCompleted对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="work对象" %}
+{% code title="work对象" %}
 ```javascript
 var work = {
     "id": "854e2c22-718e-48bb-98db-96f4b43e7ee8",   //流程实例ID
@@ -132,11 +129,9 @@ var work = {
     "form": "db3b2766-93a1-4058-b522-0edb922bd84f"          //流程展现所使用的表单
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="workCompleted对象" %}
+{% code title="workCompleted对象" %}
 ```javascript
 var workCompleted = {
     "id": "be0195f1-f2e2-4eac-911c-99897a43ff8f",   //流程实例ID
@@ -159,8 +154,7 @@ var workCompleted = {
     "form": "320be1ca-ee49-478f-a751-f65ab67cf818",         //流程展现所使用的表单
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### getActivity
 
@@ -213,8 +207,7 @@ var taskList = this.workContext.getReadList();
 
 每个read对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="read对象" %}
+{% code title="read对象" %}
 ```javascript
 {
     "id": "dd476045-7c79-44f7-9dba-f51d322de40f",   //待阅ID
@@ -243,8 +236,7 @@ var taskList = this.workContext.getReadList();
     "creatorUnit": "XX@c448d8bb-98b8-4305-9d3f-12537723cfcc@U"  //流程实例创建人所在组织
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### getTaskCompletedList
 
@@ -264,8 +256,7 @@ var taskCompletedList = this.workContext.getTaskCompletedList();
 
 每个workCompleted对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="workCompleted对象" %}
+{% code title="workCompleted对象" %}
 ```javascript
 {
     "id": "2aef274c-ec3b-4cb3-882b-6f6c4a2fb6f6",   //已办ID
@@ -298,8 +289,7 @@ var taskCompletedList = this.workContext.getTaskCompletedList();
     "opinion": "退回申请人"                         //办理意见
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### getControl
 
@@ -319,8 +309,7 @@ var control = this.workContext.getControl();
 
 返回内容如下：
 
-{% tabs %}
-{% tab title="流程实例的权限对象" %}
+{% code title="流程实例的权限对象" %}
 ```javascript
 {
     "allowVisit": true,             //是否允许访问
@@ -333,8 +322,7 @@ var control = this.workContext.getControl();
     "allowDelete": true             //是否允许删除流程实例
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### getWorkLogList
 

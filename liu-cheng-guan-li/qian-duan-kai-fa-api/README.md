@@ -261,8 +261,7 @@ description: >-
 
 3、在category1和category2两个下拉框的可选值脚本如下：　　
 
-{% tabs %}
-{% tab title="category1的可选值脚本" %}
+{% code title="category1的可选值脚本" %}
 ```javascript
 var dict = new this.Dict("category"); //获取名为category的数据字典
 var categoryList = dict.get(); //获取数据字典
@@ -270,18 +269,15 @@ var options = Object.keys(categoryList); //获取大类，赋值给options变量
 options.unshift("(请选择大类)|"); //在options数组首位插入提示选项，并将“”作为value，“(请选择大类)”作为text
 return options; //返回列表，作为列表框的可选值　　
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="category2的可选值脚本" %}
+{% code title="category2的可选值脚本" %}
 ```javascript
 var dict = new this.Dict("category"); //获取名为category的数据字典
 var categoryList = dict.get(this.data.category1); //获取数据字典,以下拉框category1的值为关键字的数据值（数组）
 return categoryList; //返回列表，作为列表框的可选值
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 　4、在category1的change事件中添加如下代码：
 

@@ -14,7 +14,7 @@ description: O2OA服务器提供了配置文件，支持自定义工作日、节
 
 ## 二、配置说明（平台默认使用的为以下配置） <a id="h1_2"></a>
 
-![](../.gitbook/assets/image%20%28126%29.png)
+![](../.gitbook/assets/image%20%28130%29.png)
 
 其中holidays一般配置国家每年发布的法定节假日（如遇周末可以不用配置）
 

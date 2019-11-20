@@ -60,8 +60,7 @@ var personList = this.org.getPerson( person );
 
 person对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="person对象" %}
+{% code title="person对象" %}
 ```javascript
 {
     "name": "李四",    //姓名
@@ -85,8 +84,7 @@ person对象为JSON格式数据，其格式和主要数据如下：
     "zhengwuDingdingId" //政务钉钉id
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listSubPerson
 
@@ -106,8 +104,7 @@ var personList = this.org.listSubPerson( person , nested );
 > nested :　（boolean）可选，true嵌套的所有人员；false直接人员；默认false
 ```
 
-{% tabs %}
-{% tab title="参数person 示例" %}
+{% code title="参数person 示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -128,8 +125,7 @@ var personList = this.org.listSubPerson( person , nested );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -139,8 +135,7 @@ var personList = this.org.listSubPerson( person , nested );
 
 person对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="person对象" %}
+{% code title="person对象" %}
 ```javascript
 {
     "name": "李四",    //姓名
@@ -164,8 +159,7 @@ person对象为JSON格式数据，其格式和主要数据如下：
     "zhengwuDingdingId" //政务钉钉id
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listSupPerson
 
@@ -185,8 +179,7 @@ var personList = this.org.listSupPerson( person , nested );
 > nested :　（boolean）可选，true嵌套的所有人员；false直接人员；默认false
 ```
 
-{% tabs %}
-{% tab title="参数person 示例" %}
+{% code title="参数person 示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -207,8 +200,7 @@ var personList = this.org.listSupPerson( person , nested );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -218,8 +210,7 @@ var personList = this.org.listSupPerson( person , nested );
 
 person对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="person对象" %}
+{% code title="person对象" %}
 ```javascript
 {
     "name": "李四",    //姓名
@@ -243,8 +234,7 @@ person对象为JSON格式数据，其格式和主要数据如下：
     "zhengwuDingdingId" //政务钉钉id
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listPersonWithGroup
 
@@ -262,8 +252,7 @@ var personList = this.org.listPersonWithGroup( group );
 > group :　（string JsonObject or array）必选。可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数group示例" %}
+{% code title="参数group示例" %}
 ```javascript
 //以下均为合法参数
 //群组属性值
@@ -284,8 +273,7 @@ var personList = this.org.listPersonWithGroup( group );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -295,8 +283,7 @@ var personList = this.org.listPersonWithGroup( group );
 
 person对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="person对象" %}
+{% code title="person对象" %}
 ```javascript
 {
     "name": "李四",    //姓名
@@ -320,8 +307,7 @@ person对象为JSON格式数据，其格式和主要数据如下：
     "zhengwuDingdingId" //政务钉钉id
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listPersonWithRole
 
@@ -341,8 +327,7 @@ var personList = this.org.listPersonWithRole( role, nested );
 > nested :　（boolean）可选，true嵌套的所有人员；false直接人员；默认false
 ```
 
-{% tabs %}
-{% tab title="参数role示例" %}
+{% code title="参数role示例" %}
 ```javascript
 //对象
 { "distinguishedName": "Manager@ManagerSystemRole@R" } //角色识别名
@@ -356,8 +341,7 @@ var personList = this.org.listPersonWithRole( role, nested );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -367,8 +351,7 @@ var personList = this.org.listPersonWithRole( role, nested );
 
 person对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="person对象" %}
+{% code title="person对象" %}
 ```javascript
 {
     "name": "李四",    //姓名
@@ -392,8 +375,7 @@ person对象为JSON格式数据，其格式和主要数据如下：
     "zhengwuDingdingId" //政务钉钉id
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listPersonWithIdentity
 
@@ -412,8 +394,7 @@ var personList = this.org.listPersonWithIdentity( identity );
 可以是身份的distinguishedName、name、id、unique属性值，身份对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数identity示例" %}
+{% code title="参数identity示例" %}
 ```javascript
 //以下均为合法参数
 //身份属性值
@@ -434,8 +415,7 @@ var personList = this.org.listPersonWithIdentity( identity );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -445,8 +425,7 @@ var personList = this.org.listPersonWithIdentity( identity );
 
 person对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="person对象" %}
+{% code title="person对象" %}
 ```javascript
 {
     "name": "李四",    //姓名
@@ -470,8 +449,7 @@ person对象为JSON格式数据，其格式和主要数据如下：
     "zhengwuDingdingId" //政务钉钉id
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listPersonWithUnit
 
@@ -490,8 +468,7 @@ var personList = this.org.listPersonWithUnit( unit );
 可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数unit示例" %}
+{% code title="参数unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -512,8 +489,7 @@ var personList = this.org.listPersonWithUnit( unit );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -523,8 +499,7 @@ var personList = this.org.listPersonWithUnit( unit );
 
 person对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="person对象" %}
+{% code title="person对象" %}
 ```javascript
 {
     "name": "李四",    //姓名
@@ -548,8 +523,7 @@ person对象为JSON格式数据，其格式和主要数据如下：
     "zhengwuDingdingId" //政务钉钉id
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 
 

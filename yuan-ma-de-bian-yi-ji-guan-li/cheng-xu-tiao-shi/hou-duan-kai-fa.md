@@ -8,7 +8,7 @@ description: O2OA无法直接在IDE内直接运行起来，无法直接进行断
 
 jvm是支持远程调试的，得在启动脚本里加jvm参数开启远程调试
 
-![&#x6DFB;&#x52A0;&#x914D;&#x7F6E;](../../.gitbook/assets/image%20%2871%29.png)
+![&#x6DFB;&#x52A0;&#x914D;&#x7F6E;](../../.gitbook/assets/image%20%2873%29.png)
 
 添加内容：-Xdebug -Xrunjdwp:transport=dt\_socket,address=6666,server=y,suspend=n
 
@@ -28,7 +28,7 @@ Listening for transport dt\_socket at address: 6666
 
 ### 1、增加调试/运行配置
 
-![](../../.gitbook/assets/image%20%28163%29.png)
+![](../../.gitbook/assets/image%20%28169%29.png)
 
 ### 2、启动调试
 
@@ -36,7 +36,7 @@ Listening for transport dt\_socket at address: 6666
 
 Connected to the target VM, address: '127.0.0.1:6666', transport: 'socket'
 
-![](../../.gitbook/assets/image%20%28140%29.png)
+![](../../.gitbook/assets/image%20%28146%29.png)
 
 ### 3、增加断点
 
@@ -46,11 +46,11 @@ Connected to the target VM, address: '127.0.0.1:6666', transport: 'socket'
 
 ### 1、打开调试/运行配置界面
 
-![](../../.gitbook/assets/image%20%2846%29.png)
+![](../../.gitbook/assets/image%20%2847%29.png)
 
 ### 2、新增远程调试配置
 
-![](../../.gitbook/assets/image%20%28182%29.png)
+![](../../.gitbook/assets/image%20%28188%29.png)
 
 ### 3、选择需要调试的项目
 
@@ -64,7 +64,7 @@ Connected to the target VM, address: '127.0.0.1:6666', transport: 'socket'
 
 ### 5、在代码增加断点调试
 
-![](../../.gitbook/assets/image%20%28183%29.png)
+![](../../.gitbook/assets/image%20%28189%29.png)
 
 Eclipse远程调试教程很多，可以参考:
 

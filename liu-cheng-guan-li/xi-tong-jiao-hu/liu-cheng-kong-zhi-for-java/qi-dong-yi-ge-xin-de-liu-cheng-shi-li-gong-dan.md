@@ -6,8 +6,7 @@ description: 本例使用Java语言发送请求，向服务器进行认证后，
 
 完整代码：
 
-{% tabs %}
-{% tab title="Demo\_StartProcess.java" %}
+{% code title="Demo\_StartProcess.java" %}
 ```java
 package net.o2oa.demos;
 
@@ -224,8 +223,7 @@ public class Demo_StartProcess {
 }
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 pom.xml
 

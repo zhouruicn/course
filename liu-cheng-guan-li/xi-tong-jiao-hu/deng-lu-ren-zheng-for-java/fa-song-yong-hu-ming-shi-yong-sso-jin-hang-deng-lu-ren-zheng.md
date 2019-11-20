@@ -28,8 +28,7 @@ description: 此示例演示如何通过登录用户名，和SSO相关的配置�
 
 完整代码内容：
 
-{% tabs %}
-{% tab title="Demo\_LoginWithSSO.java" %}
+{% code title="Demo\_LoginWithSSO.java" %}
 ```java
 package net.o2oa.demos;
 
@@ -242,13 +241,11 @@ public class Demo_LoginWithSSO {
 }
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 数据加密辅助类：
 
-{% tabs %}
-{% tab title="Crypto.java" %}
+{% code title="Crypto.java" %}
 ```java
 package net.o2oa.util;
 import java.io.IOException;
@@ -322,13 +319,11 @@ public class Crypto {
 	}
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 pom.xml内容：
 
-{% tabs %}
-{% tab title="pom.xml" %}
+{% code title="pom.xml" %}
 ```markup
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -401,8 +396,7 @@ pom.xml内容：
 </project>
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 示例下载（Eclipse, JDK1.8）：
 

@@ -32,8 +32,7 @@ var identityList = this.org.getDuty( dutyName, unit );
 可以是组织的distinguishedName、name、id、unique属性值，组织对象。
 ```
 
-{% tabs %}
-{% tab title="参数unit示例" %}
+{% code title="参数unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -48,8 +47,7 @@ var identityList = this.org.getDuty( dutyName, unit );
 { "unique": "kfb" } //人员唯一标识
 { "name": "开发部" } //名称对象
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -59,8 +57,7 @@ var identityList = this.org.getDuty( dutyName, unit );
 
 identity对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="identity对象" %}
+{% code title="identity对象" %}
 ```javascript
 {
     "name": "李四",  //身份名称，不唯一
@@ -76,8 +73,7 @@ identity对象为JSON格式数据，其格式和主要数据如下：
 }
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listDutyNameWithIdentity
 
@@ -96,8 +92,7 @@ var dutyNameList = this.org.listDutyNameWithIdentity( identity );
 可以是身份的distinguishedName、name、id、unique属性值，身份对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数identity示例" %}
+{% code title="参数identity示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -118,8 +113,7 @@ var dutyNameList = this.org.listDutyNameWithIdentity( identity );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -144,8 +138,7 @@ var dutyNameList = this.org.listDutyNameWithIdentity( unit );
 可以是组织的distinguishedName、name、id、unique属性值，组织对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数unit示例" %}
+{% code title="参数unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -166,8 +159,7 @@ var dutyNameList = this.org.listDutyNameWithIdentity( unit );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -192,8 +184,7 @@ var dutyList = this.org.listUnitAllDuty( unit );
 可以是组织的distinguishedName、name、id、unique属性值，组织对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数unit示例" %}
+{% code title="参数unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -214,8 +205,7 @@ var dutyList = this.org.listUnitAllDuty( unit );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -225,8 +215,7 @@ var dutyList = this.org.listUnitAllDuty( unit );
 
 duty对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="duty对象" %}
+{% code title="duty对象" %}
 ```javascript
 {
     "name": "正职领导", //职务名称
@@ -247,8 +236,7 @@ duty对象为JSON格式数据，其格式和主要数据如下：
     ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 
 

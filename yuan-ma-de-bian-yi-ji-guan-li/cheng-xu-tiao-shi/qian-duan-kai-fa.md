@@ -6,7 +6,7 @@ description: Chrome浏览器F12开发者工具简单使用
 
 用浏览器自带调试功能
 
-![](../../.gitbook/assets/image%20%28130%29.png)
+![](../../.gitbook/assets/image%20%28135%29.png)
 
 ## 一、如何调出开发者工具
 

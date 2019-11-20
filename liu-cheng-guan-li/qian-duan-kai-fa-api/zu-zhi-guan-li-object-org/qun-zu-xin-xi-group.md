@@ -31,8 +31,7 @@ var groupList = this.org.getGroup( group );
 可以是群组的distinguishedName、name、id、unique属性值，群组对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数group示例" %}
+{% code title="参数group示例" %}
 ```javascript
 //以下均为合法参数
 //群组属性值
@@ -54,8 +53,7 @@ var groupList = this.org.getGroup( group );
 ...其他属性值或对象数组
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -101,8 +99,7 @@ var groupList = this.org.listSubGroup( group , nested );
 > nested :　（boolean）可选，true嵌套的所有下级群组；false直接群组；默认false
 ```
 
-{% tabs %}
-{% tab title="参数group示例" %}
+{% code title="参数group示例" %}
 ```javascript
 //以下均为合法参数
 //群组属性值
@@ -123,8 +120,7 @@ var groupList = this.org.listSubGroup( group , nested );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -170,8 +166,7 @@ var groupList = this.org.listSupGroup( group , nested );
 > nested :　（boolean）可选，true嵌套的所有上级群组；false直接群组；默认false
 ```
 
-{% tabs %}
-{% tab title="参数group示例" %}
+{% code title="参数group示例" %}
 ```javascript
 //以下均为合法参数
 //群组属性值
@@ -192,8 +187,7 @@ var groupList = this.org.listSupGroup( group , nested );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -238,8 +232,7 @@ var groupList = this.org.listGroupWithPerson( person );
 可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数person示例" %}
+{% code title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -260,8 +253,7 @@ var groupList = this.org.listGroupWithPerson( person );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 

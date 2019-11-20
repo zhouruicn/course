@@ -33,8 +33,7 @@ this.org.appendUnitAttribute( unit, attribute, valueArray);
 > valueArray :　（Array）必选，属性值，必须为数组
 ```
 
-{% tabs %}
-{% tab title="参数Unit示例" %}
+{% code title="参数Unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -49,8 +48,7 @@ this.org.appendUnitAttribute( unit, attribute, valueArray);
 { "unique": "kfb" } //组织唯一标识
 { "name": "开发部" } //组织对象
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -77,8 +75,7 @@ this.org.setUnitAttribute( unit, attribute, valueArray );
 > valueArray :　（Array）必选，属性值，必须为数组
 ```
 
-{% tabs %}
-{% tab title="参数Unit示例" %}
+{% code title="参数Unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -93,8 +90,7 @@ this.org.setUnitAttribute( unit, attribute, valueArray );
 { "unique": "kfb" } //组织唯一标识
 { "name": "开发部" } //组织对象
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -120,8 +116,7 @@ var valueList = this.org.getUnitAttribute( unit, attributeName );
 > attributeName :　（string）必选，属性名称
 ```
 
-{% tabs %}
-{% tab title="参数Unit示例" %}
+{% code title="参数Unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -136,8 +131,7 @@ var valueList = this.org.getUnitAttribute( unit, attributeName );
 { "unique": "kfb" } //组织唯一标识
 { "name": "开发部" } //组织对象
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -162,8 +156,7 @@ var valueList = this.org.listUnitAttributeName( unit );
 可以是组织的distinguishedName、name、id、unique属性值，组织对象。
 ```
 
-{% tabs %}
-{% tab title="参数Unit示例" %}
+{% code title="参数Unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -184,8 +177,7 @@ var valueList = this.org.listUnitAttributeName( unit );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -210,8 +202,7 @@ var valueList = this.org.listUnitAllAttribute( unit );
 可以是组织的distinguishedName、name、id、unique属性值，组织对象。
 ```
 
-{% tabs %}
-{% tab title="参数Unit示例" %}
+{% code title="参数Unit示例" %}
 ```javascript
 //以下均为合法参数
 //组织属性值
@@ -232,8 +223,7 @@ var valueList = this.org.listUnitAllAttribute( unit );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -243,8 +233,7 @@ var valueList = this.org.listUnitAllAttribute( unit );
 
 unitAttribute对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="unitAttribute对象" %}
+{% code title="unitAttribute对象" %}
 ```javascript
 {
     "name": "部门类别",
@@ -254,6 +243,5 @@ unitAttribute对象为JSON格式数据，其格式和主要数据如下：
     ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 

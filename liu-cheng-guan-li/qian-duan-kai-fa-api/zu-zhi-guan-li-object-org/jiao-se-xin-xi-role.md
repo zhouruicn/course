@@ -31,8 +31,7 @@ var roleList = this.org.getRole( role );
 可以是角色的distinguishedName、name、id、unique属性值，角色对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数role示例" %}
+{% code title="参数role示例" %}
 ```javascript
 ///以下均为合法参数
 //角色属性值
@@ -53,8 +52,7 @@ var roleList = this.org.getRole( role );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -64,8 +62,7 @@ var roleList = this.org.getRole( role );
 
 role对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="role对象" %}
+{% code title="role对象" %}
 ```javascript
 {
     "name": "Manager",   //角色名称
@@ -82,8 +79,7 @@ role对象为JSON格式数据，其格式和主要数据如下：
     ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### listRoleWithPerson
 
@@ -102,8 +98,7 @@ var roleList = this.org.listRoleWithPerson( person );
 可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数person示例" %}
+{% code title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -124,8 +119,7 @@ var roleList = this.org.listRoleWithPerson( person );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -135,8 +129,7 @@ var roleList = this.org.listRoleWithPerson( person );
 
 role对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="role对象" %}
+{% code title="role对象" %}
 ```javascript
 {
     "name": "Manager",   //角色名称
@@ -153,8 +146,7 @@ role对象为JSON格式数据，其格式和主要数据如下：
     ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### personHasRole
 
@@ -175,8 +167,7 @@ var flag = this.org.personHasRole( person, role );
 可以是角色的distinguishedName、name、id、unique属性值，角色对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数person示例" %}
+{% code title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -191,11 +182,9 @@ var flag = this.org.personHasRole( person, role );
 { "unique": "lisi" } //人员唯一标识
 { "name": "李四" } //名称对象
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="参数role示例" %}
+{% code title="参数role示例" %}
 ```javascript
 ///以下均为合法参数
 //角色属性值
@@ -216,8 +205,7 @@ var flag = this.org.personHasRole( person, role );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -244,8 +232,7 @@ var flag = this.org.groupHasRole( group, role );
 可以是角色的distinguishedName、name、id、unique属性值，角色对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数group示例" %}
+{% code title="参数group示例" %}
 ```javascript
 //以下均为合法参数
 //群组属性值
@@ -260,11 +247,9 @@ var flag = this.org.groupHasRole( group, role );
 { "unique": "ReportReader" } //群组唯一标识
 { "name": "工作汇报读者" } //群组对象
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="参数role示例" %}
+{% code title="参数role示例" %}
 ```javascript
 ///以下均为合法参数
 //角色属性值
@@ -285,8 +270,7 @@ var flag = this.org.groupHasRole( group, role );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 

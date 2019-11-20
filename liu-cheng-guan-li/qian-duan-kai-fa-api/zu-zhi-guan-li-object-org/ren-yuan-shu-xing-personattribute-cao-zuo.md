@@ -33,8 +33,7 @@ this.org.appendPersonAttribute( person, attribute, valueArray);
 > valueArray :　（Array）必选，属性值，必须为数组
 ```
 
-{% tabs %}
-{% tab title="参数person示例" %}
+{% code title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -49,8 +48,7 @@ this.org.appendPersonAttribute( person, attribute, valueArray);
 { "unique": "lisi" } //人员唯一标识
 { "name": "李四" } //名称对象
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -77,8 +75,7 @@ this.org.setPersonAttribute( person, attribute, valueArray );
 > valueArray:　（Array）必选，属性值，必须为数组
 ```
 
-{% tabs %}
-{% tab title="参数person示例" %}
+{% code title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -93,8 +90,7 @@ this.org.setPersonAttribute( person, attribute, valueArray );
 { "unique": "lisi" } //人员唯一标识
 { "name": "李四" } //名称对象
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -120,8 +116,7 @@ var valueList = this.org.getPersonAttribute( person, attributeName );
 > attributeName :　（string）必选，属性名称
 ```
 
-{% tabs %}
-{% tab title="参数person示例" %}
+{% code title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -136,8 +131,7 @@ var valueList = this.org.getPersonAttribute( person, attributeName );
 { "unique": "lisi" } //人员唯一标识
 { "name": "李四" } //名称对象
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -162,8 +156,7 @@ var attributeNameList = this.org.listPersonAttributeName( person );
 可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数person示例" %}
+{% code title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -184,8 +177,7 @@ var attributeNameList = this.org.listPersonAttributeName( person );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -210,8 +202,7 @@ var personAttributeList = this.org.listPersonAllAttribute( person );
 可以是人员的distinguishedName、name、id、unique属性值，人员对象，或者是上述属性值和对象的数组。
 ```
 
-{% tabs %}
-{% tab title="参数person示例" %}
+{% code title="参数person示例" %}
 ```javascript
 //以下均为合法参数
 //人员属性值
@@ -232,8 +223,7 @@ var personAttributeList = this.org.listPersonAllAttribute( person );
 
 ...其他属性值或对象数组
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -243,8 +233,7 @@ var personAttributeList = this.org.listPersonAllAttribute( person );
 
 personAttribute对象为JSON格式数据，其格式和主要数据如下：
 
-{% tabs %}
-{% tab title="personAttribute对象" %}
+{% code title="personAttribute对象" %}
 ```javascript
 {
     "name": "住址",
@@ -254,8 +243,7 @@ personAttribute对象为JSON格式数据，其格式和主要数据如下：
     ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 
 

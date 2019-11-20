@@ -23,14 +23,12 @@ data数据用于存储表单获取的数据，所有属性都是动态的，其�
 
 #### Syntax:
 
-{% tabs %}
-{% tab title="Syntax:" %}
+{% code title="Syntax:" %}
 ```javascript
 var value = this.data.property;  //获取名为property的数据值
 this.data.property = '123';   //将property的值修改为'123'
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Return:
 
@@ -40,13 +38,11 @@ this.data.property = '123';   //将property的值修改为'123'
 
 获取流程文档的subject值：
 
-{% tabs %}
-{% tab title="获取流程文档的subject值：" %}
+{% code title="获取流程文档的subject值：" %}
 ```javascript
 var subject = this.data.subject; 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Examples 2:
 
@@ -121,13 +117,11 @@ this.data.datagrid.data[0].nameCol.name='平板电脑';
 
 #### Syntax:
 
-{% tabs %}
-{% tab title="Syntax:" %}
+{% code title="Syntax:" %}
 ```javascript
 var newData = this.data.add(key, value, overwrite);
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Arguments:
 
